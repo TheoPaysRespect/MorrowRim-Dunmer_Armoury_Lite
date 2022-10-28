@@ -4,7 +4,7 @@
 	<ThingDef ParentName="UnfinishedBase">
 		<defName>MorrowRim_Dunmer_UnfinishedBonemold</defName>
 		<label>unfinished bonemold</label>
-		<description>An unfinished piece of bonemold equpment.</description>
+		<description>An unfinished piece of bonemold equipment.</description>
 		<statBases>
 			<Flammability>0.3</Flammability>
 		</statBases>
