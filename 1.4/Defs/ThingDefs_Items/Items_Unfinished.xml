@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
+	<!-- ==========[MorrowRim_Dunmer_UnfinishedBonemold]========== -->
 	<ThingDef ParentName="UnfinishedBase">
 		<defName>MorrowRim_Dunmer_UnfinishedBonemold</defName>
 		<label>unfinished bonemold</label>
@@ -14,7 +14,7 @@
 		</graphicData>
 		<stuffCategories Inherit="false"/>
 	</ThingDef>
-	
+	<!-- ==========[MorrowRim_Dunmer_UnfinishedChitin]========== -->
 	<ThingDef ParentName="UnfinishedBase">
 		<defName>MorrowRim_Dunmer_UnfinishedChitin</defName>
 		<label>unfinished chitin</label>
@@ -28,7 +28,7 @@
 		</graphicData>
 		<stuffCategories Inherit="false"/>
 	</ThingDef>
-	
+	<!-- ==========[MorrowRim_Dunmer_UnfinishedOrdinator]========== -->
 	<ThingDef ParentName="UnfinishedBase">
 		<defName>MorrowRim_Dunmer_UnfinishedOrdinator</defName>
 		<label>unfinished ordinator</label>
@@ -42,5 +42,4 @@
 		</graphicData>
 		<stuffCategories Inherit="false"/>
 	</ThingDef>
-	
 </Defs>
