@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>MorrowRim_Dunmer_UnfinishedBonemold</defName>
+		<label>unfinished bonemold</label>
+		<description>An unfinished piece of bonemold equpment.</description>
+		<statBases>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/MorrowRim_Dunmer_UnfinishedBonemold</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+	
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>MorrowRim_Dunmer_UnfinishedChitin</defName>
+		<label>unfinished chitin</label>
+		<description>An unfinished piece of chitin equipment.</description>
+		<statBases>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/MorrowRim_Dunmer_UnfinishedChitin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+	
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>MorrowRim_Dunmer_UnfinishedOrdinator</defName>
+		<label>unfinished ordinator</label>
+		<description>An unfinished piece of ordinator equipment.</description>
+		<statBases>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/MorrowRim_Dunmer_UnfinishedOrdinator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+	
+</Defs>

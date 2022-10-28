@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>MorrowRim - Dunmer Armoury Lite</name>
+	<packageId>SirMashedPotato.MorrowRim.DunmerArmouryLite</packageId>
+	<author>SirMashedPotato</author>
+	<modVersion>1.0.0</modVersion>
+	<supportedVersions>
+    	<li>1.4</li>
+	</supportedVersions>
+	<description>.\n\n-Supports Vanilla Achievements Expanded\n-Requires ESCP - Tools\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios\n\nSome of the art done by the world famous Dan.
+	</description>
+	<modDependencies>
+	  <li>
+        <packageId>SirMashedPotato.InsectsHaveChitin</packageId>
+		<displayName>Insects have chitin</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2045595134</steamWorkshopUrl>
+		<downloadUrl>https://github.com/SirMashedPotato/Insects-Have-Chitin</downloadUrl>
+      </li>
+	  <li>
+        <packageId>SirMashedPotato.MorrowRim.SimpleBonemold</packageId>
+		<displayName>MorrowRim - Simple Bonemold</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2681835020</steamWorkshopUrl>
+		<downloadUrl>https://github.com/SirMashedPotato/MorrowRim-Simple_Bonemold</downloadUrl>
+      </li>
+	  <li>
+        <packageId>SirMashedPotato.MorrowRim.GlassAndEbony</packageId>
+		<displayName>MorrowRim - Glass and Ebony</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2053604662</steamWorkshopUrl>
+      </li>
+	  <li>
+        <packageId>SirMashedPotato.MorrowRim.Adamantium</packageId>
+		<displayName>MorrowRim - Adamantium</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2383451953</steamWorkshopUrl>
+      </li>
+    </modDependencies>
+	<loadAfter>
+	  <li>brrainz.harmony</li>
+      <li>Ludeon.RimWorld</li>
+      <li>Ludeon.RimWorld.Ideology</li>
+	  <li>Ludeon.RimWorld.Royalty</li>
+	  <li>Ludeon.RimWorld.Biotech</li>
+	  <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	  <!-- Requirements -->
+	  <li>SirMashedPotato.InsectsHaveChitin</li>
+	  <li>SirMashedPotato.MorrowRim.SimpleBonemold</li>
+	  <li>SirMashedPotato.MorrowRim.GlassAndEbony</li>
+	  <li>SirMashedPotato.MorrowRim.Adamantium</li>
+    </loadAfter>
+	<loadBefore>
+		<li>SirMashedPotato.ESCP.Dunmer</li>
+	</loadBefore>
+	<incompatibleWith>
+      <li>SirMashedPotato.MorrowRim.DunmerRace</li>
+      <li>SirMashedPotato.MorrowRim.DunmerFactions</li>
+      <li>SirMashedPotato.MorrowRim.DunmerFactionsMedieval</li>
+      <li>SirMashedPotato.MorrowRim.DunmerArmoury</li>
+    </incompatibleWith>
+</ModMetaData>
