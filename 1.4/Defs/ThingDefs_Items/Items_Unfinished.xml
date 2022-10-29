@@ -3,7 +3,7 @@
 	<!-- ==========[MorrowRim_Dunmer_UnfinishedBonemold]========== -->
 	<ThingDef ParentName="UnfinishedBase">
 		<defName>MorrowRim_Dunmer_UnfinishedBonemold</defName>
-		<label>unfinished bonemold</label>
+		<label>unfinished bonemold equipment</label>
 		<description>An unfinished piece of bonemold equipment.</description>
 		<statBases>
 			<Flammability>0.3</Flammability>
@@ -17,7 +17,7 @@
 	<!-- ==========[MorrowRim_Dunmer_UnfinishedChitin]========== -->
 	<ThingDef ParentName="UnfinishedBase">
 		<defName>MorrowRim_Dunmer_UnfinishedChitin</defName>
-		<label>unfinished chitin</label>
+		<label>unfinished chitin equipment</label>
 		<description>An unfinished piece of chitin equipment.</description>
 		<statBases>
 			<Flammability>0.3</Flammability>
@@ -28,11 +28,25 @@
 		</graphicData>
 		<stuffCategories Inherit="false"/>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_UnfinishedLeather]========== -->
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>MorrowRim_Dunmer_UnfinishedLeather</defName>
+		<label>unfinished leather equipment</label>
+		<description>An unfinished piece of leather equipment.</description>
+		<statBases>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/MorrowRim_Dunmer_UnfinishedLeather</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_UnfinishedOrdinator]========== -->
 	<ThingDef ParentName="UnfinishedBase">
 		<defName>MorrowRim_Dunmer_UnfinishedOrdinator</defName>
-		<label>unfinished ordinator</label>
-		<description>An unfinished piece of ordinator equipment.</description>
+		<label>unfinished Ordinator equipment</label>
+		<description>An unfinished piece of Ordinator equipment.</description>
 		<statBases>
 			<Flammability>0.3</Flammability>
 		</statBases>
