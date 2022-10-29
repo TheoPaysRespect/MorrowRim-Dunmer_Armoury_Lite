@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Bases]========== -->
+	<ResearchProjectDef Name="MorrowRim_Dunmer_ArmouryTechprints" Abstract="True">
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>1000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Tribal</li>
+			<li>ESCP_DunmerGreatHouse</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+	<!-- ==========[Weapons path]========== -->
+	<!--
+		Weapons unlocked based on vanilla research
+			- bow also requires researching recurve/great bow
+			- throwing weapons + belts unlocked by Dunmer throwing weapons
+			- long blades also require researching long blades
+	-->
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_ChitinWeapons</defName>
+		<label>chitin weapons</label>
+		<description>Allows the creation of Dunmer style chitin weapons at the Ashlander forge.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<tags>
+			<li>ESCP_DumerStart_Ashlander</li>
+		</tags>
+	</ResearchProjectDef>
+	<!--
+		Also unlocks Dunmer forge with smithing, electric dunmer forge with electricity
+	<ResearchProjectDef>
+		<defName>ESCP_DunmerBonemoldCreation</defName>
+		<label>bonemold creation</label>
+		<description>Allows the creation of bonemold at a butchers table.\n\nBonemold armor provides reasonable protection, and is comparatively faster to make and lighter than steel plate, though is also less durable. Bonemold is also better at dispersing heat than steel.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<tags>
+		  <li>ESCP_DunmerStart_Medieval</li>
+		</tags>
+	</ResearchProjectDef>
+	-->
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_BonemoldWeapons</defName>
+		<label>bonemold weapons</label>
+		<description>Allows the creation of Dunmeri style bonemold weapons, at the Dunmeri forge.\n\nWhile they require less steel to craft than comparable weapons, this substitution also reduces their overall quality, causing them to deal slightly less damage\n\nWhile bonemold melee weapons are mostly used due to their utilitarian nature, bonemold longbows are well renowned for their flexibility and precision.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_ChitinWeapons</li>
+			<li>ESCP_DunmerBonemoldCreation</li>
+		</prerequisites>
+		<tags>
+			<li>ESCP_DunmerStart_Medieval</li>
+		</tags>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_MoragTongWeapons</defName>
+		<label>Morag Tong blades</label>
+		<description>Allows the creation of Morag Tong style weapons, at the Dunmeri forge.\n\nA Tong specialised in making people disappear, their weapons are designed to strike fast and true, but suffer against multiple adversaries..</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_BonemoldWeapons</li>
+		</prerequisites>
+		<tags>
+			<li>ESCP_DunmerStart_MoragTong</li>
+		</tags>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_DoctrineWeapons</defName>
+		<label>doctrine weapons</label>
+		<description>Allows the creation of Doctrine style Ordinator weapons, at the Dunmeri forge.\n\nWeapons typically utilised by the Order of Doctrine and Ordination, these gold-coated ebony weapons are truly formidable on combat, though sacrifice some of their potential for aesthetics.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_BonemoldWeapons</li>
+		</prerequisites>
+		<tags>
+			<li>ESCP_DunmerStart_Ordinator</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Equipment path]========== -->
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_ThrowingWeapons</defName>
+		<label>Dunmeri throwing weapons</label>
+		<description>Allows the creation of Dunmer style throwing weapons, as well as special belts to carry them in.\n\nFurther research will unlock different weapons.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_ExplosiveWeapons</defName>
+		<label>Dunmeri explosive weapons</label>
+		<description>Allows the creation of Dunmer style explosive weapons, as well as special belts to carry them in, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_ThrowingWeapons</li>
+			<li>ESCP_DunmerBonemoldCreation</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_MoragTongBelts</defName>
+		<label>Morag Tong smoke-bomb belt</label>
+		<description>Allows the creation of Morag Tong smoke-bomb belts at the Dunmeri forge.\n\nThese belts are designed in such a way that a single smoke-bomb is released when the wearer takes damage, though the bombs can be manually released as well.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_ExplosiveWeapons</li>
+		</prerequisites>
+		<tags>
+			<li>ESCP_DunmerStart_MoragTong</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Armour path]========== -->
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_LeatherArmour</defName>
+		<label>leather armour</label>
+		<description>Allows the creation of Dunmer style leather armour at the Ashlander forge.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<tags>
+			<li>ESCP_DumerStart_Ashlander</li>
+		</tags>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_ChitinArmour</defName>
+		<label>chitin armour</label>
+		<description>Allows the creation of Dunmer style chitin armour at the Ashlander forge.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_LeatherArmour</li>
+		</prerequisites>
+		<tags>
+			<li>ESCP_DumerStart_Ashlander</li>
+		</tags>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_BonemoldArmour</defName>
+		<label>bonemold armour</label>
+		<description>Allows the creation of Dunmeri style bonemold armour, at the Dunmeri forge.\n\nBonemold armor provides reasonable protection, and is comparatively faster to make and lighter than steel plate, though is also less durable. Bonemold is also better at dispersing heat than steel.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_ChitinArmour</li>
+			<li>ESCP_DunmerBonemoldCreation</li>
+		</prerequisites>
+		<tags>
+			<li>ESCP_DunmerStart_Medieval</li>
+		</tags>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_MoragTongArmour</defName>
+		<label>Morag Tong armour</label>
+		<description>Allows the creation of specially designed Morag Tong, at the Dunmeri forge.\n\nA combination of leather and chitin, this armour is lightweight, but still protective.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_ChitinArmour</li>
+		</prerequisites>
+		<tags>
+			<li>ESCP_DunmerStart_MoragTong</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Ordinator extension]========== -->
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_DoctrineOrdinatorArmour</defName>
+		<label>doctrine ordinator armour</label>
+		<description>Allows the creation of Doctrine style Ordinator armour, at the Dunmeri forge.\n\nIntricately crafted, out of an assortment of materials, wearers of this armour are feared by all, and themselves fear little.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_BonemoldArmour</li>
+		</prerequisites>
+		<tags>
+			<li>ESCP_DunmerStart_Ordinator</li>
+		</tags>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_NightRaidOrdinatorArmour</defName>
+		<label>night raid ordinator armour</label>
+		<description>Allows the creation of Night Raid style Ordinator armour, at the Dunmeri forge.\n\nLighter weight than regular Ordinator armour, thanks to using steel in place of gold, an excellent choice for night-time missions.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_MourningOrdinatorArmour</defName>
+		<label>mourning ordinator armour</label>
+		<description>Allows the creation of Necrom style Ordinator armour, at the Dunmeri forge.\n\nRarely seen outside of the holy city of Necrom, the design of the armour attunes its wearer to the unseen.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_HighOrdinatorArmour</defName>
+		<label>high ordinator armour</label>
+		<description>Allows the creation of Mournhold style Ordinator armour, at the Dunmeri forge.\n\nOrnately decorated, and made out of only the finest materials, far more protective than other Ordinator styles, but also heavier.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- ==========[Houses]========== -->
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_DresArmour</defName>
+		<label>Dres armour</label>
+		<description>Allows the creation of Great House Dres style armour, at the Dunmeri forge.\n\nFamed for their proficiency with slaves, Dres armour tends to be lighter than most, but still adequately protective.\n\nFurther research will unlock different armour sets.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>4</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_HlaaluArmour</defName>
+		<label>Hlaalu armour</label>
+		<description>Allows the creation of Great House Hlaalu style armour, at the Dunmeri forge.\n\nUsually ones to favour words over weapons, Hlaalu armour strikes a good balance between form and function.\n\nFurther research will unlock different armour sets.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>4</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_IndorilArmour</defName>
+		<label>Indoril armour</label>
+		<description>Allows the creation of Great House Indoril style armour, at the Dunmeri forge.\n\nAlways the most faithful supporters of the Temple, and growing increasingly indistinguishable from it over time, Indoril armour provides more than just physical protection.\n\nFurther research will unlock different armour sets.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>4</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_RedoranArmour</defName>
+		<label>Redoran armour</label>
+		<description>Allows the creation of Great House Redoran style armour, at the Dunmeri forge.\n\nThe most militaristic of the Great Houses, whether fighting in snow, or in swamps, House Redoran has a set of armour suited for any situation.\n\nFurther research will unlock different armour sets.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>4</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>MorrowRim_Dunmer_TelvanniArmour</defName>
+		<label>Telvanni armour</label>
+		<description>Allows the creation of Great House Telvanni style armour, at the Dunmeri forge.\n\nNever particularly ones for war, House Telvanni instead creates armour designed to augment their abilities, often out of peculiar materials.\n\nFurther research will unlock different armour sets.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>4</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+	</ResearchProjectDef>
+	<!-- ==========[Houses Elite]========== -->
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_DresArmourElite</defName>
+		<label>elite Dres armour</label>
+		<description>Allows the creation of elite Great House Dres style armour, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>5</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_DresArmour</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_HlaaluArmourElite</defName>
+		<label>elite Hlaalu armour</label>
+		<description>Allows the creation of elite Great House Hlaalu style armour, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>5</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_HlaaluArmour</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_IndorilArmourElite</defName>
+		<label>elite Indoril armour</label>
+		<description>Allows the creation of elite Great House Indoril style armour, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>5</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_IndorilArmour</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_RedoranArmourElite</defName>
+		<label>elite Redoran armour</label>
+		<description>Allows the creation of elite Great House Redoran style armour, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>5</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_RedoranArmour</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+		<defName>MorrowRim_Dunmer_TelvanniArmourElite</defName>
+		<label>elite Telvanni armour</label>
+		<description>Allows the creation of elite Great House Telvanni style armour, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>5</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_TelvanniArmour</li>
+		</prerequisites>
+	</ResearchProjectDef>
+</Defs>
