@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_ForgeBase]========== -->
+	<ThingDef ParentName="BenchBase" Name="MorrowRim_Dunmer_ForgeBase" Abstract="True">
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<costStuffCount>75</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_AshlanderForge]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ForgeBase">
+		<defName>MorrowRim_Dunmer_AshlanderForge</defName>
+		<label>Ashlander forge</label>
+		<description>A simple workbench, equipped with everything necessary to work leather and chitin. Works at 50% of the speed of a Dunmeri forge.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/TableTailorHand</texPath>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<statBases>
+			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+		</statBases>
+		<comps>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DunmerForgeFuelled]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ForgeBase">
+		<defName>MorrowRim_Dunmer_DunmerForgeFuelled</defName>
+		<label>fuelled Dunmeri forge</label>
+		<description>A wood-fuelled forge, equipped with everything needed to work bonemold and steel.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/TableTailorHand</texPath>
+		</graphicData>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>80.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ESCP_DunmerBonemoldCreation</li>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DunmerForgeElectric]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ForgeBase">
+		<defName>MorrowRim_Dunmer_DunmerForgeElectric</defName>
+		<label>electric Dunmeri forge</label>
+		<description>An electric-powered forge, equipped with everything needed to work bonemold and steel.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/TableTailorHand</texPath>
+		</graphicData>
+		<costList>
+			<Steel>25</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>210</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>4</heatPerSecond>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ESCP_DunmerBonemoldCreation</li>
+			<li>Smithing</li>
+			<li>Electricity</li>
+		</researchPrerequisites>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<WorkGiverDef>
+		<defName>MorrowRim_Dunmer_WorkDunmerForge</defName>
+		<label>work Dunmeri forge</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>115</priorityInType>
+		<fixedBillGiverDefs>
+			<li>MorrowRim_Dunmer_AshlanderForge</li>
+			<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+			<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+		</fixedBillGiverDefs>
+		<verb>smith</verb>
+		<gerund>smithing at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+</Defs>
