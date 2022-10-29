@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Blunt]========== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality" Name="MorrowRim_Dunmer_DoctrineWeapon_Blunt" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<stuffCategories Inherit="False"/>
+		<recipeMaker Inherit="False">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>MorrowRim_Dunmer_DoctrineWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedOrdinator</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Sharp]========== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="MorrowRim_Dunmer_DoctrineWeapon_Sharp" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<stuffCategories Inherit="False"/>
+		<recipeMaker Inherit="False">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>MorrowRim_Dunmer_DoctrineWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedOrdinator</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Axe]========== -->
+	<!-- Doctrine version of MeleeWeapon_Axe in Royalty -->
+	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_Axe</defName>
+		<label>Doctrine axe</label>
+		<description>An ornate ebony axe, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it cleaves through flesh.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Axe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Gold>1</Gold>
+			<MorrowRim_Ebony>40</MorrowRim_Ebony>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_DoctrineMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>7.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_BattleAxe]========== -->
+	<!-- counterpart to MorrowRim_Dunmer_DoctrineWeapon_Warhammer -->
+	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_BattleAxe</defName>
+		<label>Doctrine battle axe</label>
+		<description>An ornate ebony battle axe, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it cleaves through armour.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_BattleAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>4.2</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Gold>2.5</Gold>
+			<MorrowRim_Ebony>125</MorrowRim_Ebony>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_DoctrineMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8.8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_GreatSword]========== -->
+	<!-- better than MeleeWeapon_LongSword in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_GreatSword</defName>
+		<label>Doctrine greatsword</label>
+		<description>An ornate ebony greatsword, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it slashes through armour.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Greatsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Gold>2.5</Gold>
+			<MorrowRim_Ebony>125</MorrowRim_Ebony>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MorrowRim_Dunmer_DoctrineMeleeAdvanced</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Mace]========== -->
+	<!-- Doctrine version of MeleeWeapon_Mace in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Blunt">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_Mace</defName>
+		<label>Doctrine mace</label>
+		<description>An ornate mace, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it crushes bone.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Mace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Gold>1</Gold>
+			<MorrowRim_Ebony>40</MorrowRim_Ebony>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_DoctrineMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>7.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12.7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Maul]========== -->
+	<!-- Doctrine version of MeleeWeapon_Warhammer in Royalty -->
+	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Blunt">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_Maul</defName>
+		<label>Doctrine maul</label>
+		<description>An ornate maul, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it crushes armour.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Maul</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Gold>2.5</Gold>
+			<MorrowRim_Ebony>125</MorrowRim_Ebony>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_DoctrineMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8.8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Spear]========== -->
+	<!-- similar to MeleeWeapon_Spear in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_Spear</defName>
+		<label>Doctrine spear</label>
+		<description>An ornate spear, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it pierces armour.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Spear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.6</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Gold>1</Gold>
+			<MorrowRim_Ebony>65</MorrowRim_Ebony>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MorrowRim_Dunmer_DoctrineMeleeAdvanced</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.4</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>18.4</power>
+				<armorPenetration>0.50</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Sword]========== -->
+	<!-- Doctrine version of MeleeWeapon_Gladius in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_Sword</defName>
+		<label>Doctrine sword</label>
+		<description>An ornate ebony sword, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it slashes through flesh.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Sword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>0.68</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Gold>1.5</Gold>
+			<MorrowRim_Ebony>30</MorrowRim_Ebony>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_DoctrineMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>7.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12.8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12.8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>

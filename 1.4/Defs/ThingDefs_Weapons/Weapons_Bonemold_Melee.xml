@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+		Compared to steel/base
+		- Damage ~20% lower
+		- Mass reduced by ~20%
+	-->
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Blunt]========== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality" Name="MorrowRim_Dunmer_BonemoldWeapon_Blunt" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<stuffCategories Inherit="False"/>
+		<recipeMaker Inherit="False">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Sharp]========== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="MorrowRim_Dunmer_BonemoldWeapon_Sharp" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<stuffCategories Inherit="False"/>
+		<recipeMaker Inherit="False">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_BattleAxe]========== -->
+	<!-- counterpart to MorrowRim_Dunmer_BonemoldWeapon_Warhammer -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_BattleAxe</defName>
+		<label>bonemold battle axe</label>
+		<description>A heavy steel blade, attached to a long bonemold handle. The powerful cleaving impacts can slice an enemy's insides, even through armor.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_BattleAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>4.2</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ESCP_BonemoldItem>100</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_BonemoldMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8.8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Dagger]========== -->
+	<!-- bonemold version of MeleeWeapon_Knife in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_Dagger</defName>
+		<label>bonemold dagger</label>
+		<description>A small steel blade, attached to a bonemold handle. Not the most dangerous weapon, but sometimes you have to work with what you have.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Dagger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.4</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<costList>
+			<Steel>15</Steel>
+			<ESCP_BonemoldItem>15</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>MorrowRim_Dunmer_BonemoldMeleeBasic</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9.6</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10.4</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_GreatSword]========== -->
+	<!-- better than MeleeWeapon_LongSword in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_GreatSword</defName>
+		<label>bonemold greatsword</label>
+		<description>A large steel blade, attached to a sturdy bonemold handle. Excellent for slashing and stabbing, though a little unwieldy.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Greatsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>100</Steel>
+			<ESCP_BonemoldItem>50</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MorrowRim_Dunmer_BonemoldMeleeAdvanced</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Katana]========== -->
+	<!-- similar to MeleeWeapon_LongSword in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_Katana</defName>
+		<label>bonemold katana</label>
+		<description>A large single-edged steel blade, attached to a sturdy bonemold handle. Excellent for slashing, though not so good for stabbing.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Katana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1.6</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>80</Steel>
+			<ESCP_BonemoldItem>20</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MorrowRim_Dunmer_BonemoldMeleeAdvanced</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18.4</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Mace]========== -->
+	<!-- bonemold version of MeleeWeapon_Mace in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Blunt">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_Mace</defName>
+		<label>bonemold mace</label>
+		<description>A heavy steel weight, attached to a bonemold handle, engineered for efficient swinging and deadly impacts.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Mace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<ESCP_BonemoldItem>30</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_BonemoldMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>7.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12.7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Spear]========== -->
+	<!-- similar to MeleeWeapon_Spear in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_Spear</defName>
+		<label>bonemold spear</label>
+		<description>A steel blade, attached to a long bonemold handle. Excellent for stabbing from a distance.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Spear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.6</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<ESCP_BonemoldItem>55</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MorrowRim_Dunmer_BonemoldMeleeAdvanced</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.4</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>18.4</power>
+				<armorPenetration>0.50</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Sword]========== -->
+	<!-- bonemold version of MeleeWeapon_Gladius in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_Sword</defName>
+		<label>bonemold sword</label>
+		<description>A steel blade, attached to a bonemold handle. Good for stabbing and slashing.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Sword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>0.68</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>30</Steel>
+			<ESCP_BonemoldItem>20</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_BonemoldMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>7.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12.8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12.8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_WarAxe]========== -->
+	<!-- bonemold version of MeleeWeapon_Axe in Royalty -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_WarAxe</defName>
+		<label>bonemold war axe</label>
+		<description>A heavy steel blade, attached to a bonemold handle. The simple, ancient design concentrates cutting power generated from strong overhand swings.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Waraxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<ESCP_BonemoldItem>30</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_BonemoldMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>7.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Warhammer]========== -->
+	<!-- bonemold version of MeleeWeapon_Warhammer in Royalty -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Blunt">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_Warhammer</defName>
+		<label>bonemold warhammer</label>
+		<description>A long polearm containing a heavy steel weight, attached to a bonemold handle. The powerful blunt impacts can pulverize an enemy's insides, even through armor.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Warhammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ESCP_BonemoldItem>100</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_BonemoldMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8.8</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>
