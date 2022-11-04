@@ -96,6 +96,58 @@
 			</li>
 		</tools>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Club]========== -->
+	<!-- bonemold version of MeleeWeapon_Mace in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Blunt">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_Club</defName>
+		<label>bonemold club</label>
+		<description>A crudely constructed bonemold club, with a steel spike protruding from the head.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Club</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>1.6</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<costList>
+			<Steel>10</Steel>
+			<ESCP_BonemoldItem>30</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>MorrowRim_Dunmer_BonemoldMeleeBasic</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>7.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>spike</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>11.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Dagger]========== -->
 	<!-- bonemold version of MeleeWeapon_Knife in Core -->
 	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Sharp">
