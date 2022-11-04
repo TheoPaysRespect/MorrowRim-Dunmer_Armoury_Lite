@@ -113,7 +113,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Gold>2.5</Gold>
+			<Gold>3</Gold>
 			<MorrowRim_Ebony>125</MorrowRim_Ebony>
 		</costList>
 		<weaponTags>
@@ -162,7 +162,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Gold>2.5</Gold>
+			<Gold>3</Gold>
 			<MorrowRim_Ebony>125</MorrowRim_Ebony>
 		</costList>
 		<weaponTags>
@@ -268,7 +268,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Gold>2.5</Gold>
+			<Gold>3</Gold>
 			<MorrowRim_Ebony>125</MorrowRim_Ebony>
 		</costList>
 		<weaponTags>
@@ -367,7 +367,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Gold>1.5</Gold>
+			<Gold>2</Gold>
 			<MorrowRim_Ebony>30</MorrowRim_Ebony>
 		</costList>
 		<weaponTags>
