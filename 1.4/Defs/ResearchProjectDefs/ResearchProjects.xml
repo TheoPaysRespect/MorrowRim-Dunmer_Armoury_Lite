@@ -31,6 +31,7 @@
 		</tags>
 	</ResearchProjectDef>
 	<!--
+		In Simple Bonemold
 		Also unlocks Dunmer forge with smithing, electric dunmer forge with electricity
 	<ResearchProjectDef>
 		<defName>ESCP_DunmerBonemoldCreation</defName>
@@ -66,7 +67,7 @@
 	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
 		<defName>MorrowRim_Dunmer_MoragTongWeapons</defName>
 		<label>Morag Tong blades</label>
-		<description>Allows the creation of Morag Tong style weapons, at the Dunmeri forge.\n\nA Tong specialised in making people disappear, their weapons are designed to strike fast and true, but suffer against multiple adversaries..</description>
+		<description>Allows the creation of Morag Tong style weapons, at the Dunmeri forge.\n\nA Tong specialised in making people disappear, their weapons are designed to strike fast and true, but suffer against multiple adversaries.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>3</researchViewX>
