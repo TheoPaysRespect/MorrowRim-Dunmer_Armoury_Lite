@@ -266,7 +266,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="BaseGrenadeProjectile" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
+	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb_Thrown</defName>
 		<label>bonemold smoke bomb</label>
 		<thingClass>Projectile_Explosive</thingClass>

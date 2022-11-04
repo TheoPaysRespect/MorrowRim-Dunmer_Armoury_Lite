@@ -158,6 +158,62 @@
 			</li>
 		</tools>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Dagger]========== -->
+	<!-- Doctrine version of MeleeWeapon_Gladius in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_Dagger</defName>
+		<label>Doctrine dagger</label>
+		<description>An ornate ebony dagger, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it slashes through flesh.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Dagger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.4</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Gold>1</Gold>
+			<MorrowRim_Ebony>15</MorrowRim_Ebony>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>MorrowRim_Dunmer_DoctrineMeleeBasic</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9.7</power>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>11.8</power>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12.8</power>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_GreatSword]========== -->
 	<!-- better than MeleeWeapon_LongSword in Core -->
 	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Sharp">
