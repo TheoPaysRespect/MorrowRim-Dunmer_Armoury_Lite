@@ -1,10 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--
+		Compared to Ebony
+		- Damage ~10% lower
+		- Beauty based on gold
+	-->
 	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Blunt]========== -->
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality" Name="MorrowRim_Dunmer_DoctrineWeapon_Blunt" Abstract="True">
 		<techLevel>Medieval</techLevel>
 		<possessionCount>1</possessionCount>
 		<stuffCategories Inherit="False"/>
+		<statBases>
+			<Beauty>17</Beauty>
+		</statBases>
 		<recipeMaker Inherit="False">
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -26,6 +34,9 @@
 		<techLevel>Medieval</techLevel>
 		<possessionCount>1</possessionCount>
 		<stuffCategories Inherit="False"/>
+		<statBases>
+			<Beauty>17</Beauty>
+		</statBases>
 		<recipeMaker Inherit="False">
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -55,7 +66,7 @@
 		<uiIconScale>1.2</uiIconScale>
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
-			<Mass>1.2</Mass>
+			<Mass>1.5</Mass>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<recipeMaker>
@@ -77,16 +88,16 @@
 				<capacities>
 					<li>Poke</li>
 				</capacities>
-				<power>7.2</power>
-				<cooldownTime>2</cooldownTime>
+				<power>9.7</power>
+				<cooldownTime>2.4</cooldownTime>
 			</li>
 			<li>
 				<label>edge</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>12</power>
-				<cooldownTime>2</cooldownTime>
+				<power>14.8</power>
+				<cooldownTime>2.4</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
@@ -102,7 +113,7 @@
 		</graphicData>
 		<statBases>
 			<WorkToMake>18000</WorkToMake>
-			<Mass>4.2</Mass>
+			<Mass>5</Mass>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -126,16 +137,16 @@
 				<capacities>
 					<li>Poke</li>
 				</capacities>
-				<power>8.8</power>
-				<cooldownTime>2.6</cooldownTime>
+				<power>11.9</power>
+				<cooldownTime>3.12</cooldownTime>
 			</li>
 			<li>
 				<label>edge</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>15</power>
-				<cooldownTime>2.6</cooldownTime>
+				<power>21.6</power>
+				<cooldownTime>3.12</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
@@ -151,7 +162,7 @@
 		</graphicData>
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
-			<Mass>3</Mass>
+			<Mass>3.5</Mass>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -175,24 +186,24 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>9</power>
-				<cooldownTime>2.8</cooldownTime>
+				<power>10</power>
+				<cooldownTime>2.4</cooldownTime>
 			</li>
 			<li>
 				<label>edge</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>26</power>
-				<cooldownTime>2.8</cooldownTime>
+				<power>27</power>
+				<cooldownTime>3.12</cooldownTime>
 			</li>
 			<li>
 				<label>point</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>26</power>
-				<cooldownTime>2.8</cooldownTime>
+				<power>27</power>
+				<cooldownTime>3.12</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
@@ -201,7 +212,7 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Blunt">
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_Mace</defName>
 		<label>Doctrine mace</label>
-		<description>An ornate mace, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it crushes bone.</description>
+		<description>An ornate ebony mace, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it crushes bone.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Mace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -231,8 +242,8 @@
 				<capacities>
 					<li>Poke</li>
 				</capacities>
-				<power>7.2</power>
-				<cooldownTime>2</cooldownTime>
+				<power>9.7</power>
+				<cooldownTime>2.4</cooldownTime>
 			</li>
 			<li>
 				<label>head</label>
@@ -240,8 +251,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>12.7</power>
-				<cooldownTime>2</cooldownTime>
+				<power>16.9</power>
+				<cooldownTime>2.4</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
@@ -250,14 +261,14 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Blunt">
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_Maul</defName>
 		<label>Doctrine maul</label>
-		<description>An ornate maul, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it crushes armour.</description>
+		<description>An ornate ebony maul, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it crushes armour.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Maul</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
 			<WorkToMake>18000</WorkToMake>
-			<Mass>4</Mass>
+			<Mass>5</Mass>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -281,8 +292,8 @@
 				<capacities>
 					<li>Poke</li>
 				</capacities>
-				<power>8.8</power>
-				<cooldownTime>2.6</cooldownTime>
+				<power>11.8</power>
+				<cooldownTime>3.12</cooldownTime>
 			</li>
 			<li>
 				<label>head</label>
@@ -290,8 +301,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>16</power>
-				<cooldownTime>2.6</cooldownTime>
+				<power>21.6</power>
+				<cooldownTime>3.12</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
@@ -307,7 +318,7 @@
 		</graphicData>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
-			<Mass>1.6</Mass>
+			<Mass>2</Mass>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -329,19 +340,20 @@
 			<li>
 				<label>shaft</label>
 				<capacities>
+					<li>Poke</li>
 					<li>Blunt</li>
 				</capacities>
-				<power>10.4</power>
-				<cooldownTime>2.6</cooldownTime>
+				<power>14</power>
+				<cooldownTime>3.12</cooldownTime>
 			</li>
 			<li>
 				<label>edge</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>18.4</power>
+				<power>22.7</power>
 				<armorPenetration>0.50</armorPenetration>
-				<cooldownTime>2.6</cooldownTime>
+				<cooldownTime>3.12</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
@@ -358,7 +370,7 @@
 		<uiIconScale>1.2</uiIconScale>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
-			<Mass>0.68</Mass>
+			<Mass>0.85</Mass>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<recipeMaker>
@@ -380,24 +392,24 @@
 				<capacities>
 					<li>Poke</li>
 				</capacities>
-				<power>7.2</power>
-				<cooldownTime>2</cooldownTime>
+				<power>9.7</power>
+				<cooldownTime>2.4</cooldownTime>
 			</li>
 			<li>
 				<label>point</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>12.8</power>
-				<cooldownTime>2</cooldownTime>
+				<power>15.8</power>
+				<cooldownTime>2.4</cooldownTime>
 			</li>
 			<li>
 				<label>edge</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>12.8</power>
-				<cooldownTime>2</cooldownTime>
+				<power>15.8</power>
+				<cooldownTime>2.4</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
