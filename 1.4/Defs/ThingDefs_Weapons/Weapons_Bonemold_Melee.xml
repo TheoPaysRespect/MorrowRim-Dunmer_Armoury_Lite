@@ -25,6 +25,10 @@
 			</researchPrerequisites>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>
 		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_BonemoldWeapon</li>
+			<li>MorrowRim_Dunmer_BonemoldWeaponMelee</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Sharp]========== -->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="MorrowRim_Dunmer_BonemoldWeapon_Sharp" Abstract="True">
@@ -46,6 +50,10 @@
 			</researchPrerequisites>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>
 		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_BonemoldWeapon</li>
+			<li>MorrowRim_Dunmer_BonemoldWeaponMelee</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_BattleAxe]========== -->
 	<!-- counterpart to MorrowRim_Dunmer_BonemoldWeapon_Warhammer -->

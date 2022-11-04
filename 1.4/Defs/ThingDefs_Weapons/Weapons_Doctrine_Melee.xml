@@ -28,6 +28,10 @@
 			</researchPrerequisites>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedOrdinator</unfinishedThingDef>
 		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_DoctrineWeapon</li>
+			<li>MorrowRim_Dunmer_DoctrineWeaponMelee</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Sharp]========== -->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="MorrowRim_Dunmer_DoctrineWeapon_Sharp" Abstract="True">
@@ -52,6 +56,10 @@
 			</researchPrerequisites>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedOrdinator</unfinishedThingDef>
 		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_DoctrineWeapon</li>
+			<li>MorrowRim_Dunmer_DoctrineWeaponMelee</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Axe]========== -->
 	<!-- Doctrine version of MeleeWeapon_Axe in Royalty -->
@@ -71,7 +79,7 @@
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<recipeMaker>
 			<skillRequirements>
-				<Crafting>3</Crafting>
+				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
@@ -120,7 +128,7 @@
 				<li>LongBlades</li>
 			</researchPrerequisites>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>7</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
@@ -169,7 +177,7 @@
 				<li>LongBlades</li>
 			</researchPrerequisites>
 			<skillRequirements>
-				<Crafting>7</Crafting>
+				<Crafting>9</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
@@ -225,7 +233,7 @@
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<recipeMaker>
 			<skillRequirements>
-				<Crafting>3</Crafting>
+				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
@@ -275,7 +283,7 @@
 				<li>LongBlades</li>
 			</researchPrerequisites>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>7</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
@@ -325,7 +333,7 @@
 				<li>LongBlades</li>
 			</researchPrerequisites>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
@@ -375,7 +383,7 @@
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<recipeMaker>
 			<skillRequirements>
-				<Crafting>3</Crafting>
+				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>

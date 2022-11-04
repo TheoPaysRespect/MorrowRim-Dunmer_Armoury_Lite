@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Throwing]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_Throwing" Name="MorrowRim_Dunmer_DoctrineWeapon_Throwing" Abstract="True">
+		<statBases>
+			<Beauty>17</Beauty>
+			<Mass>1.5</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.81</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>MorrowRim_Dunmer_DoctrineThrowing</li>
+		</weaponTags>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>MorrowRim_Dunmer_DoctrineWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedOrdinator</unfinishedThingDef>
+		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_DoctrineWeapon</li>
+			<li>MorrowRim_Dunmer_DoctrineWeaponThrowing</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_ThrowingDart]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Throwing">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_ThrowingDart</defName>
+		<label>doctrine throwing darts</label>
+		<description>Ornate ebony throwing darts, coated in a layer of gold, a weapon typically wielded by Ordinators. While effective at puncturing through armour from a distance, they can also make for decent melee weapons when needed.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Doctrine/Doctrine_ThrowingDart</texPath>
+		</graphicData>
+		<costList>
+			<Gold>2</Gold>
+			<MorrowRim_Ebony>30</MorrowRim_Ebony>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MorrowRim_Dunmer_DoctrineWeapon_ThrowingDart_Thrown</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>10.9</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_ThrowingDart_Thrown</defName>
+		<label>doctrine throwing dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/MorrowRim_Doctrine_ThrowingDart_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>26</speed>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_ThrowingKnife]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_DoctrineWeapon_Throwing">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_ThrowingKnife</defName>
+		<label>doctrine throwing knives</label>
+		<description>Ornate ebony throwing knives, coated in a layer of gold, a weapon typically wielded by Ordinators.  While effective at slicing through armour from a distance, they can also make for decent melee weapons when needed.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Doctrine/Doctrine_ThrowingKnife</texPath>
+		</graphicData>
+		<costList>
+			<Gold>2</Gold>
+			<MorrowRim_Ebony>30</MorrowRim_Ebony>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MorrowRim_Dunmer_DoctrineWeapon_ThrowingKnife_Thrown</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>10.9</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>MorrowRim_Dunmer_DoctrineWeapon_ThrowingKnife_Thrown</defName>
+		<label>doctrine throwing knife</label>
+		<graphicData>
+			<texPath>Things/Projectile/MorrowRim_Doctrine_ThrowingKnife_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>MorrowRim_Dunmer_RangedCut</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>26</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

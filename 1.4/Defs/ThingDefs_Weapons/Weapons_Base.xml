@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_Weapon_Throwing]========== -->
+	<ThingDef ParentName="BaseWeaponNeolithic" Name="MorrowRim_Dunmer_Weapon_Throwing" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<possessionCount>1</possessionCount>
+		<weaponClasses Inherit="False">
+			<li>Ranged</li>
+		</weaponClasses>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ThrowingWeapons</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
