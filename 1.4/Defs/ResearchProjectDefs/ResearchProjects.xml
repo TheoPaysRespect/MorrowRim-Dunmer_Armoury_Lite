@@ -118,7 +118,6 @@
 		<tab>ESCP_DunmerTab</tab>
 		<prerequisites>
 			<li>MorrowRim_Dunmer_ThrowingWeapons</li>
-			<li>ESCP_DunmerBonemoldCreation</li>
 		</prerequisites>
 	</ResearchProjectDef>
 	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">

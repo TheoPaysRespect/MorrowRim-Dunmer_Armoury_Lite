@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Explosive]========== -->
+	<ThingDef Name="MorrowRim_Dunmer_BonemoldWeapon_Explosive" ParentName="BaseWeapon" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>3500</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ExplosiveWeapons</li>
+				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_BonemoldWeapon</li>
+			<li>MorrowRim_Dunmer_BonemoldWeaponExplosive</li>
+		</tradeTags>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_FireBomb]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Explosive">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_FireBomb</defName>
+		<label>bonemold fire bomb</label>
+		<description>A bonemold vessel, filled with a chemfuel mixture. Explodes after a short delay, unleashing a blast of fire.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Explosive/MorrowRim_FireBomb</texPath>
+		</graphicData>
+		<costList>
+			<Cloth>5</Cloth>
+			<Chemfuel>40</Chemfuel>
+			<ESCP_BonemoldItem>40</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MorrowRim_Dunmer_BonemoldExplosive_Destructive</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw fire bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_FireBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>70~150</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_FireBomb_Thrown</defName>
+		<label>bonemold fire bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/MorrowRim_FireBomb_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Flame</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>45</explosionDelay>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_NetchBomb]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Explosive" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_NetchBomb</defName>
+		<label>bonemold retching bomb</label>
+		<description>A two-chambered bonemold vessel, one filled with chemfuel, the other with netch jelly. Shatters on impact, releasing a a cloud of retching netch gas.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Explosive/MorrowRim_NetchBomb</texPath>
+		</graphicData>
+		<costList>
+			<Chemfuel>15</Chemfuel>
+			<MorrowRim_NetchJelly>30</MorrowRim_NetchJelly>
+			<ESCP_BonemoldItem>40</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MorrowRim_Dunmer_BonemoldExplosive_Gas</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw netch bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_NetchBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Smoke</explosiveDamageType>
+				<postExplosionSpawnThingDef>Gas_RetchingNetch</postExplosionSpawnThingDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_NetchBomb_Thrown</defName>
+		<label>bonemold retching bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/MorrowRim_NetchBomb_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<!-- Use default damage from explosion def -->
+			<preExplosionSpawnThingDef>Gas_RetchingNetch</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_ShrapnelBomb]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Explosive">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_ShrapnelBomb</defName>
+		<label>bonemold shrapnel bomb</label>
+		<description>A bonemold vessel embedded with steel spikes, and filled with a chemfuel mixture. Explodes after a short delay, unleashing a blast of shrapnel.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Explosive/MorrowRim_ShrapnelBomb</texPath>
+		</graphicData>
+		<costList>
+			<Cloth>5</Cloth>
+			<Steel>20</Steel>
+			<Chemfuel>40</Chemfuel>
+			<ESCP_BonemoldItem>40</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MorrowRim_Dunmer_BonemoldExplosive_Destructive</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw shrapnel bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_ShrapnelBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<wickTicks>70~150</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_ShrapnelBomb_Thrown</defName>
+		<label>bonemold shrapnel bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/MorrowRim_ShrapnelBomb_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>45</explosionDelay>
+		</projectile>
+	</ThingDef>
+<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Explosive">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb</defName>
+		<label>bonemold smoke bomb</label>
+		<description>A fragile bonemold vessel, filled with a chemfuel mixture. Shatters on impact, releasing a thick smoke cloud.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Explosive/MorrowRim_SmokeBomb</texPath>
+		</graphicData>
+		<costList>
+			<Chemfuel>20</Chemfuel>
+			<ESCP_BonemoldItem>30</ESCP_BonemoldItem>
+		</costList>
+		<weaponTags>
+			<li>MorrowRim_Dunmer_BonemoldExplosive_Gas</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw smoke bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Smoke</explosiveDamageType>
+				<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb_Thrown</defName>
+		<label>bonemold smoke bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/MorrowRim_SmokeBomb_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<!-- Use default damage from explosion def -->
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+</Defs>
