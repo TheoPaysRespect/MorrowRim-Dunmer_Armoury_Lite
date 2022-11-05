@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Ranged]========== -->
+	<ThingDef ParentName="BaseWeaponNeolithic" Name="MorrowRim_Dunmer_BonemoldWeapon_Ranged" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponClasses Inherit="False">
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>NeolithicRangedChief</li>
+			<li>MorrowRim_Dunmer_BonemoldRanged</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>
+		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_BonemoldWeapon</li>
+			<li>MorrowRim_Dunmer_BonemoldWeaponRanged</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_RangedDart]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Ranged">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_RangedLongBow</defName>
+		<label>bonemold long bow</label>
+		<description>A highly flexible long bow, made from bonemold. An exceptional weapon, though it requires some skill to wield to its full power. The bonemold long bow can launch arrows a great distance, with frightening precision.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Bonemold/Bonemold_LongBow</texPath>
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<costList>
+			<ESCP_BonemoldItem>50</ESCP_BonemoldItem>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+				<li>Greatbow</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.9</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_RangedLongBow_Arrow</defaultProjectile>
+				<warmupTime>2.40</warmupTime>
+				<range>34.9</range>
+				<soundCast>Bow_Recurve</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>MorrowRim_Dunmer_BonemoldWeapon_RangedLongBow_Arrow</defName>
+		<label>bonemold arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+</Defs>
