@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_MoragTongWeapon_Sharp]========== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="MorrowRim_Dunmer_MoragTongWeapon_Sharp" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<stuffCategories Inherit="False"/>
+		<recipeMaker Inherit="False">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>MorrowRim_Dunmer_MoragTongWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_MoragTongWeapon</li>
+			<li>MorrowRim_Dunmer_MoragTongWeaponMelee</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_MoragTongWeapon_Blade]========== -->
+	<!-- Similar to MeleeWeapon_Gladius in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_MoragTongWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_MoragTongWeapon_Blade</defName>
+		<label>Morag Tong blade</label>
+		<description>An exquisite glass-steel alloy blade, dyed blood-red. Typically a ceremonial weapon wielded by members of the Morag Tong. Blades such as these strike clean through armour, the perfect weapon for someone that wants to make a swift getaway afterwards.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_MoragTong/MoragTong_Blade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>0.6</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Dye>20</Dye>
+			<Steel>20</Steel>
+			<MorrowRim_Glass>30</MorrowRim_Glass>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MorrowRim_Dunmer_MorangTongMeleeAdvanced</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10.8</power>
+				<armorPenetration>0.50</armorPenetration>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10.8</power>
+				<armorPenetration>0.50</armorPenetration>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>
