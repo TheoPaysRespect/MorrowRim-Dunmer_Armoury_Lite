@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BenchBase" Name="MorrowRim_Dunmer_ForgeBase" Abstract="True">
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
 			<damageData>
@@ -14,6 +14,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+		<rotatable>false</rotatable>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<costStuffCount>75</costStuffCount>
@@ -58,7 +59,7 @@
 		<description>A simple workbench, equipped with everything necessary to work leather and chitin. Works at 50% of the speed of a Dunmeri forge.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Production/TableTailorHand</texPath>
+			<texPath>Things/Building/Production/MorrowRim_DunmerForges/MorrowRim_AshlanderForge</texPath>
 		</graphicData>
 		<stuffCategories>
 			<li>Woody</li>
@@ -76,7 +77,7 @@
 		<description>A wood-fuelled forge, equipped with everything needed to work bonemold and steel.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Production/TableTailorHand</texPath>
+			<texPath>Things/Building/Production/MorrowRim_DunmerForges/MorrowRim_DunmerForge_Fuelled</texPath>
 		</graphicData>
 		<costList>
 			<Steel>25</Steel>
@@ -110,7 +111,7 @@
 		<description>An electric-powered forge, equipped with everything needed to work bonemold and steel.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Production/TableTailorHand</texPath>
+			<texPath>Things/Building/Production/MorrowRim_DunmerForges/MorrowRim_DunmerForge_Powered</texPath>
 		</graphicData>
 		<costList>
 			<Steel>25</Steel>
