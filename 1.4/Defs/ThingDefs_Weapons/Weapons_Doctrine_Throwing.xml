@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Throwing]========== -->
-	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_Throwing" Name="MorrowRim_Dunmer_DoctrineWeapon_Throwing" Abstract="True">
+	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_Ranged" Name="MorrowRim_Dunmer_DoctrineWeapon_Throwing" Abstract="True">
 		<statBases>
 			<Beauty>17</Beauty>
 			<Mass>1.5</Mass>
@@ -20,6 +20,7 @@
 			</skillRequirements>
 			<researchPrerequisites>
 				<li>Smithing</li>
+				<li>MorrowRim_Dunmer_ThrowingWeapons</li>
 				<li>MorrowRim_Dunmer_DoctrineWeapons</li>
 			</researchPrerequisites>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedOrdinator</unfinishedThingDef>
