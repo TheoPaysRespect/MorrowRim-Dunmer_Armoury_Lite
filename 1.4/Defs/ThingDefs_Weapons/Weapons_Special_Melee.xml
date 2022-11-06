@@ -196,9 +196,7 @@
 				<power>20</power>
 				<armorPenetration>1</armorPenetration>
 				<cooldownTime>2.5</cooldownTime>
-				
 			</li>
-			
 		</tools>
 	</ThingDef>
 </Defs>
