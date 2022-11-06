@@ -2,13 +2,8 @@
 <Defs>
 	<!-- ==========[MorrowRim_Dunmer_Weapon_Throwing]========== -->
 	<ThingDef ParentName="BaseWeapon" Name="MorrowRim_Dunmer_SpecialWeapon_Melee" Abstract="True">
-		<modExtensions>
-			<li Class="UniqueItems.CompProperties_UniqueItem" MayRequire="MorphsAssorted.UniqueRareItems">
-				<maxCount>1</maxCount>
-				<labelUniquePrefix/>
-			</li>
-		</modExtensions>
 		<techLevel>Medieval</techLevel>
+		<comps/>
 		<statBases>
 			<MarketValue>2000</MarketValue>
 			<Mass>2</Mass>
