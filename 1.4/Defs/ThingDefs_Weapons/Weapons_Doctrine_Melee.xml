@@ -411,7 +411,7 @@
 				<cooldownTime>3.12</cooldownTime>
 			</li>
 			<li>
-				<label>edge</label>
+				<label>point</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
