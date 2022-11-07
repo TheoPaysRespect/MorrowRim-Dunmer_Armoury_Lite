@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_BeltBonemold_Throwing]========== -->
+	<ThingDef Name="MorrowRim_Dunmer_BeltBonemold_Throwing" ParentName="ApparelNoQualityBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<EquipDelay>2</EquipDelay>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.71</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.32</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>MorrowRim_Dunmer_ThrowingWeapons</li>
+				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<generateAllowChance>0.15</generateAllowChance>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_BonemoldBelt</li>
+			<li>MorrowRim_Dunmer_BonemoldBeltThrowing</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BeltBonemold_ThrowingDart]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BeltBonemold_Throwing">
+		<defName>MorrowRim_Dunmer_BeltBonemold_ThrowingDart</defName>
+		<label>bonemold throwing dart belt</label>
+		<description>A belt holding several bonemold throwing darts, effective at puncturing through armour from a distance. Can be refuelled with additional bonemold throwing darts.</description>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<maxCharges>10</maxCharges>
+				<ammoDef>MorrowRim_Dunmer_BonemoldWeapon_ThrowingDart</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Interact_BeatFire</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>throwing dart</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw dart</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>10.9</range>
+				<warmupTime>2</warmupTime>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>Interact_BeatFire</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_ThrowingDart_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<costList>
+			<MorrowRim_Dunmer_BonemoldWeapon_ThrowingDart>1</MorrowRim_Dunmer_BonemoldWeapon_ThrowingDart>
+		</costList>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Belts/Belt_Bonemold_ThrowingDart</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BeltBonemold_ThrowingKnife]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BeltBonemold_Throwing">
+		<defName>MorrowRim_Dunmer_BeltBonemold_ThrowingKnife</defName>
+		<label>bonemold throwing knife belt</label>
+		<description>A belt holding several bonemold throwing knives, effective at slicing through armour from a distance. Can be refuelled with additional bonemold throwing knives.</description>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<maxCharges>10</maxCharges>
+				<ammoDef>MorrowRim_Dunmer_BonemoldWeapon_ThrowingKnife</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Interact_BeatFire</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>throwing knife</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw knife</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>10.9</range>
+				<warmupTime>2</warmupTime>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>Interact_BeatFire</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_ThrowingKnife_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<costList>
+			<MorrowRim_Dunmer_BonemoldWeapon_ThrowingKnife>1</MorrowRim_Dunmer_BonemoldWeapon_ThrowingKnife>
+		</costList>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Belts/Belt_Bonemold_ThrowingKnife</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

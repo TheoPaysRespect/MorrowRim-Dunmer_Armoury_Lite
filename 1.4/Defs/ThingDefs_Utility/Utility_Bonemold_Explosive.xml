@@ -51,7 +51,7 @@
 			<li>MorrowRim_Dunmer_BonemoldBeltExplosive</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Explosive]========== -->
+	<!-- ==========[MorrowRim_Dunmer_BeltBonemold_FireBomb]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_BeltBonemold_Explosive">
 		<defName>MorrowRim_Dunmer_BeltBonemold_FireBomb</defName>
 		<label>bonemold fire bomb belt</label>
@@ -100,7 +100,7 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Explosive]========== -->
+	<!-- ==========[MorrowRim_Dunmer_BeltBonemold_NetchBomb]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_BeltBonemold_Explosive" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
 		<defName>MorrowRim_Dunmer_BeltBonemold_NetchBomb</defName>
 		<label>bonemold retching bomb belt</label>
@@ -149,7 +149,7 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Explosive]========== -->
+	<!-- ==========[MorrowRim_Dunmer_BeltBonemold_ShrapnelBomb]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_BeltBonemold_Explosive">
 		<defName>MorrowRim_Dunmer_BeltBonemold_ShrapnelBomb</defName>
 		<label>bonemold shrapnel bomb belt</label>
@@ -198,7 +198,7 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Explosive]========== -->
+	<!-- ==========[MorrowRim_Dunmer_BeltBonemold_SmokeBomb]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_BeltBonemold_Explosive">
 		<defName>MorrowRim_Dunmer_BeltBonemold_SmokeBomb</defName>
 		<label>bonemold smoke bomb belt</label>
