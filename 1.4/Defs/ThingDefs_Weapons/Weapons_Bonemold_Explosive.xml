@@ -225,7 +225,7 @@
 			<explosionDelay>45</explosionDelay>
 		</projectile>
 	</ThingDef>
-<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb]========== -->
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Explosive">
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb</defName>
 		<label>bonemold smoke bomb</label>
