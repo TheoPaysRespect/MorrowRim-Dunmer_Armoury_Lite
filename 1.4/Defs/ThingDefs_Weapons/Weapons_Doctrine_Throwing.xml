@@ -3,6 +3,7 @@
 	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Throwing]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_Ranged" Name="MorrowRim_Dunmer_DoctrineWeapon_Throwing" Abstract="True">
 		<statBases>
+			<WorkToMake>6000</WorkToMake>
 			<Beauty>17</Beauty>
 			<Mass>1.5</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
