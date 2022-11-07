@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_BeltBonemold_Explosive]========== -->
+	<ThingDef Name="MorrowRim_Dunmer_BeltBonemold_Explosive" ParentName="ApparelNoQualityBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ExplosiveWeapons</li>
+				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<generateAllowChance>0.15</generateAllowChance>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_BonemoldBelt</li>
+			<li>MorrowRim_Dunmer_BonemoldBeltExplosive</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Explosive]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BeltBonemold_Explosive">
+		<defName>MorrowRim_Dunmer_BeltBonemold_FireBomb</defName>
+		<label>bonemold fire bomb belt</label>
+		<description>Bonemold vessels, filled with a chemfuel mixture. Explodes after a short delay, unleashing a blast of fire. Can be refuelled with additional bonemold fire bombs.</description>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<maxCharges>5</maxCharges>
+				<ammoDef>MorrowRim_Dunmer_BonemoldWeapon_FireBomb</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Interact_MolotovCocktail</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>vessel</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw vessel</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_FireBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<costList>
+			<MorrowRim_Dunmer_BonemoldWeapon_FireBomb>1</MorrowRim_Dunmer_BonemoldWeapon_FireBomb>
+		</costList>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Belts/Belt_Bonemold_FireBomb</texPath>
+		</graphicData>
+		<apparel>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldBelt_ExplosiveDestructive</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Explosive]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BeltBonemold_Explosive" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
+		<defName>MorrowRim_Dunmer_BeltBonemold_NetchBomb</defName>
+		<label>bonemold retching bomb belt</label>
+		<description>Bonemold vessels, filled with both chemfuel and netch jelly. Shatters on impact, releasing a a cloud of retching netch gas. Can be refuelled with additional bonemold retching bombs.</description>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<maxCharges>5</maxCharges>
+				<ammoDef>MorrowRim_Dunmer_BonemoldWeapon_NetchBomb</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Interact_MolotovCocktail</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>vessel</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw vessel</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_NetchBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<costList>
+			<MorrowRim_Dunmer_BonemoldWeapon_NetchBomb>1</MorrowRim_Dunmer_BonemoldWeapon_NetchBomb>
+		</costList>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Belts/Belt_Bonemold_NetchBomb</texPath>
+		</graphicData>
+		<apparel>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldBelt_ExplosiveGas</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Explosive]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BeltBonemold_Explosive">
+		<defName>MorrowRim_Dunmer_BeltBonemold_ShrapnelBomb</defName>
+		<label>bonemold shrapnel bomb belt</label>
+		<description>Bonemold vessels, embedded with steel spikes, and filled with a chemfuel mixture. Explodes after a short delay, unleashing a blast of shrapnel. Can be refuelled with additional bonemold shrapnel bombs.</description>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<maxCharges>5</maxCharges>
+				<ammoDef>MorrowRim_Dunmer_BonemoldWeapon_ShrapnelBomb</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Interact_MolotovCocktail</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>vessel</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw vessel</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_ShrapnelBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<costList>
+			<MorrowRim_Dunmer_BonemoldWeapon_ShrapnelBomb>1</MorrowRim_Dunmer_BonemoldWeapon_ShrapnelBomb>
+		</costList>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Belts/Belt_Bonemold_ShrapnelBomb</texPath>
+		</graphicData>
+		<apparel>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldBelt_ExplosiveDestructive</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Explosive]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BeltBonemold_Explosive">
+		<defName>MorrowRim_Dunmer_BeltBonemold_SmokeBomb</defName>
+		<label>bonemold smoke bomb belt</label>
+		<description>Bonemold vessels, filled with a chemfuel mixture. Shatters on impact, releasing a thick smoke cloud. Can be refuelled with additional bonemold smoke bombs.</description>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<maxCharges>5</maxCharges>
+				<ammoDef>MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Interact_MolotovCocktail</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>vessel</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw vessel</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<costList>
+			<MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb>1</MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb>
+		</costList>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Belts/Belt_Bonemold_SmokeBomb</texPath>
+		</graphicData>
+		<apparel>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldBelt_ExplosiveGas</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+</Defs>

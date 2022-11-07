@@ -66,10 +66,10 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<range>14.9</range>
 				<forcedMissRadius>1.9</forcedMissRadius>
-				<warmupTime>2.5</warmupTime>
-				<noiseRadius>3</noiseRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-				<soundCast>ThrowGrenade</soundCast>
+				<soundCast>ThrowMolotovCocktail</soundCast>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -130,10 +130,10 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<range>14.9</range>
 				<forcedMissRadius>1.9</forcedMissRadius>
-				<warmupTime>2.5</warmupTime>
-				<noiseRadius>3</noiseRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-				<soundCast>ThrowGrenade</soundCast>
+				<soundCast>ThrowMolotovCocktail</soundCast>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -188,10 +188,10 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<range>14.9</range>
 				<forcedMissRadius>1.9</forcedMissRadius>
-				<warmupTime>2.5</warmupTime>
-				<noiseRadius>3</noiseRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-				<soundCast>ThrowGrenade</soundCast>
+				<soundCast>ThrowMolotovCocktail</soundCast>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -201,7 +201,7 @@
 		</verbs>
 		<comps>
 			<li Class="CompProperties_Explosive">
-				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveRadius>2.66</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
 				<startWickOnDamageTaken>
 					<li>Flame</li>
@@ -219,7 +219,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<explosionRadius>1.9</explosionRadius>
+			<explosionRadius>2.9</explosionRadius>
 			<damageDef>Bomb</damageDef>
 			<!-- Use default damage from explosion def -->
 			<explosionDelay>45</explosionDelay>
@@ -247,10 +247,10 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<range>14.9</range>
 				<forcedMissRadius>1.9</forcedMissRadius>
-				<warmupTime>2.5</warmupTime>
-				<noiseRadius>3</noiseRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-				<soundCast>ThrowGrenade</soundCast>
+				<soundCast>ThrowMolotovCocktail</soundCast>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -260,7 +260,7 @@
 		</verbs>
 		<comps>
 			<li Class="CompProperties_Explosive">
-				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveRadius>2.66</explosiveRadius>
 				<explosiveDamageType>Smoke</explosiveDamageType>
 				<postExplosionGasType>BlindSmoke</postExplosionGasType>
 			</li>
@@ -275,7 +275,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<explosionRadius>1.9</explosionRadius>
+			<explosionRadius>2.9</explosionRadius>
 			<damageDef>Smoke</damageDef>
 			<!-- Use default damage from explosion def -->
 			<postExplosionGasType>BlindSmoke</postExplosionGasType>
