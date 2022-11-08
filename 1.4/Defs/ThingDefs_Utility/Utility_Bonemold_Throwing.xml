@@ -82,7 +82,6 @@
 				<onlyManualCast>True</onlyManualCast>
 				<range>10.9</range>
 				<warmupTime>2</warmupTime>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<soundCast>Interact_BeatFire</soundCast>
 				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
 				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_ThrowingDart_Thrown</defaultProjectile>
@@ -121,7 +120,6 @@
 				<onlyManualCast>True</onlyManualCast>
 				<range>10.9</range>
 				<warmupTime>2</warmupTime>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<soundCast>Interact_BeatFire</soundCast>
 				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
 				<defaultProjectile>MorrowRim_Dunmer_BonemoldWeapon_ThrowingKnife_Thrown</defaultProjectile>

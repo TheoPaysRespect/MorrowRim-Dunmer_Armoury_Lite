@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_Throwing]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_Ranged" Name="MorrowRim_Dunmer_ChitinWeapon_Throwing" Abstract="True">
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.71</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.26</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>MorrowRim_Dunmer_ChitinThrowing</li>
+		</weaponTags>
+		<recipeMaker>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_AshlanderForge</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ThrowingWeapons</li>
+				<li>MorrowRim_Dunmer_ChitinWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedChitin</unfinishedThingDef>
+		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_ChitinWeapon</li>
+			<li>MorrowRim_Dunmer_ChitinWeaponThrowing</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_ThrowingStar]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ChitinWeapon_Throwing">
+		<defName>MorrowRim_Dunmer_ChitinWeapon_ThrowingStar</defName>
+		<label>chitin throwing stars</label>
+		<description>Primitive chitin throwing stars, aerodynamic and quick to throw, though not the most accurate. While effective at cutting through flesh from a distance, they can also make for decent melee weapons when needed.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Chitin/Chitin_ThrowingStar</texPath>
+		</graphicData>
+		<costList>
+			<InsectChitin>40</InsectChitin>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MorrowRim_Dunmer_ChitinWeapon_ThrowingStar_Thrown</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>10.9</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>MorrowRim_Dunmer_ChitinWeapon_ThrowingStar_Thrown</defName>
+		<label>chitin throwing star</label>
+		<graphicData>
+			<texPath>Things/Projectile/MorrowRim_Chitin_ThrowingStar_Thrown</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>MorrowRim_Dunmer_RangedCut</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<stoppingPower>0.2</stoppingPower>
+			<speed>26</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

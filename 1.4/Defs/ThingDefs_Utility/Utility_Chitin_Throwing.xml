@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_BeltChitin_Throwing]========== -->
+	<ThingDef Name="MorrowRim_Dunmer_BeltChitin_Throwing" ParentName="ApparelNoQualityBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<EquipDelay>2</EquipDelay>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.71</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.26</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_AshlanderForge</li>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ThrowingWeapons</li>
+				<li>MorrowRim_Dunmer_ChitinWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedChitin</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<generateAllowChance>0.15</generateAllowChance>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_ChitinBelt</li>
+			<li>MorrowRim_Dunmer_ChitinBeltThrowing</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BeltChitin_ThrowingStar]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BeltChitin_Throwing">
+		<defName>MorrowRim_Dunmer_BeltChitin_ThrowingStar</defName>
+		<label>chitin throwing star belt</label>
+		<description>A belt holding several chitin throwing stars, effective at slicing through flesh from a distance. Can be refuelled with additional chitin throwing stars.</description>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<maxCharges>10</maxCharges>
+				<ammoDef>MorrowRim_Dunmer_ChitinWeapon_ThrowingStar</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Interact_BeatFire</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>throwing star</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw star</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>10.9</range>
+				<warmupTime>1.5</warmupTime>
+				<soundCast>Interact_BeatFire</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<defaultProjectile>MorrowRim_Dunmer_ChitinWeapon_ThrowingStar_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<costList>
+			<MorrowRim_Dunmer_ChitinWeapon_ThrowingStar>1</MorrowRim_Dunmer_ChitinWeapon_ThrowingStar>
+		</costList>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Belts/Belt_Chitin_ThrowingStar</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>
