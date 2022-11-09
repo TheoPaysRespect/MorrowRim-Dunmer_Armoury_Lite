@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_Ranged]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_Ranged" Name="MorrowRim_Dunmer_ChitinWeapon_Ranged" Abstract="True">
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>MorrowRim_Dunmer_ChitinRanged</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ChitinWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedChitin</unfinishedThingDef>
+		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_ChitinWeapon</li>
+			<li>MorrowRim_Dunmer_ChitinWeaponRanged</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_RangedDart]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ChitinWeapon_Ranged">
+		<defName>MorrowRim_Dunmer_ChitinWeapon_RangedLongBow</defName>
+		<label>chitin short bow</label>
+		<description>A primitive short bow, made from chitin, a weapon favoured by Ashlanders. While it fires faster than a regular short bow, the arrows fired don't have quite the same impact.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Chitin/Chitin_ShortBow</texPath>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<soundInteract>Bow_Small</soundInteract>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<costList>
+			<InsectChitin>30</InsectChitin>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>2400</WorkToMake>
+			<Mass>0.8</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MorrowRim_Dunmer_ChitinWeapon_RangedShortBow_Arrow</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>22.9</range>
+				<soundCast>Bow_Small</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>MorrowRim_Dunmer_ChitinWeapon_RangedShortBow_Arrow</defName>
+		<label>chitin arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<speed>45</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

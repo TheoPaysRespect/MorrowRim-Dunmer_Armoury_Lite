@@ -105,7 +105,7 @@
 		</tools>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Club]========== -->
-	<!-- bonemold version of MeleeWeapon_Mace in Core -->
+	<!-- bonemold version of MeleeWeapon_Club in Core -->
 	<ThingDef ParentName="MorrowRim_Dunmer_BonemoldWeapon_Blunt">
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_Club</defName>
 		<label>bonemold club</label>

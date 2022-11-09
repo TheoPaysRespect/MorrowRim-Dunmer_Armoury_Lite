@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+		Easy to craft
+		chance of additional scratches
+		though damage is somewhat low
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_Blunt]========== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality" Name="MorrowRim_Dunmer_ChitinWeapon_Blunt" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<stuffCategories Inherit="False"/>
+		<recipeMaker Inherit="False">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_AshlanderForge</li>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ChitinWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedChitin</unfinishedThingDef>
+		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_ChitinWeapon</li>
+			<li>MorrowRim_Dunmer_ChitinWeaponMelee</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_Sharp]========== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="MorrowRim_Dunmer_ChitinWeapon_Sharp" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<stuffCategories Inherit="False"/>
+		<recipeMaker Inherit="False">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_AshlanderForge</li>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ChitinWeapons</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedChitin</unfinishedThingDef>
+		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_ChitinWeapon</li>
+			<li>MorrowRim_Dunmer_ChitinWeaponMelee</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_Club]========== -->
+	<!-- chitin version of MeleeWeapon_Club in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ChitinWeapon_Blunt">
+		<defName>MorrowRim_Dunmer_ChitinWeapon_Club</defName>
+		<label>chitin club</label>
+		<description>A primitive chitin club, covered in large spikes. Strikes from the head have a chance of inflicting additional scratches.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Chitin/Chitin_Club</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>1.6</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<costList>
+			<InsectChitin>40</InsectChitin>
+		</costList>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+			<li>MorrowRim_Dunmer_ChitinMeleeBasic</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.8</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Scratch</def>
+						<amount>2</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>spike</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.8</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Scratch</def>
+						<amount>2</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_Dagger]========== -->
+	<!-- chitin version of MeleeWeapon_Knife in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ChitinWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_ChitinWeapon_Dagger</defName>
+		<label>chitin dagger</label>
+		<description>A primitive chitin dagger, with a rough serrated edge. Slashes from the blade have a chance of inflicting additional scratches.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Chitin/Chitin_Dagger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.4</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<costList>
+			<InsectChitin>30</InsectChitin>
+		</costList>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+			<li>MorrowRim_Dunmer_ChitinMeleeBasic</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.3</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Scratch</def>
+						<amount>2</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.8</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Scratch</def>
+						<amount>3</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_Spear]========== -->
+	<!-- similar to MeleeWeapon_Spear in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ChitinWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_ChitinWeapon_Spear</defName>
+		<label>chitin spear</label>
+		<description>A primitive chitin spear, a weapon favoured by Ashlanders. Stabs from the point have a chance of inflicting additional scratches.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Chitin/Chitin_Spear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.6</Mass>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<InsectChitin>75</InsectChitin>
+		</costList>
+		<weaponTags>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>MorrowRim_Dunmer_ChitinMeleeAdvanced</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<armorPenetration>0.25</armorPenetration>
+				<cooldownTime>2.3</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Scratch</def>
+						<amount>3</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_Sword]========== -->
+	<!-- chitin version of MeleeWeapon_Gladius in Core -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ChitinWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_ChitinWeapon_Sword</defName>
+		<label>chitin shortsword</label>
+		<description>A primitive chitin sword, rather deadly by Ashlander standards. Slashes from the blade have a chance of inflicting additional scratches.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Chitin/Chitin_Shortsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.68</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<InsectChitin>50</InsectChitin>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_ChitinMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Scratch</def>
+						<amount>2</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Scratch</def>
+						<amount>3</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_WarAxe]========== -->
+	<!-- chitin version of MeleeWeapon_Axe in Royalty -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ChitinWeapon_Sharp">
+		<defName>MorrowRim_Dunmer_ChitinWeapon_WarAxe</defName>
+		<label>chitin war axe</label>
+		<description>A primitive chitin war axe, its head featuring multiple large spikes. Stabs from these spikes have a chance of inflicting additional scratches</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Chitin/Chitin_WarAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<InsectChitin>50</InsectChitin>
+		</costList>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MorrowRim_Dunmer_ChitinMeleeDecent</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.8</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Scratch</def>
+						<amount>3</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>
