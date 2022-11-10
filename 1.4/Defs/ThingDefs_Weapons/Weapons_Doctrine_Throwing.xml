@@ -20,7 +20,6 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 			<researchPrerequisites>
-				<li>Smithing</li>
 				<li>MorrowRim_Dunmer_ThrowingWeapons</li>
 				<li>MorrowRim_Dunmer_DoctrineWeapons</li>
 			</researchPrerequisites>

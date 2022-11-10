@@ -20,7 +20,6 @@
 				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
 			</recipeUsers>
 			<researchPrerequisites>
-				<li>Smithing</li>
 				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
 			</researchPrerequisites>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>
@@ -45,7 +44,6 @@
 				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
 			</recipeUsers>
 			<researchPrerequisites>
-				<li>Smithing</li>
 				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
 			</researchPrerequisites>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>

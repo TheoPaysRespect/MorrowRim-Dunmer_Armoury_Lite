@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_ApparelMakeable_Base]========== -->
+	<ThingDef ParentName="ArmorSmithableBase" Name="MorrowRim_Dunmer_ArmourMakeable_Base" Abstract="True">
+		<recipeMaker>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+			<defaultIngredientFilter Inherit="False"/>
+		</recipeMaker>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Armor</li>
+			<li>MorrowRim_Dunmer_Armour</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<possessionCount>1</possessionCount>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_Apparel_Leather]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" Name="MorrowRim_Dunmer_ArmourMakeable_Leather" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedLeather</unfinishedThingDef>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_AshlanderForge</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_LeatherArmour</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<apparel>
+			<tags>
+				<li>MorrowRim_Dunmer_LeatherArmour</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_Apparel_Chitin]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" Name="MorrowRim_Dunmer_ArmourMakeable_Chitin" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedChitin</unfinishedThingDef>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_AshlanderForge</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ChitinArmour</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<apparel>
+			<tags>
+				<li>MorrowRim_Dunmer_ChitinArmour</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_Apparel_Bonemold]========== -->
+	<!-- 
+		Base stats off steel plate armour
+		- Roughly same defence
+		- Lighter, less impact on movement speed
+		- Less durable, 20%
+		- Higher heat resistance (both armour and temperature)
+		- Some sets will deviate from this
+	-->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" Name="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedBonemold</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_BonemoldArmour</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<apparel>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldArmour</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+</Defs>

@@ -15,7 +15,6 @@
 				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
 			</recipeUsers>
 			<researchPrerequisites>
-				<li>Smithing</li>
 				<li>MorrowRim_Dunmer_MoragTongWeapons</li>
 			</researchPrerequisites>
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>

@@ -7,7 +7,6 @@
 		</weaponTags>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Smithing</li>
 				<li>MorrowRim_Dunmer_DoctrineWeapons</li>
 			</researchPrerequisites>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedOrdinator</unfinishedThingDef>

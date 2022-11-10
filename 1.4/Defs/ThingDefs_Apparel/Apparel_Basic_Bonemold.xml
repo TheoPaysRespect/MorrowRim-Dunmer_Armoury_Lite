@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_BonemoldRegular]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourCuirass_BonemoldRegular">
+		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldRegular</defName>
+		<label>bonemold cuirass</label>
+		<description>A relatively standard bonemold cuirass. Offers reasonable protection, and is somewhat light. Typically favoured by low-ranking members of Great Houses, and those unaffiliated with one.</description>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Regular/Bonemold_Regular_Armour_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<ESCP_BonemoldItem>170</ESCP_BonemoldItem>
+		</costList>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<MaxHitPoints>230</MaxHitPoints>
+			<Mass>12</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Regular/Bonemold_Regular_Armour</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldArmour_Standard</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldRegular]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourHelmet_BonemoldRegular">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldRegular</defName>
+		<label>bonemold helmet</label>
+		<description>A relatively standard bonemold helmet. Offers reasonable protection, and is somewhat light. Typically favoured by low-ranking members of Great Houses, and those unaffiliated with one.</description>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Regular/Bonemold_Regular_Helmet_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<ESCP_BonemoldItem>50</ESCP_BonemoldItem>
+		</costList>
+		<statBases>
+			<WorkToMake>6800</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.34</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Regular/Bonemold_Regular_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldArmour_Standard</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+</Defs>

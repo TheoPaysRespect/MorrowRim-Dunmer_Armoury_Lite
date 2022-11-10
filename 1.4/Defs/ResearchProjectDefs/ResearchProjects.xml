@@ -57,6 +57,7 @@
 		<researchViewY>1</researchViewY>
 		<tab>ESCP_DunmerTab</tab>
 		<prerequisites>
+			<li>Smithing</li>
 			<li>MorrowRim_Dunmer_ChitinWeapons</li>
 			<li>ESCP_DunmerBonemoldCreation</li>
 		</prerequisites>
@@ -169,13 +170,14 @@
 	<ResearchProjectDef>
 		<defName>MorrowRim_Dunmer_BonemoldArmour</defName>
 		<label>bonemold armour</label>
-		<description>Allows the creation of Dunmeri style bonemold armour, at the Dunmeri forge.\n\nBonemold armor provides reasonable protection, and is comparatively faster to make and lighter than steel plate, though is also less durable. Bonemold is also better at dispersing heat than steel.</description>
+		<description>Allows the creation of Dunmeri style bonemold armour, at the Dunmeri forge.\n\nBonemold armor provides reasonable protection, it is comparatively more flexible than steel, though not as durable. Bonemold is also better at dispersing heat, rather useful in the ashlands.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>2</researchViewX>
 		<researchViewY>3</researchViewY>
 		<tab>ESCP_DunmerTab</tab>
 		<prerequisites>
+			<li>Smithing</li>
 			<li>MorrowRim_Dunmer_ChitinArmour</li>
 			<li>ESCP_DunmerBonemoldCreation</li>
 		</prerequisites>
