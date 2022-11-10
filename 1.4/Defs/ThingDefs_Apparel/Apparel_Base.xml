@@ -3,7 +3,7 @@
 	<!-- ==========[MorrowRim_Dunmer_ApparelMakeable_Base]========== -->
 	<ThingDef ParentName="ArmorSmithableBase" Name="MorrowRim_Dunmer_ArmourMakeable_Base" Abstract="True">
 		<recipeMaker>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
 				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
 			</recipeUsers>
