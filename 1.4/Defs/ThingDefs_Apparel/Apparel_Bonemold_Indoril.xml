@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_BonemoldAldKhan]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
+		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldAldKhan</defName>
+		<label>Ald-Khan bonemold cuirass</label>
+		<description>A traditional bonemold cuirass, made in the Ald-Khan style. Something about it radiates a sense of authority, helping the wearer sway others to the one true faith.\n\nTypically favoured by members of Great House Indoril, and those faithful to the Temple.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_IndorilArmour</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Indoril_AldKhan/Bonemold_Indoril_AldKhan_Armour_Item</texPath>
+		</graphicData>
+		<costList>
+			<Cloth>20</Cloth>
+			<ESCP_BonemoldItem>170</ESCP_BonemoldItem>
+		</costList>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>12</Mass>
+			<Flammability>0.2</Flammability>
+			<!-- 5% lower than standard -->
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<!-- 5% higher than standard -->
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+			<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.15</ConversionPower>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Indoril_AldKhan/Bonemold_Indoril_AldKhan_Armour</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldArmour_IndorilBasic</li>
+				<li>MorrowRim_Dunmer_BonemoldArmour_AldKhan</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldAldKhan]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldAldKhan</defName>
+		<label>Ald-Khan bonemold helmet</label>
+		<description>A traditional bonemold helmet, made in the Ald-Khan style. While it offers reduced protection compared to the regular bonemold helmet, the design calls forth the perseverance of a a leader of old, reinforcing the wearers mental fortitude.\n\nTypically favoured by members of Great House Indoril, and those faithful to the Temple.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_IndorilArmour</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Indoril_AldKhan/Bonemold_Indoril_AldKhan_Helmet_Item</texPath>
+		</graphicData>
+		<costList>
+			<Cloth>30</Cloth>
+			<ESCP_BonemoldItem>40</ESCP_BonemoldItem>
+		</costList>
+		<statBases>
+			<WorkToMake>6800</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>2.0</Mass>
+			<Flammability>0.2</Flammability>
+			<!-- 4% lower than standard -->
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<!-- 4% lower than standard -->
+			<ArmorRating_Blunt>0.14</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<!-- 5 higher than standard -->
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.1</CertaintyLossFactor>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Indoril_AldKhan/Bonemold_Indoril_AldKhan_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldArmour_IndorilBasic</li>
+				<li>MorrowRim_Dunmer_BonemoldArmour_AldKhan</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+</Defs>

@@ -15,7 +15,7 @@
 			<li>MorrowRim_Dunmer_ChitinThrowing</li>
 		</weaponTags>
 		<recipeMaker>
-			<recipeUsers Inherit="False">
+			<recipeUsers>
 				<li>MorrowRim_Dunmer_AshlanderForge</li>
 			</recipeUsers>
 			<researchPrerequisites>

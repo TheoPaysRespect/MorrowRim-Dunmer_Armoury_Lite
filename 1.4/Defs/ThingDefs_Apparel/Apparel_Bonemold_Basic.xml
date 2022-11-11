@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourCuirass_BonemoldRegular">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldRegular</defName>
 		<label>bonemold cuirass</label>
-		<description>A relatively standard bonemold cuirass. Offers reasonable protection, and is somewhat light. Typically favoured by low-ranking members of Great Houses, and those unaffiliated with one.</description>
+		<description>A relatively standard bonemold cuirass. Offers reasonable protection, and is somewhat light.\n\nTypically favoured by low-ranking members of Great Houses, and those unaffiliated with one.</description>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>7</Crafting>
@@ -12,7 +12,6 @@
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Regular/Bonemold_Regular_Armour_Item</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costList>
 			<ESCP_BonemoldItem>170</ESCP_BonemoldItem>
@@ -26,7 +25,7 @@
 			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
 			<Insulation_Cold>2</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Heat>8</Insulation_Heat>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -54,7 +53,7 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourHelmet_BonemoldRegular">
 		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldRegular</defName>
 		<label>bonemold helmet</label>
-		<description>A relatively standard bonemold helmet. Offers reasonable protection, and is somewhat light. Typically favoured by low-ranking members of Great Houses, and those unaffiliated with one.</description>
+		<description>A relatively standard bonemold helmet. Offers reasonable protection, and is somewhat light.\n\nTypically favoured by low-ranking members of Great Houses, and those unaffiliated with one.</description>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>7</Crafting>
@@ -62,7 +61,6 @@
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Regular/Bonemold_Regular_Helmet_Item</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costList>
 			<ESCP_BonemoldItem>50</ESCP_BonemoldItem>
