@@ -125,7 +125,6 @@
 			<MoveSpeed>-0.1</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>Feet</li>
 			</bodyPartGroups>
@@ -168,7 +167,6 @@
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 		</equippedStatOffsets>
 		<apparel>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>Hands</li>
 			</bodyPartGroups>

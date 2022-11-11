@@ -89,4 +89,22 @@
 			</tags>
 		</apparel>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_Apparel_Ordinator]========== -->
+	<!-- 
+		Base stats off ebony plate armour
+		- Roughly same defence
+		- Additionally confers additional stat bonuses
+		- Work increased by 20%
+	-->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" Name="MorrowRim_Dunmer_ArmourMakeable_Ordinator" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedOrdinator</unfinishedThingDef>
+		</recipeMaker>
+		<apparel>
+			<tags>
+				<li>MorrowRim_Dunmer_OrdinatorArmour</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 </Defs>
