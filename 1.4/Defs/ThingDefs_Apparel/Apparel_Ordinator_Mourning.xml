@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!--
+		- don't remember the stat differences
+		- 15% more work to craft
+	-->
 	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_OrdinatorMourning]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Ordinator" Name="MorrowRim_Dunmer_ArmourCuirass_OrdinatorMourning">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_OrdinatorMourning</defName>
@@ -24,7 +28,7 @@
 		</costList>
 		<statBases>
 			<Beauty>20</Beauty>
-			<WorkToMake>45600</WorkToMake>
+			<WorkToMake>52440</WorkToMake>
 			<MaxHitPoints>800</MaxHitPoints>
 			<Mass>16</Mass>
 			<Flammability>0.2</Flammability>
@@ -83,7 +87,7 @@
 		</costList>
 		<statBases>
 			<Beauty>20</Beauty>
-			<WorkToMake>8160</WorkToMake>
+			<WorkToMake>9384</WorkToMake>
 			<MaxHitPoints>400</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0.2</Flammability>
@@ -139,7 +143,7 @@
 		</costList>
 		<statBases>
 			<Beauty>10</Beauty>
-			<WorkToMake>8160</WorkToMake>
+			<WorkToMake>9384</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0.2</Flammability>
@@ -192,7 +196,7 @@
 		</costList>
 		<statBases>
 			<Beauty>10</Beauty>
-			<WorkToMake>8160</WorkToMake>
+			<WorkToMake>9384</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0.2</Flammability>
