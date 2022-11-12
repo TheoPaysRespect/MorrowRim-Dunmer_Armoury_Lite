@@ -6,19 +6,8 @@
 		- Mass reduced by ~20%
 	-->
 	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Blunt]========== -->
-	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality" Name="MorrowRim_Dunmer_BonemoldWeapon_Blunt" Abstract="True">
-		<techLevel>Medieval</techLevel>
-		<possessionCount>1</possessionCount>
-		<stuffCategories Inherit="False"/>
-		<recipeMaker Inherit="False">
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers>
-				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
-				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
-			</recipeUsers>
+	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_MeleeBluntQuality" Name="MorrowRim_Dunmer_BonemoldWeapon_Blunt" Abstract="True">
+		<recipeMaker>
 			<researchPrerequisites>
 				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
 			</researchPrerequisites>
@@ -30,19 +19,8 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_BonemoldWeapon_Sharp]========== -->
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="MorrowRim_Dunmer_BonemoldWeapon_Sharp" Abstract="True">
-		<techLevel>Medieval</techLevel>
-		<possessionCount>1</possessionCount>
-		<stuffCategories Inherit="False"/>
-		<recipeMaker Inherit="False">
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers>
-				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
-				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
-			</recipeUsers>
+	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_MeleeSharpQuality" Name="MorrowRim_Dunmer_BonemoldWeapon_Sharp" Abstract="True">
+		<recipeMaker>
 			<researchPrerequisites>
 				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
 			</researchPrerequisites>

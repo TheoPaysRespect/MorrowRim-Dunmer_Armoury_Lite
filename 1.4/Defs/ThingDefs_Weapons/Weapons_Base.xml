@@ -1,6 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[MorrowRim_Dunmer_Weapon_Throwing]========== -->
+	<!-- ==========[MorrowRim_Dunmer_Weapon_MeleeBluntQuality]========== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality" Name="MorrowRim_Dunmer_Weapon_MeleeBluntQuality" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<stuffCategories Inherit="False"/>
+		<recipeMaker Inherit="False">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_Weapon_MeleeSharpQuality]========== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="MorrowRim_Dunmer_Weapon_MeleeSharpQuality" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<stuffCategories Inherit="False"/>
+		<recipeMaker Inherit="False">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
+				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_Weapon_Ranged]========== -->
 	<ThingDef ParentName="BaseWeaponNeolithic" Name="MorrowRim_Dunmer_Weapon_Ranged" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>

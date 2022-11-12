@@ -6,22 +6,11 @@
 		- Beauty based on gold
 	-->
 	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Blunt]========== -->
-	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality" Name="MorrowRim_Dunmer_DoctrineWeapon_Blunt" Abstract="True">
-		<techLevel>Medieval</techLevel>
-		<possessionCount>1</possessionCount>
-		<stuffCategories Inherit="False"/>
+	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_MeleeBluntQuality" Name="MorrowRim_Dunmer_DoctrineWeapon_Blunt" Abstract="True">
 		<statBases>
 			<Beauty>17</Beauty>
 		</statBases>
-		<recipeMaker Inherit="False">
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers>
-				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
-				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
-			</recipeUsers>
+		<recipeMaker>
 			<researchPrerequisites>
 				<li>MorrowRim_Dunmer_DoctrineWeapons</li>
 			</researchPrerequisites>
@@ -33,22 +22,11 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_DoctrineWeapon_Sharp]========== -->
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="MorrowRim_Dunmer_DoctrineWeapon_Sharp" Abstract="True">
-		<techLevel>Medieval</techLevel>
-		<possessionCount>1</possessionCount>
-		<stuffCategories Inherit="False"/>
+	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_MeleeSharpQuality" Name="MorrowRim_Dunmer_DoctrineWeapon_Sharp" Abstract="True">
 		<statBases>
 			<Beauty>17</Beauty>
 		</statBases>
-		<recipeMaker Inherit="False">
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers>
-				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
-				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
-			</recipeUsers>
+		<recipeMaker>
 			<researchPrerequisites>
 				<li>MorrowRim_Dunmer_DoctrineWeapons</li>
 			</researchPrerequisites>

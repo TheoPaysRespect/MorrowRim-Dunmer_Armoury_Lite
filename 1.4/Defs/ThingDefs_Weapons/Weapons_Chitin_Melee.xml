@@ -6,15 +6,9 @@
 		though damage is somewhat low
 	-->
 	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_Blunt]========== -->
-	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality" Name="MorrowRim_Dunmer_ChitinWeapon_Blunt" Abstract="True">
-		<techLevel>Medieval</techLevel>
-		<possessionCount>1</possessionCount>
-		<stuffCategories Inherit="False"/>
-		<recipeMaker Inherit="False">
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
+	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_MeleeBluntQuality" Name="MorrowRim_Dunmer_ChitinWeapon_Blunt" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
 			<recipeUsers>
 				<li>MorrowRim_Dunmer_AshlanderForge</li>
 			</recipeUsers>
@@ -29,15 +23,9 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ChitinWeapon_Sharp]========== -->
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="MorrowRim_Dunmer_ChitinWeapon_Sharp" Abstract="True">
-		<techLevel>Medieval</techLevel>
-		<possessionCount>1</possessionCount>
-		<stuffCategories Inherit="False"/>
-		<recipeMaker Inherit="False">
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
+	<ThingDef ParentName="MorrowRim_Dunmer_Weapon_MeleeSharpQuality" Name="MorrowRim_Dunmer_ChitinWeapon_Sharp" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
 			<recipeUsers>
 				<li>MorrowRim_Dunmer_AshlanderForge</li>
 			</recipeUsers>
