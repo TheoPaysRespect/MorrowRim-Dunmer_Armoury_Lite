@@ -221,7 +221,7 @@
 	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
 		<defName>MorrowRim_Dunmer_NightRaidOrdinatorArmour</defName>
 		<label>night raid ordinator armour</label>
-		<description>Allows the creation of Night Raid style Ordinator armour, at the Dunmeri forge.\n\nLighter weight than regular Ordinator armour, thanks to using steel in place of gold, an excellent choice for night-time missions.</description>
+		<description>Allows the creation of Night Raid style Ordinator armour, at the Dunmeri forge.\n\nThe darkened colouration of this set, compared to the regular Ordinator set, makes it perfect for night time missions.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>5</researchViewX>

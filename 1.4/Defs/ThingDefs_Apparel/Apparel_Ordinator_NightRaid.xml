@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_OrdinatorNightRaid]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Ordinator" Name="MorrowRim_Dunmer_ArmourCuirass_OrdinatorNightRaid">
+		<defName>MorrowRim_Dunmer_ArmourCuirass_OrdinatorNightRaid</defName>
+		<label>night raid Ordinator cuirass</label>
+		<description>A variation of the regular Ordinator cuirass, notably missing the ornate golden coating. The darkened colouration makes this cuirass perfect for night-time missions, and delving into poorly lit areas.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_NightRaidOrdinatorArmour</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Ordinator/Ordinator_NightRaid/Ordinator_NightRaid_Armour_Item</texPath>
+		</graphicData>
+		<costList>
+			<Dye>15</Dye>
+			<Cloth>30</Cloth>
+			<Steel>50</Steel>
+			<MorrowRim_Ebony>120</MorrowRim_Ebony>
+		</costList>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToMake>45600</WorkToMake>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Mass>15</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.8</MoveSpeed>
+			<ArrestSuccessChance>0.1</ArrestSuccessChance>
+			<MeleeHitChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.2</MeleeHitChanceOutdoorsDarkOffset>
+			<MeleeHitChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.2</MeleeHitChanceIndoorsDarkOffset>
+			<MeleeDodgeChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.2</MeleeDodgeChanceOutdoorsDarkOffset>
+			<MeleeDodgeChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.2</MeleeDodgeChanceIndoorsDarkOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Ordinator/Ordinator_NightRaid/Ordinator_NightRaid_Armour</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_OrdinatorArmour_NightRaid</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_OrdinatorNightRaid]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Ordinator" Name="MorrowRim_Dunmer_ArmourHelmet_OrdinatorNightRaid">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_OrdinatorNightRaid</defName>
+		<label>night raid Ordinator helmet</label>
+		<description>A variation of the regular Ordinator helmet, notably missing the ornate golden coating. The darkened colouration makes this helmet perfect for night-time missions, and delving into poorly lit areas.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_NightRaidOrdinatorArmour</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Ordinator/Ordinator_NightRaid/Ordinator_NightRaid_Helmet_Item</texPath>
+		</graphicData>
+		<costList>
+			<Dye>5</Dye>
+			<Cloth>20</Cloth>
+			<Steel>10</Steel>
+			<MorrowRim_Ebony>20</MorrowRim_Ebony>
+		</costList>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToMake>8160</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>2.8</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.48</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+			<ArrestSuccessChance>0.1</ArrestSuccessChance>
+			<MeleeHitChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</MeleeHitChanceOutdoorsDarkOffset>
+			<MeleeHitChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</MeleeHitChanceIndoorsDarkOffset>
+			<MeleeDodgeChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</MeleeDodgeChanceOutdoorsDarkOffset>
+			<MeleeDodgeChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</MeleeDodgeChanceIndoorsDarkOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Ordinator/Ordinator_NightRaid/Ordinator_NightRaid_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_OrdinatorArmour_NightRaid</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourBoots_OrdinatorNightRaid]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Ordinator" Name="MorrowRim_Dunmer_ArmourBoots_OrdinatorNightRaid">
+		<defName>MorrowRim_Dunmer_ArmourBoots_OrdinatorNightRaid</defName>
+		<label>night raid Ordinator boots</label>
+		<description>A variation of the regular Ordinator boots, notably missing the ornate golden coating. The darkened colouration makes these boots perfect for night-time missions, and delving into poorly lit areas.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_NightRaidOrdinatorArmour</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Ordinator/Ordinator_NightRaid/Ordinator_NightRaid_Boots</texPath>
+		</graphicData>
+		<costList>
+			<Dye>5</Dye>
+			<Cloth>20</Cloth>
+			<Steel>10</Steel>
+			<MorrowRim_Ebony>20</MorrowRim_Ebony>
+		</costList>
+		<statBases>
+			<Beauty>5</Beauty>
+			<WorkToMake>8160</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>2.8</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.48</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<MeleeHitChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</MeleeHitChanceOutdoorsDarkOffset>
+			<MeleeHitChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</MeleeHitChanceIndoorsDarkOffset>
+			<MeleeDodgeChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</MeleeDodgeChanceOutdoorsDarkOffset>
+			<MeleeDodgeChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</MeleeDodgeChanceIndoorsDarkOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_OrdinatorArmour_NightRaid</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourGauntlets_OrdinatorNightRaid]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Ordinator" Name="MorrowRim_Dunmer_ArmourGauntlets_OrdinatorNightRaid">
+		<defName>MorrowRim_Dunmer_ArmourGauntlets_OrdinatorNightRaid</defName>
+		<label>night raid Ordinator gauntlets</label>
+		<description>A variation of the regular Ordinator gauntlets, notably missing the ornate golden coating. The darkened colouration makes these guantlets perfect for night-time missions, and delving into poorly lit areas.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_NightRaidOrdinatorArmour</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Ordinator/Ordinator_NightRaid/Ordinator_NightRaid_Gauntlets</texPath>
+		</graphicData>
+		<costList>
+			<Dye>5</Dye>
+			<Cloth>20</Cloth>
+			<Steel>10</Steel>
+			<MorrowRim_Ebony>20</MorrowRim_Ebony>
+		</costList>
+		<statBases>
+			<Beauty>5</Beauty>
+			<WorkToMake>8160</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>2.8</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.48</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+			<MeleeHitChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</MeleeHitChanceOutdoorsDarkOffset>
+			<MeleeHitChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</MeleeHitChanceIndoorsDarkOffset>
+			<MeleeDodgeChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</MeleeDodgeChanceOutdoorsDarkOffset>
+			<MeleeDodgeChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</MeleeDodgeChanceIndoorsDarkOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_OrdinatorArmour_NightRaid</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+</Defs>

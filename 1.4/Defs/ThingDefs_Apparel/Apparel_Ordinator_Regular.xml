@@ -83,6 +83,7 @@
 			<MorrowRim_Ebony>20</MorrowRim_Ebony>
 		</costList>
 		<statBases>
+			<Beauty>20</Beauty>
 			<WorkToMake>8160</WorkToMake>
 			<MaxHitPoints>400</MaxHitPoints>
 			<Mass>2.8</Mass>
@@ -137,6 +138,7 @@
 			<MorrowRim_Ebony>20</MorrowRim_Ebony>
 		</costList>
 		<statBases>
+			<Beauty>10</Beauty>
 			<WorkToMake>8160</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>2.8</Mass>
@@ -149,6 +151,8 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
+			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+			<ArrestSuccessChance>0.05</ArrestSuccessChance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -185,6 +189,7 @@
 			<MorrowRim_Ebony>20</MorrowRim_Ebony>
 		</costList>
 		<statBases>
+			<Beauty>10</Beauty>
 			<WorkToMake>8160</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>2.8</Mass>
@@ -197,6 +202,8 @@
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+			<MeleeHitChance>0.05</MeleeHitChance>
+			<ArrestSuccessChance>0.05</ArrestSuccessChance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
