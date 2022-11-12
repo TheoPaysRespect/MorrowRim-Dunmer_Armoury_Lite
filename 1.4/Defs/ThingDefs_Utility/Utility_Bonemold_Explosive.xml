@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[MorrowRim_Dunmer_BeltBonemold_Explosive]========== -->
-	<ThingDef Name="MorrowRim_Dunmer_BeltBonemold_Explosive" ParentName="ApparelNoQualityBase" Abstract="True">
-		<techLevel>Medieval</techLevel>
-		<tickerType>Normal</tickerType>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<WorkToMake>500</WorkToMake>
-			<Mass>3</Mass>
-			<Flammability>0.4</Flammability>
-			<EquipDelay>2</EquipDelay>
-		</statBases>
+	<ThingDef Name="MorrowRim_Dunmer_BeltBonemold_Explosive" ParentName="MorrowRim_Dunmer_Belt_Throwing" Abstract="True">
 		<recipeMaker>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers>
-				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
-				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
-			</recipeUsers>
-			<researchPrerequisites>
+			<researchPrerequisites Inherit="False">
 				<li>MorrowRim_Dunmer_ExplosiveWeapons</li>
 				<li>MorrowRim_Dunmer_BonemoldWeapons</li>
 			</researchPrerequisites>
@@ -31,21 +12,6 @@
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<thingCategories>
-			<li>ApparelUtility</li>
-		</thingCategories>
-		<generateAllowChance>0.15</generateAllowChance>
-		<apparel>
-			<careIfWornByCorpse>false</careIfWornByCorpse>
-			<careIfDamaged>false</careIfDamaged>
-			<wearPerDay>0</wearPerDay>
-			<bodyPartGroups>
-				<li>Waist</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Belt</li>
-			</layers>
-		</apparel>
 		<tradeTags>
 			<li>MorrowRim_Dunmer_BonemoldBelt</li>
 			<li>MorrowRim_Dunmer_BonemoldBeltExplosive</li>

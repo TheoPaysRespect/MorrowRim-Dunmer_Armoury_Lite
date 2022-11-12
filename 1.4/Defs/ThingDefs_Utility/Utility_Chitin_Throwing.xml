@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[MorrowRim_Dunmer_BeltChitin_Throwing]========== -->
-	<ThingDef Name="MorrowRim_Dunmer_BeltChitin_Throwing" ParentName="ApparelNoQualityBase" Abstract="True">
-		<techLevel>Medieval</techLevel>
-		<tickerType>Normal</tickerType>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
+	<ThingDef Name="MorrowRim_Dunmer_BeltChitin_Throwing" ParentName="MorrowRim_Dunmer_Belt_Throwing" Abstract="True">
+		<techLevel>Neolithic</techLevel>
 		<statBases>
-			<WorkToMake>500</WorkToMake>
-			<Mass>3</Mass>
-			<Flammability>0.4</Flammability>
-			<EquipDelay>2</EquipDelay>
 			<AccuracyTouch>0.50</AccuracyTouch>
 			<AccuracyShort>0.71</AccuracyShort>
 			<AccuracyMedium>0.45</AccuracyMedium>
@@ -19,36 +11,14 @@
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
 			<recipeUsers>
 				<li>MorrowRim_Dunmer_AshlanderForge</li>
-				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
-				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
 			</recipeUsers>
 			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_ThrowingWeapons</li>
 				<li>MorrowRim_Dunmer_ChitinWeapons</li>
 			</researchPrerequisites>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedChitin</unfinishedThingDef>
 		</recipeMaker>
-		<thingCategories>
-			<li>ApparelUtility</li>
-		</thingCategories>
-		<generateAllowChance>0.15</generateAllowChance>
-		<apparel>
-			<careIfWornByCorpse>false</careIfWornByCorpse>
-			<careIfDamaged>false</careIfDamaged>
-			<wearPerDay>0</wearPerDay>
-			<bodyPartGroups>
-				<li>Waist</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Belt</li>
-			</layers>
-		</apparel>
 		<tradeTags>
 			<li>MorrowRim_Dunmer_ChitinBelt</li>
 			<li>MorrowRim_Dunmer_ChitinBeltThrowing</li>
