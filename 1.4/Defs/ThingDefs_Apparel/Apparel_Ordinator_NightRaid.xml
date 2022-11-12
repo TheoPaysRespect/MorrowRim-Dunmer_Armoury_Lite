@@ -80,8 +80,8 @@
 		<costList>
 			<Dye>5</Dye>
 			<Cloth>20</Cloth>
-			<Steel>10</Steel>
-			<MorrowRim_Ebony>20</MorrowRim_Ebony>
+			<Steel>30</Steel>
+			<MorrowRim_Ebony>30</MorrowRim_Ebony>
 		</costList>
 		<statBases>
 			<Beauty>10</Beauty>
@@ -137,7 +137,7 @@
 		<costList>
 			<Dye>5</Dye>
 			<Cloth>20</Cloth>
-			<Steel>10</Steel>
+			<Steel>30</Steel>
 			<MorrowRim_Ebony>20</MorrowRim_Ebony>
 		</costList>
 		<statBases>
@@ -190,7 +190,7 @@
 		<costList>
 			<Dye>5</Dye>
 			<Cloth>20</Cloth>
-			<Steel>10</Steel>
+			<Steel>30</Steel>
 			<MorrowRim_Ebony>20</MorrowRim_Ebony>
 		</costList>
 		<statBases>

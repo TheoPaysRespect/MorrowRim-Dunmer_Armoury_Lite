@@ -119,7 +119,7 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Ordinator" Name="MorrowRim_Dunmer_ArmourBoots_OrdinatorRegular">
 		<defName>MorrowRim_Dunmer_ArmourBoots_OrdinatorRegular</defName>
 		<label>Ordinator boots</label>
-		<description>An ornately crafted pair of boots, a mixture of chitin and ebony, coated in a layer of gold. Provides excellent protection, and doesn't carry the associations of the rest of the armour, as it's just a pair of boots.</description>
+		<description>An ornately crafted pair of boots, a mixture of chitin and ebony, coated in a layer of gold. Provides excellent protection, and makes those that have defied the Temple feel uneasy.</description>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
@@ -170,7 +170,7 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Ordinator" Name="MorrowRim_Dunmer_ArmourGauntlets_OrdinatorRegular">
 		<defName>MorrowRim_Dunmer_ArmourGauntlets_OrdinatorRegular</defName>
 		<label>Ordinator gauntlets</label>
-		<description>An ornately crafted pair of gauntlets, a mixture of chitin and ebony, coated in a layer of gold. Provides excellent protection, and doesn't carry the associations of the rest of the armour, as it's just a pair of gauntlets.</description>
+		<description>An ornately crafted pair of gauntlets, a mixture of chitin and ebony, coated in a layer of gold. Provides excellent protection, and makes those that have defied the Temple feel uneasy.</description>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
