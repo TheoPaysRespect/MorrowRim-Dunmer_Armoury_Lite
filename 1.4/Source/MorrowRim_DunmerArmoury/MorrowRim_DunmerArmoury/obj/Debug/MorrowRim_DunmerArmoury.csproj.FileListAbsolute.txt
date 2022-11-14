@@ -1,0 +1,4 @@
+J:\Modding\Github\MorrowRim-Dunmer_Armoury_Lite\1.4\Assemblies\MorrowRim_DunmerArmoury.dll
+J:\Modding\Github\MorrowRim-Dunmer_Armoury_Lite\1.4\Source\MorrowRim_DunmerArmoury\MorrowRim_DunmerArmoury\obj\Debug\MorrowRim_DunmerArmoury.csproj.AssemblyReference.cache
+J:\Modding\Github\MorrowRim-Dunmer_Armoury_Lite\1.4\Source\MorrowRim_DunmerArmoury\MorrowRim_DunmerArmoury\obj\Debug\MorrowRim_DunmerArmoury.csproj.CoreCompileInputs.cache
+J:\Modding\Github\MorrowRim-Dunmer_Armoury_Lite\1.4\Source\MorrowRim_DunmerArmoury\MorrowRim_DunmerArmoury\obj\Debug\MorrowRim_DunmerArmoury.dll

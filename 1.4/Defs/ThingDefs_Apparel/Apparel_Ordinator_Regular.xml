@@ -39,8 +39,8 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.8</MoveSpeed>
 			<ArrestSuccessChance>0.15</ArrestSuccessChance>
-			<MeleeHitChance>0.1</MeleeHitChance>
-			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeHitChance>1</MeleeHitChance>
+			<MeleeDodgeChance>5</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -97,8 +97,8 @@
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
 			<ArrestSuccessChance>0.15</ArrestSuccessChance>
-			<MeleeHitChance>0.1</MeleeHitChance>
-			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeHitChance>1</MeleeHitChance>
+			<MeleeDodgeChance>5</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -151,7 +151,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
-			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+			<MeleeDodgeChance>2.5</MeleeDodgeChance>
 			<ArrestSuccessChance>0.05</ArrestSuccessChance>
 		</equippedStatOffsets>
 		<apparel>
@@ -202,7 +202,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
-			<MeleeHitChance>0.05</MeleeHitChance>
+			<MeleeHitChance>0.5</MeleeHitChance>
 			<ArrestSuccessChance>0.05</ArrestSuccessChance>
 		</equippedStatOffsets>
 		<apparel>
@@ -228,8 +228,8 @@
 		<equippedStatOffsets Inherit="False">
 			<MoveSpeed>-0.8</MoveSpeed>
 			<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.15</ConversionPower>
-			<MeleeHitChance>0.1</MeleeHitChance>
-			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeHitChance>1</MeleeHitChance>
+			<MeleeDodgeChance>5</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Ordinator/Ordinator_Regular_Alternate/Ordinator_Regular_Alternate_Armour</wornGraphicPath>		
@@ -254,8 +254,8 @@
 		<equippedStatOffsets Inherit="False">
 			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
 			<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.15</ConversionPower>
-			<MeleeHitChance>0.1</MeleeHitChance>
-			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeHitChance>1</MeleeHitChance>
+			<MeleeDodgeChance>5</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Ordinator/Ordinator_Regular_Alternate/Ordinator_Regular_Alternate_Helmet</wornGraphicPath>

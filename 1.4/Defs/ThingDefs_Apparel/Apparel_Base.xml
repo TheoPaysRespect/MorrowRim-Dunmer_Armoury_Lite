@@ -107,4 +107,43 @@
 			</tags>
 		</apparel>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_Armour_Special]========== -->
+	<ThingDef ParentName="ApparelNoQualityBase" Name="MorrowRim_Dunmer_Armour_Special" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>2000</ticksPerHeal>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>Armor</li>
+			<li>MorrowRim_Dunmer_Armour</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>Royal</li>
+				<li>RoyalTier7</li>
+			</tags>
+		</apparel>
+		<relicChance>1</relicChance>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+	</ThingDef>
 </Defs>

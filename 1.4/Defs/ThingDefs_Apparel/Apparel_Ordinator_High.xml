@@ -45,8 +45,8 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-1.0</MoveSpeed>
 			<ArrestSuccessChance>0.2</ArrestSuccessChance>
-			<MeleeHitChance>0.15</MeleeHitChance>
-			<MeleeDodgeChance>0.15</MeleeDodgeChance>
+			<MeleeHitChance>3</MeleeHitChance>
+			<MeleeDodgeChance>15</MeleeDodgeChance>
 			<ToxicResistance>0.1</ToxicResistance>
 		</equippedStatOffsets>
 		<apparel>
@@ -105,8 +105,8 @@
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
 			<ArrestSuccessChance>0.2</ArrestSuccessChance>
-			<MeleeHitChance>0.15</MeleeHitChance>
-			<MeleeDodgeChance>0.15</MeleeDodgeChance>
+			<MeleeHitChance>3</MeleeHitChance>
+			<MeleeDodgeChance>15</MeleeDodgeChance>
 			<ToxicResistance>0.1</ToxicResistance>
 		</equippedStatOffsets>
 		<apparel>
@@ -161,7 +161,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.3</MoveSpeed>
-			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeDodgeChance>10</MeleeDodgeChance>
 			<ArrestSuccessChance>0.1</ArrestSuccessChance>
 			<ToxicResistance>0.05</ToxicResistance>
 		</equippedStatOffsets>
@@ -214,7 +214,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
-			<MeleeHitChance>0.1</MeleeHitChance>
+			<MeleeHitChance>1.5</MeleeHitChance>
 			<ArrestSuccessChance>0.1</ArrestSuccessChance>
 			<ToxicResistance>0.05</ToxicResistance>
 		</equippedStatOffsets>

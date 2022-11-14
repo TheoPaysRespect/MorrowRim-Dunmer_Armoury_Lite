@@ -3,7 +3,7 @@
 	<!-- ==========[Bases]========== -->
 	<ResearchProjectDef Name="MorrowRim_Dunmer_ArmouryTechprints" Abstract="True">
 		<techprintCount>1</techprintCount>
-		<techprintCommonality>1</techprintCommonality>
+		<techprintCommonality>0.5</techprintCommonality>
 		<techprintMarketValue>1000</techprintMarketValue>
 		<heldByFactionCategoryTags>
 			<li>Tribal</li>
