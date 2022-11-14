@@ -56,4 +56,18 @@
 		</graphicData>
 		<stuffCategories Inherit="false"/>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_UnfinishedTelvanni]========== -->
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>MorrowRim_Dunmer_UnfinishedTelvanni</defName>
+		<label>unfinished Telvanni equipment</label>
+		<description>An unfinished piece of Telvanni equipment.</description>
+		<statBases>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/MorrowRim_Dunmer_UnfinishedTelvanni</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
 </Defs>

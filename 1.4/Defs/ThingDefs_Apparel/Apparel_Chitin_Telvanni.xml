@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" Name="MorrowRim_Dunmer_ArmourMakeable_ChitinTelvanni" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedTelvanni</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ChitinArmour</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<apparel>
+			<tags>
+				<li>MorrowRim_Dunmer_TelvanniArmour</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- 
+		- Stats based on regular bonemold
+		- defence reduced by ~40%
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_ChitinCephalopod]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_ChitinTelvanni">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_ChitinCephalopod</defName>
+		<label>Telvanni cephalopod helmet</label>
+		<description>The hollowed shell of a Telvannis cephalopod, made into a rather peculiar helmet. While somewhat claustrophobic, it does increase the rate at which neural heat is dissipated. The inbuilt filtration system helps to protect the wearer from toxic environments.\n\nTypically worn by members of Great House Telvanni, as no one else would dare be caught wearing the hollowed shell of a cephalopod on their head.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_TelvanniArmourAdvanced</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+				<Intellectual>10</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Telvanni_Cephalopod/Telvanni_Cephalopod_Helmet_Item</texPath>
+		</graphicData>
+		<costList>
+			<Cloth>30</Cloth>
+			<MorrowRim_AirSalts MayRequire="SirMashedPotato.MorrowRim.TelvanniTechnology">10</MorrowRim_AirSalts>
+			<MorrowRim_WaterSalts MayRequire="SirMashedPotato.MorrowRim.TelvanniTechnology">10</MorrowRim_WaterSalts>
+			<InsectChitin>65</InsectChitin>
+		</costList>
+		<statBases>
+			<WorkToMake>8600</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1.2</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.14</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<PsychicEntropyRecoveryRate MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">0.033</PsychicEntropyRecoveryRate>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Telvanni_Cephalopod/Telvanni_Cephalopod_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Royal</li>
+				<li>RoyalTier2</li>
+				<li>MorrowRim_Dunmer_TelvanniArmour_Caster</li>
+				<li>MorrowRim_Dunmer_ChitinArmour_Cephalopod</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- 
+		- Base stats are slightly better than Legendary quality cephalopod counterparts
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_ChitinCephalopodAged]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_Armour_Special">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_ChitinCephalopodAged</defName>
+		<label>aged cephalopod helmet</label>
+		<description>A legendary helmet, worn by a Telvanni master from a distant era. While the helmet itself was already of masterful craftsmanship, it appears that time has elevated it to a beyond legendary quality.</description>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Telvanni_Cephalopod_Aged/Telvanni_Cephalopod_Aged_Helmet_Item</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1750</MarketValue>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>1.2</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+			<PsychicEntropyRecoveryRate MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">0.09</PsychicEntropyRecoveryRate>
+			<PsychicEntropyMax MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">20</PsychicEntropyMax>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Telvanni_Cephalopod_Aged/Telvanni_Cephalopod_Aged_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Psychic</li>
+				<li>MorrowRim_Dunmer_TelvanniArmour_Caster</li>
+				<li>MorrowRim_Dunmer_ChitinArmour_CephalopodAged</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+</Defs>

@@ -202,7 +202,7 @@
 			<ArrestSuccessChance>0.15</ArrestSuccessChance>
 			<ToxicResistance>0.05</ToxicResistance>
 			<InjuryHealingFactor>0.05</InjuryHealingFactor>
-			<PsychicEntropyMax MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">0.1</PsychicEntropyMax>
+			<PsychicEntropyMax MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">10</PsychicEntropyMax>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>

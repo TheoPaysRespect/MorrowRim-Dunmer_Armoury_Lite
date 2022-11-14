@@ -9,6 +9,7 @@
 			<recipeUsers Inherit="False">
 				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
 				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
+				<li MayRequire="SirMashedPotato.MorrowRim.TelvanniTechnology">MorrowRim_TelvanniForge</li>
 			</recipeUsers>
 			<defaultIngredientFilter Inherit="False"/>
 		</recipeMaker>
@@ -27,6 +28,9 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 		</apparel>
 		<possessionCount>1</possessionCount>
 	</ThingDef>
@@ -140,6 +144,12 @@
 			</defaultOutfitTags>
 			<tags>
 				<li>Royal</li>
+				<li>RoyalTier1</li>
+				<li>RoyalTier2</li>
+				<li>RoyalTier3</li>
+				<li>RoyalTier4</li>
+				<li>RoyalTier5</li>
+				<li>RoyalTier6</li>
 				<li>RoyalTier7</li>
 			</tags>
 		</apparel>

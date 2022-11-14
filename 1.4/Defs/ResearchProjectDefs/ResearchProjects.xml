@@ -1,10 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Bases]========== -->
-	<ResearchProjectDef Name="MorrowRim_Dunmer_ArmouryTechprints" Abstract="True">
+	<ResearchProjectDef Name="MorrowRim_Dunmer_ArmouryTechprints_Cheap" Abstract="True">
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>0.5</techprintCommonality>
+		<techprintMarketValue>500</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Tribal</li>
+			<li>ESCP_DunmerGreatHouse</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+	<ResearchProjectDef Name="MorrowRim_Dunmer_ArmouryTechprints_Expensive" Abstract="True">
 		<techprintCount>1</techprintCount>
 		<techprintCommonality>0.5</techprintCommonality>
 		<techprintMarketValue>1000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Tribal</li>
+			<li>ESCP_DunmerGreatHouse</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+	<ResearchProjectDef Name="MorrowRim_Dunmer_ArmouryTechprints_Tribunal" Abstract="True">
+		<techprintCount>3</techprintCount>
+		<techprintCommonality>0.5</techprintCommonality>
+		<techprintMarketValue>500</techprintMarketValue>
 		<heldByFactionCategoryTags>
 			<li>Tribal</li>
 			<li>ESCP_DunmerGreatHouse</li>
@@ -65,7 +83,7 @@
 			<li>ESCP_DunmerStart_Medieval</li>
 		</tags>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Expensive">
 		<defName>MorrowRim_Dunmer_MoragTongWeapons</defName>
 		<label>Morag Tong blades</label>
 		<description>Allows the creation of Morag Tong style weapons, at the Dunmeri forge.\n\nA Tong specialised in making people disappear, their weapons are designed to strike fast and true, but suffer against multiple adversaries.</description>
@@ -81,7 +99,7 @@
 			<li>ESCP_DunmerStart_MoragTong</li>
 		</tags>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Tribunal">
 		<defName>MorrowRim_Dunmer_DoctrineWeapons</defName>
 		<label>doctrine weapons</label>
 		<description>Allows the creation of Doctrine style Ordinator weapons, at the Dunmeri forge.\n\nWeapons typically utilised by the Order of Doctrine and Ordination, these gold-coated ebony weapons are truly formidable on combat, though sacrifice some of their potential for aesthetics.</description>
@@ -121,7 +139,7 @@
 			<li>MorrowRim_Dunmer_ThrowingWeapons</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Expensive">
 		<defName>MorrowRim_Dunmer_MoragTongBelts</defName>
 		<label>Morag Tong smoke-bomb belt</label>
 		<description>Allows the creation of Morag Tong smoke-bomb belts at the Dunmeri forge.\n\nThese belts are designed in such a way that a single smoke-bomb is released when the wearer takes damage, though the bombs can be manually released as well.</description>
@@ -185,7 +203,7 @@
 			<li>ESCP_DunmerStart_Medieval</li>
 		</tags>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Expensive">
 		<defName>MorrowRim_Dunmer_MoragTongArmour</defName>
 		<label>Morag Tong armour</label>
 		<description>Allows the creation of specially designed Morag Tong, at the Dunmeri forge.\n\nA combination of leather and chitin, this armour is lightweight, but still protective.</description>
@@ -202,7 +220,7 @@
 		</tags>
 	</ResearchProjectDef>
 	<!-- ==========[Ordinator extension]========== -->
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Tribunal">
 		<defName>MorrowRim_Dunmer_DoctrineOrdinatorArmour</defName>
 		<label>doctrine ordinator armour</label>
 		<description>Allows the creation of Doctrine style Ordinator armour, at the Dunmeri forge.\n\nIntricately crafted, out of an assortment of materials, wearers of this armour are feared by all, and themselves fear little.</description>
@@ -218,7 +236,7 @@
 			<li>ESCP_DunmerStart_Ordinator</li>
 		</tags>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Tribunal">
 		<defName>MorrowRim_Dunmer_NightRaidOrdinatorArmour</defName>
 		<label>night raid ordinator armour</label>
 		<description>Allows the creation of Night Raid style Ordinator armour, at the Dunmeri forge.\n\nThe darkened colouration of this set, compared to the regular Ordinator set, makes it perfect for night time missions.</description>
@@ -231,7 +249,7 @@
 			<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Tribunal">
 		<defName>MorrowRim_Dunmer_MourningOrdinatorArmour</defName>
 		<label>mourning ordinator armour</label>
 		<description>Allows the creation of Necrom style Ordinator armour, at the Dunmeri forge.\n\nRarely seen outside of the holy city of Necrom, the design of the armour attunes its wearer to the unseen.</description>
@@ -244,7 +262,7 @@
 			<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Tribunal">
 		<defName>MorrowRim_Dunmer_HighOrdinatorArmour</defName>
 		<label>high ordinator armour</label>
 		<description>Allows the creation of Mournhold style Ordinator armour, at the Dunmeri forge.\n\nOrnately decorated, and made out of only the finest materials, far more protective than other Ordinator styles, but also heavier.</description>
@@ -308,11 +326,11 @@
 		<researchViewY>4</researchViewY>
 		<tab>ESCP_DunmerTab</tab>
 	</ResearchProjectDef>
-	<!-- ==========[Houses Elite]========== -->
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
-		<defName>MorrowRim_Dunmer_DresArmourElite</defName>
-		<label>elite Dres armour</label>
-		<description>Allows the creation of elite Great House Dres style armour, at the Dunmeri forge.</description>
+	<!-- ==========[Houses Advanced]========== -->
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Cheap">
+		<defName>MorrowRim_Dunmer_DresArmourAdvanced</defName>
+		<label>advanced Dres armour</label>
+		<description>Allows the creation of advanced Great House Dres style armour, at the Dunmeri forge.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>1</researchViewX>
@@ -322,10 +340,10 @@
 			<li>MorrowRim_Dunmer_DresArmour</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
-		<defName>MorrowRim_Dunmer_HlaaluArmourElite</defName>
-		<label>elite Hlaalu armour</label>
-		<description>Allows the creation of elite Great House Hlaalu style armour, at the Dunmeri forge.</description>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Cheap">
+		<defName>MorrowRim_Dunmer_HlaaluArmourAdvanced</defName>
+		<label>advanced Hlaalu armour</label>
+		<description>Allows the creation of advanced Great House Hlaalu style armour, at the Dunmeri forge.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>2</researchViewX>
@@ -335,10 +353,10 @@
 			<li>MorrowRim_Dunmer_HlaaluArmour</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
-		<defName>MorrowRim_Dunmer_IndorilArmourElite</defName>
-		<label>elite Indoril armour</label>
-		<description>Allows the creation of elite Great House Indoril style armour, at the Dunmeri forge.</description>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Cheap">
+		<defName>MorrowRim_Dunmer_IndorilArmourAdvanced</defName>
+		<label>advanced Indoril armour</label>
+		<description>Allows the creation of advanced Great House Indoril style armour, at the Dunmeri forge.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>3</researchViewX>
@@ -348,10 +366,10 @@
 			<li>MorrowRim_Dunmer_IndorilArmour</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
-		<defName>MorrowRim_Dunmer_RedoranArmourElite</defName>
-		<label>elite Redoran armour</label>
-		<description>Allows the creation of elite Great House Redoran style armour, at the Dunmeri forge.</description>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Cheap">
+		<defName>MorrowRim_Dunmer_RedoranArmourAdvanced</defName>
+		<label>advanced Redoran armour</label>
+		<description>Allows the creation of advanced Great House Redoran style armour, at the Dunmeri forge.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>4</researchViewX>
@@ -361,10 +379,10 @@
 			<li>MorrowRim_Dunmer_RedoranArmour</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints">
-		<defName>MorrowRim_Dunmer_TelvanniArmourElite</defName>
-		<label>elite Telvanni armour</label>
-		<description>Allows the creation of elite Great House Telvanni style armour, at the Dunmeri forge.</description>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Cheap">
+		<defName>MorrowRim_Dunmer_TelvanniArmourAdvanced</defName>
+		<label>advanced Telvanni armour</label>
+		<description>Allows the creation of advanced Great House Telvanni style armour, at the Dunmeri forge.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>5</researchViewX>
@@ -372,6 +390,72 @@
 		<tab>ESCP_DunmerTab</tab>
 		<prerequisites>
 			<li>MorrowRim_Dunmer_TelvanniArmour</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- ==========[Houses Noble]========== -->
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Expensive">
+		<defName>MorrowRim_Dunmer_DresArmourNoble</defName>
+		<label>noble Dres armour</label>
+		<description>Allows the creation of noble Great House Dres style armour, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>6</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_DresArmourAdvanced</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Expensive">
+		<defName>MorrowRim_Dunmer_HlaaluArmourNoble</defName>
+		<label>noble Hlaalu armour</label>
+		<description>Allows the creation of noble Great House Hlaalu style armour, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>6</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_HlaaluArmourAdvanced</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Expensive">
+		<defName>MorrowRim_Dunmer_IndorilArmourNoble</defName>
+		<label>noble Indoril armour</label>
+		<description>Allows the creation of noble Great House Indoril style armour, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>6</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_IndorilArmourAdvanced</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Expensive">
+		<defName>MorrowRim_Dunmer_RedoranArmourNoble</defName>
+		<label>noble Redoran armour</label>
+		<description>Allows the creation of noble Great House Redoran style armour, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>6</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_RedoranArmourAdvanced</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Expensive">
+		<defName>MorrowRim_Dunmer_TelvanniArmourNoble</defName>
+		<label>noble Telvanni armour</label>
+		<description>Allows the creation of noble Great House Telvanni style armour, at the Dunmeri forge.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>6</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_Dunmer_TelvanniArmourAdvanced</li>
 		</prerequisites>
 	</ResearchProjectDef>
 </Defs>
