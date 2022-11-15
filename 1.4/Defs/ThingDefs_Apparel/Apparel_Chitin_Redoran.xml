@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 
+		- Stats based on regular bonemold
+		- defence reduced by ~40%
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_ChitinWatchman]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Chitin">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_ChitinWatchman</defName>
+		<label>Redoran watchman helmet</label>
+		<description>A large chitin helmet, made from the shell of an arthropod encountered only in Redoran controlled land. Designed to provide a good range of long-distance vision, whilst still offering reasonable protection. This comes at the cost of short-distance vision, forcing wearers to walk slightly more carefully than normal, lest they trip over trama root.\n\nTypically worn by Redoran guards that are proficient with bonemold long bows.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_RedoranArmourAdvanced</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Chitin/Chitin_Redoran_Watchman/Chitin_RedoranWatchman_Helmet_Item</texPath>
+		</graphicData>
+		<costList>
+			<Cloth>45</Cloth>
+			<InsectChitin>90</InsectChitin>
+		</costList>
+		<statBases>
+			<WorkToMake>8600</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>1.2</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<ShootingAccuracyFactor_Short>0.05</ShootingAccuracyFactor_Short>
+			<ShootingAccuracyFactor_Medium>0.15</ShootingAccuracyFactor_Medium>
+			<ShootingAccuracyFactor_Long>0.20</ShootingAccuracyFactor_Long>
+			<AimingDelayFactor>-0.1</AimingDelayFactor>
+			<MeleeDodgeChance>-2</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Chitin/Chitin_Redoran_Watchman/Chitin_RedoranWatchman_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_ChitinArmour_Watchman</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_RedoranArmour_Advanced</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

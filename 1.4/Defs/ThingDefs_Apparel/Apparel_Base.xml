@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[MorrowRim_Dunmer_ApparelMakeable_Base]========== -->
+	<!-- ==========[MorrowRim_Dunmer_ArmourMakeable_Base]========== -->
 	<ThingDef ParentName="ArmorSmithableBase" Name="MorrowRim_Dunmer_ArmourMakeable_Base" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -34,7 +34,7 @@
 		</apparel>
 		<possessionCount>1</possessionCount>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Dunmer_Apparel_Leather]========== -->
+	<!-- ==========[MorrowRim_Dunmer_ArmourMakeable_Base]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" Name="MorrowRim_Dunmer_ArmourMakeable_Leather" Abstract="True">
 		<techLevel>Neolithic</techLevel>
 		<recipeMaker>
@@ -52,7 +52,7 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Dunmer_Apparel_Chitin]========== -->
+	<!-- ==========[MorrowRim_Dunmer_ArmourMakeable_Base]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" Name="MorrowRim_Dunmer_ArmourMakeable_Chitin" Abstract="True">
 		<techLevel>Neolithic</techLevel>
 		<recipeMaker>
@@ -70,7 +70,7 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Dunmer_Apparel_Bonemold]========== -->
+	<!-- ==========[MorrowRim_Dunmer_ArmourMakeable_Base]========== -->
 	<!-- 
 		Base stats off steel plate armour
 		- Roughly same defence
@@ -92,8 +92,11 @@
 				<li>MorrowRim_Dunmer_BonemoldArmour</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_Armour_Bonemold</li>
+		</tradeTags>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Dunmer_Apparel_Ordinator]========== -->
+	<!-- ==========[MorrowRim_Dunmer_ArmourMakeable_Base]========== -->
 	<!-- 
 		Base stats off ebony plate armour
 		- Roughly same defence
@@ -110,6 +113,9 @@
 				<li>MorrowRim_Dunmer_OrdinatorArmour</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_Armour_Ordinator</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_Armour_Special]========== -->
 	<ThingDef ParentName="ApparelNoQualityBase" Name="MorrowRim_Dunmer_Armour_Special" Abstract="True">

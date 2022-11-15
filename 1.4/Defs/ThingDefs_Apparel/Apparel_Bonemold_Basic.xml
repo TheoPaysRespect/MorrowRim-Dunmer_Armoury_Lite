@@ -48,6 +48,9 @@
 				<li>MorrowRim_Dunmer_BonemoldArmour_Standard</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_FactionlessArmour_Bonemold</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldRegular]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourHelmet_BonemoldRegular">
@@ -93,12 +96,15 @@
 				<li>MorrowRim_Dunmer_BonemoldArmour_Standard</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_FactionlessArmour_Bonemold</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourBoots_BonemoldRegular]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourBoots_BonemoldRegular">
 		<defName>MorrowRim_Dunmer_ArmourBoots_BonemoldRegular</defName>
 		<label>bonemold boots</label>
-		<description>A pair of standard bonemold boots. Offers reasonable protection, but slows moevement slightly.\n\nTypically favoured by low-ranking members of Great Houses, and those unaffiliated with one.</description>
+		<description>A pair of standard bonemold boots. Offers reasonable protection, but slows movement slightly.\n\nTypically favoured by low-ranking members of Great Houses, and those unaffiliated with one.</description>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>5</Crafting>
@@ -135,6 +141,9 @@
 				<li>MorrowRim_Dunmer_BonemoldArmour_Standard</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_FactionlessArmour_Bonemold</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourBracers_BonemoldRegular]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourBracers_BonemoldRegular">
@@ -177,6 +186,8 @@
 				<li>MorrowRim_Dunmer_BonemoldArmour_Standard</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_FactionlessArmour_Bonemold</li>
+		</tradeTags>
 	</ThingDef>
-
 </Defs>

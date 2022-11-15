@@ -57,6 +57,9 @@
 				<li>MorrowRim_Dunmer_BonemoldArmour_GahKogo</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_DresArmour_Basic</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldGahKogo]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
@@ -106,5 +109,8 @@
 				<li>MorrowRim_Dunmer_BonemoldArmour_GahKogo</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_DresArmour_Basic</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>

@@ -1,29 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" Name="MorrowRim_Dunmer_ArmourMakeable_ChitinTelvanni" Abstract="True">
-		<techLevel>Medieval</techLevel>
-		<recipeMaker>
-			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedTelvanni</unfinishedThingDef>
-			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_ChitinArmour</li>
-			</researchPrerequisites>
-		</recipeMaker>
-		<apparel>
-			<tags>
-				<li>MorrowRim_Dunmer_TelvanniArmour</li>
-			</tags>
-		</apparel>
-	</ThingDef>
 	<!-- 
 		- Stats based on regular bonemold
-		- defence reduced by ~40%
+		- defence reduced by ~60%
 	-->
 	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_ChitinCephalopod]========== -->
-	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_ChitinTelvanni">
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Chitin">
 		<defName>MorrowRim_Dunmer_ArmourHelmet_ChitinCephalopod</defName>
 		<label>Telvanni cephalopod helmet</label>
 		<description>The hollowed shell of a Telvannis cephalopod, made into a rather peculiar helmet. While somewhat claustrophobic, it does increase the rate at which neural heat is dissipated. The inbuilt filtration system helps to protect the wearer from toxic environments.\n\nTypically worn by members of Great House Telvanni, as no one else would dare be caught wearing the hollowed shell of a cephalopod on their head.</description>
 		<recipeMaker>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedTelvanni</unfinishedThingDef>
 			<researchPrerequisites>
 				<li>MorrowRim_Dunmer_TelvanniArmourAdvanced</li>
 			</researchPrerequisites>
@@ -71,10 +58,14 @@
 			<tags>
 				<li>Royal</li>
 				<li>RoyalTier2</li>
+				<li>MorrowRim_Dunmer_TelvanniArmour</li>
 				<li>MorrowRim_Dunmer_TelvanniArmour_Caster</li>
 				<li>MorrowRim_Dunmer_ChitinArmour_Cephalopod</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_TelvanniArmour_Advanced</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- 
 		- Base stats are slightly better than Legendary quality cephalopod counterparts
@@ -118,9 +109,13 @@
 			</layers>
 			<tags>
 				<li>Psychic</li>
+				<li>MorrowRim_Dunmer_TelvanniArmour</li>
 				<li>MorrowRim_Dunmer_TelvanniArmour_Caster</li>
 				<li>MorrowRim_Dunmer_ChitinArmour_CephalopodAged</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_TelvanniArmour_Unique</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>
