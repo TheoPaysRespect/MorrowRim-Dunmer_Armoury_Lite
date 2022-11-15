@@ -107,7 +107,6 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourBoots_ChitinRegular]========== -->
-	<!--
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Chitin" Name="MorrowRim_Dunmer_ArmourBoots_ChitinRegular">
 		<defName>MorrowRim_Dunmer_ArmourBoots_ChitinRegular</defName>
 		<label>chitin boots</label>
@@ -152,9 +151,7 @@
 			<li>MorrowRim_Dunmer_FactionlessArmour_Chitin</li>
 		</tradeTags>
 	</ThingDef>
-	-->
 	<!-- ==========[MorrowRim_Dunmer_ArmourBracers_ChitinRegular]========== -->
-	<!--
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Chitin" Name="MorrowRim_Dunmer_ArmourBracers_ChitinRegular">
 		<defName>MorrowRim_Dunmer_ArmourBracers_ChitinRegular</defName>
 		<label>chitin bracers</label>
@@ -199,7 +196,6 @@
 			<li>MorrowRim_Dunmer_FactionlessArmour_Chitin</li>
 		</tradeTags>
 	</ThingDef>
-	-->
 	<!--
 		- Armour reduced by an additional 5% compared to regular chitin helmet
 		- Temperature resistances increased slightly
