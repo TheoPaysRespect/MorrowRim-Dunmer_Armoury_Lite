@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 
+		- Stats based on regular bonemold
+		- defence increased by ~20%, and inverted
+		- 20% heavier
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_OtherKwamaEgg]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheKwama">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_OtherKwamaEgg</defName>
+		<label>Telvanni kwama egg helmet</label>
+		<description>A hollowed out kwama egg, reinforced with Telvanni secrets, and made into a rather peculiar helmet. Claustrophobic and smells strange, it does provide surprisingly good defence.\n\nTypically worn by members of Great House Telvanni, as no one else would dare be caught wearing a hollowed kwama egg on their head.</description>
+		<recipeMaker>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedTelvanni</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_TelvanniArmourAdvanced</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+				<Intellectual>10</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Telvanni_KwamaEgg/Telvanni_KwamaEgg_Helmet_Item</texPath>
+		</graphicData>
+		<costList>
+			<Cloth>30</Cloth>
+			<Chemfuel>10</Chemfuel>
+			<ESCP_BonemoldItem>20</ESCP_BonemoldItem>
+			<MorrowRim_FrostSalts MayRequire="SirMashedPotato.MorrowRim.TelvanniTechnology">10</MorrowRim_FrostSalts>
+			<MorrowRim_FerrousSalts MayRequire="SirMashedPotato.MorrowRim.TelvanniTechnology">10</MorrowRim_FerrousSalts>
+			<MorrowRim_KwamaEgg>1</MorrowRim_KwamaEgg>
+		</costList>
+		<statBases>
+			<WorkToMake>8600</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>2.6</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+			<SocialImpact>-0.05</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Telvanni_KwamaEgg/Telvanni_KwamaEgg_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Royal</li>
+				<li>RoyalTier2</li>
+				<li>MorrowRim_Dunmer_TelvanniArmour</li>
+				<li>MorrowRim_Dunmer_OtherArmour_KwamaEgg</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_TelvanniArmour_Advanced</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- 
+		- Base stats are slightly better than Legendary quality kwama egg counterparts
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_OtherKwamaEggAged]========== -->
+	<!--
+	<ThingDef ParentName="MorrowRim_Dunmer_Armour_Special">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_OtherKwamaEggAged</defName>
+		<label>aged kwama egg helmet</label>
+		<description>A legendary helmet, worn by a Telvanni master from a distant era. While the helmet itself was already of masterful craftsmanship, it appears that time has elevated it to a beyond legendary quality.</description>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Telvanni_KwamaEgg_Aged/Telvanni_KwamaEgg_Aged_Helmet_Item</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1750</MarketValue>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>1.2</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+			<PsychicEntropyRecoveryRate MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">0.09</PsychicEntropyRecoveryRate>
+			<PsychicEntropyMax MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">20</PsychicEntropyMax>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Telvanni_KwamaEgg_Aged/Telvanni_KwamaEgg_Aged_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Psychic</li>
+				<li>MorrowRim_Dunmer_TelvanniArmour</li>
+				<li>MorrowRim_Dunmer_TelvanniArmour_Caster</li>
+				<li>MorrowRim_Dunmer_OtherArmour_KwamaEggAged</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_TelvanniArmour_Unique</li>
+		</tradeTags>
+	</ThingDef>
+	-->
+</Defs>

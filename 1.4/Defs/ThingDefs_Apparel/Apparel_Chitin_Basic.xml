@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ====================[Regular Set]====================-->
 	<!-- 
 		Compared to regular bonemold
 		- armour ratings reduced by ~50 %
@@ -196,6 +197,7 @@
 			<li>MorrowRim_Dunmer_FactionlessArmour_Chitin</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ====================[Ash mask]====================-->
 	<!--
 		- Armour reduced by an additional 5% compared to regular chitin helmet
 		- Temperature resistances increased slightly

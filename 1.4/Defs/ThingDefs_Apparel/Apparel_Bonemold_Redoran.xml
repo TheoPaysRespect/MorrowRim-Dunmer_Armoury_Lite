@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ====================[Regular Set]====================-->
 	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_BonemoldGahJulan]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldGahJulan</defName>
@@ -117,6 +118,67 @@
 		</apparel>
 		<tradeTags>
 			<li>MorrowRim_Dunmer_RedoranArmour_Basic</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ====================[Masters Set]====================-->
+	<!--
+		- Armour rating increased by 40% over basic bonemold
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldRedoranMaster]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_BonemoldNoble">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldRedoranMaster</defName>
+		<label>Redoran master helmet</label>
+		<description>An ornate bonemold helmet, typically reserved for high ranking members of Great House Redoran. While people seem to always agree with the wearers of these helmets, it is rather difficult to see out of.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_RedoranArmourNoble</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Redoran_Master/Bonemold_Redoran_Master_Helmet_Item</texPath>
+		</graphicData>
+		<costList>
+			<Dye>20</Dye>
+			<Cloth>40</Cloth>
+			<Steel>15</Steel>
+			<ESCP_BonemoldItem>50</ESCP_BonemoldItem>
+		</costList>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.47</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+			<NegotiationAbility>0.2</NegotiationAbility>
+			<SocialImpact>0.2</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Redoran_Master/Bonemold_Redoran_Master_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldArmour_Master</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_RedoranArmour_Noble</li>
 		</tradeTags>
 	</ThingDef>
 </Defs>

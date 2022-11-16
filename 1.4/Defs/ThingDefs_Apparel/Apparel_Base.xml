@@ -96,6 +96,25 @@
 			<li>MorrowRim_Dunmer_Armour_Bonemold</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourMakeable_BonemoldNoble]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourMakeable_BonemoldNoble" Abstract="True">
+		<apparel>
+			<tags>
+				<li>Royal</li>
+				<li>RoyalTier1</li>
+				<li>RoyalTier2</li>
+				<li>RoyalTier3</li>
+				<li>RoyalTier4</li>
+				<li>RoyalTier5</li>
+				<li>RoyalTier6</li>
+				<li>RoyalTier7</li>
+				<li>MorrowRim_Dunmer_BonemoldArmourNoble</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_Armour_BonemoldNoble</li>
+		</tradeTags>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourMakeable_Base]========== -->
 	<!-- 
 		Base stats off ebony plate armour

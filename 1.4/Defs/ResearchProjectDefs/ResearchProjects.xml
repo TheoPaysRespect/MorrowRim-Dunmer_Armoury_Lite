@@ -178,9 +178,11 @@
 		<researchViewX>1</researchViewX>
 		<researchViewY>3</researchViewY>
 		<tab>ESCP_DunmerTab</tab>
+		<!--
 		<prerequisites>
 			<li>MorrowRim_Dunmer_LeatherArmour</li>
 		</prerequisites>
+		-->
 		<tags>
 			<li>ESCP_DumerStart_Ashlander</li>
 		</tags>
