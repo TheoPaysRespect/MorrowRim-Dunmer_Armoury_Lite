@@ -56,6 +56,7 @@
 			</tags>
 		</apparel>
 		<tradeTags>
+			<li>MorrowRim_Dunmer_AshlanderArmour</li>
 			<li>MorrowRim_Dunmer_FactionlessArmour_Chitin</li>
 		</tradeTags>
 	</ThingDef>
@@ -104,6 +105,7 @@
 			</tags>
 		</apparel>
 		<tradeTags>
+			<li>MorrowRim_Dunmer_AshlanderArmour</li>
 			<li>MorrowRim_Dunmer_FactionlessArmour_Chitin</li>
 		</tradeTags>
 	</ThingDef>
@@ -149,21 +151,22 @@
 			</tags>
 		</apparel>
 		<tradeTags>
+			<li>MorrowRim_Dunmer_AshlanderArmour</li>
 			<li>MorrowRim_Dunmer_FactionlessArmour_Chitin</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Dunmer_ArmourBracers_ChitinRegular]========== -->
-	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Chitin" Name="MorrowRim_Dunmer_ArmourBracers_ChitinRegular">
-		<defName>MorrowRim_Dunmer_ArmourBracers_ChitinRegular</defName>
-		<label>chitin bracers</label>
-		<description>A pair of standard bracers, made of flexible insect chitin. Offers reasonable protection, but gets in the way while working.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
+	<!-- ==========[MorrowRim_Dunmer_ArmourGauntlets_ChitinRegular]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Chitin" Name="MorrowRim_Dunmer_ArmourGauntlets_ChitinRegular">
+		<defName>MorrowRim_Dunmer_ArmourGauntlets_ChitinRegular</defName>
+		<label>chitin gauntlets</label>
+		<description>A pair of standard gauntlets, made of flexible insect chitin. Offers reasonable protection, but gets in the way while working.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Chitin/Chitin_Regular/Chitin_Regular_Bracers</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Chitin/Chitin_Regular/Chitin_Regular_Gauntlets</texPath>
 		</graphicData>
 		<costList>
 			<InsectChitin>50</InsectChitin>
@@ -194,6 +197,7 @@
 			</tags>
 		</apparel>
 		<tradeTags>
+			<li>MorrowRim_Dunmer_AshlanderArmour</li>
 			<li>MorrowRim_Dunmer_FactionlessArmour_Chitin</li>
 		</tradeTags>
 	</ThingDef>

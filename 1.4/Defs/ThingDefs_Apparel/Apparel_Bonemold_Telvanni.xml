@@ -65,7 +65,7 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
 		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldGahTel</defName>
 		<label>Gah-Tel bonemold helmet</label>
-		<description>A traditional bonemold helmet, made in the Gah-Tel style. While it offers reduced physical protection compared to the regular bonemold helmet, the design allows heat to easily dissipate, and the inbuilt gas mask offers increased protection against toxic environments.\n\nTypically favoured by members of Great House Telvanni, and those that frequent swampy regions.</description>
+		<description>A traditional bonemold helmet, made in the Gah-Tel style. While it offers reduced physical protection compared to the regular bonemold helmet, the design allows heat to easily dissipate, and the inbuilt filtration system offers increased protection against toxic environments.\n\nTypically favoured by members of Great House Telvanni, and those that frequent swampy regions.</description>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>MorrowRim_Dunmer_TelvanniArmour</li>

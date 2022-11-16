@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ====================[Regular Set]====================-->
+	<!-- 
+		Compared to regular bonemold
+		- armour ratings reduced by ~60 %
+		- weight reduced by ~50 %
+		- hitpoints reduced by ~60%
+		- work to make reduced by ~40 %
+		- Each piece provides 'exhilaration' stat buff
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_LeatherRegular]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourCuirass_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheKwama">
+		<defName>MorrowRim_Dunmer_ArmourCuirass_LeatherBoiled</defName>
+		<label>boiled netch leather cuirass</label>
+		<description>A cuirass made of boiled netch leather, increasing its durability and protection. A fine layer of venom remains coating the armour, even after boiling the leather. While the constant stinging sensation does help to mask severe pain, it also makes wearing the armour somewhat uncomfortable. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Armour_Item</texPath>
+		</graphicData>
+		<costList>
+			<MorrowRim_NetchLeather>170</MorrowRim_NetchLeather>
+		</costList>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Mass>6</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.26</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+			<ToxicResistance>0.1</ToxicResistance>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Armour</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_LeatherArmour_Boiled</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_AshlanderArmour</li>
+			<li>MorrowRim_Dunmer_FactionlessArmour_Leather</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_LeatherBoiled]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourHelmet_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheKwama">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_LeatherBoiled</defName>
+		<label>boiled netch leather helmet</label>
+		<description>A helmet made of boiled netch leather, increasing its durability and protection. A fine layer of venom remains coating the helmet, even after boiling the leather. While the constant stinging sensation does help to mask severe pain, it also makes wearing the helmet somewhat uncomfortable. Netch leather armour also provides some protection against toxic based attacks, and the inbuilt filtration system in this helmet helps to filter out airborne toxins.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Helmet_Item</texPath>
+		</graphicData>
+		<costList>
+			<MorrowRim_NetchLeather>50</MorrowRim_NetchLeather>
+		</costList>
+		<statBases>
+			<WorkToMake>4700</WorkToMake>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>1.1</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.14</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+			<ToxicResistance>0.05</ToxicResistance>
+			<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_LeatherArmour_Boiled</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_AshlanderArmour</li>
+			<li>MorrowRim_Dunmer_FactionlessArmour_Leather</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourBoots_LeatherBoiled]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourBoots_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheKwama">
+		<defName>MorrowRim_Dunmer_ArmourBoots_LeatherBoiled</defName>
+		<label>boiled netch leather boots</label>
+		<description>A pair of boots made of boiled netch leather, increasing their durability and protection. A fine layer of venom remains coating the boots, even after boiling the leather. While the constant stinging sensation does help to mask severe pain, it also makes wearing the boots somewhat uncomfortable. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Boots</texPath>
+		</graphicData>
+		<costList>
+			<MorrowRim_NetchLeather>50</MorrowRim_NetchLeather>
+		</costList>
+		<statBases>
+			<WorkToMake>4700</WorkToMake>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>1.1</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.14</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+			<ToxicResistance>0.05</ToxicResistance>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_LeatherArmour_Boiled</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_AshlanderArmour</li>
+			<li>MorrowRim_Dunmer_FactionlessArmour_Leather</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourGauntlets_LeatherBoiled]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourGauntlets_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheKwama">
+		<defName>MorrowRim_Dunmer_ArmourGauntlets_LeatherBoiled</defName>
+		<label>boiled netch leather gauntlets</label>
+		<description>A pair of gauntlets made of boiled netch leather, increasing their durability and protection. A fine layer of venom remains coating the gauntlets, even after boiling the leather. While the constant stinging sensation does help to mask severe pain, it also makes wearing the gauntlets somewhat uncomfortable. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Gauntlets</texPath>
+		</graphicData>
+		<costList>
+			<MorrowRim_NetchLeather>50</MorrowRim_NetchLeather>
+		</costList>
+		<statBases>
+			<WorkToMake>4700</WorkToMake>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>1.1</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.14</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+			<ToxicResistance>0.05</ToxicResistance>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_LeatherArmour_Boiled</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_AshlanderArmour</li>
+			<li>MorrowRim_Dunmer_FactionlessArmour_Leather</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>
