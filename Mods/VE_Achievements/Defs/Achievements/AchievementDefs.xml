@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]========== -->
+	<AchievementsExpanded.AchievementDef Name="MorrowRim_AchievementDunmerArmoury_Base" Abstract="True">
+		<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+		<tab>MorrowRim_AchievementsTab</tab>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Researching]========== -->
+	<!-- ==========[Crafting]========== -->
+	<!-- ==========[Rare Armour]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="MorrowRim_AchievementDunmerArmoury_Base">
+		<defName>MorrowRim_AchievementDunmerArmoury_AgedCephalopodHelm</defName>
+		<label>Uvirith's Legacy</label>
+		<description>Obtain an aged cephalopod helmet</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>MorrowRim_Dunmer_ArmourHelmet_ChitinCephalopodAged</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/MorrowRim_AchievementDunmerArmoury_AgedCephalopodHelm</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="MorrowRim_AchievementDunmerArmoury_Base">
+		<defName>MorrowRim_AchievementDunmerArmoury_HerHandHelmet</defName>
+		<label>Her Hand's Helmet</label>
+		<description>Obtain a helmet that once belonged to a Hand of Almalexia</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>MorrowRim_Dunmer_ArmourHelmet_OrdinatorHerHands</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/MorrowRim_AchievementDunmerArmoury_HerHandHelmet</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="MorrowRim_AchievementDunmerArmoury_Base">
+		<defName>MorrowRim_AchievementDunmerArmoury_HerHandCuirass</defName>
+		<label>Her Hand's Cuirass</label>
+		<description>Obtain a cuirass that once belonged to a Hand of Almalexia</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>MorrowRim_Dunmer_ArmourCuirass_OrdinatorHerHands</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/MorrowRim_AchievementDunmerArmoury_HerHandCuirass</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="MorrowRim_AchievementDunmerArmoury_Base">
+		<defName>MorrowRim_AchievementDunmerArmoury_HerHandGauntlets</defName>
+		<label>Her Hand's Gauntlets</label>
+		<description>Obtain a pair of gauntlets that once belonged to a Hand of Almalexia</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>MorrowRim_Dunmer_ArmourGauntlets_OrdinatorHerHands</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/MorrowRim_AchievementDunmerArmoury_HerHandGauntlets</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="MorrowRim_AchievementDunmerArmoury_Base">
+		<defName>MorrowRim_AchievementDunmerArmoury_HerHandBoots</defName>
+		<label>Her Hand's Boots</label>
+		<description>Obtain a pair of boots that once belonged to a Hand of Almalexia</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>MorrowRim_Dunmer_ArmourBoots_OrdinatorHerHands</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/MorrowRim_AchievementDunmerArmoury_HerHandBoots</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Rare Weapons]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="MorrowRim_AchievementDunmerArmoury_Base">
+		<defName>MorrowRim_AchievementDunmerArmoury_Hopesfire</defName>
+		<label>Hopesfire</label>
+		<description>Obtain the sword once wielded by Almalexia</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>MorrowRim_Dunmer_SpecialWeapon_Hopesfire</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/MorrowRim_AchievementDunmerArmoury_Hopesfire</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="MorrowRim_AchievementDunmerArmoury_Base">
+		<defName>MorrowRim_AchievementDunmerArmoury_Trueflame</defName>
+		<label>Trueflame</label>
+		<description>Obtain the sword once wielded by Indoril Nerevar</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>MorrowRim_Dunmer_SpecialWeapon_Trueflame</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/MorrowRim_AchievementDunmerArmoury_Trueflame</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="MorrowRim_AchievementDunmerArmoury_Base">
+		<defName>MorrowRim_AchievementDunmerArmoury_Muatra</defName>
+		<label>Muatra</label>
+		<description>Obtain the spear once wielded by Vivec</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>MorrowRim_Dunmer_SpecialWeapon_Muatra</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/MorrowRim_AchievementDunmerArmoury_Muatra</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>
