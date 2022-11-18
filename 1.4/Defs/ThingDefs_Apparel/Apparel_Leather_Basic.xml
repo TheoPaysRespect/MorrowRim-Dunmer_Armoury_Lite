@@ -40,8 +40,8 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.3</MoveSpeed>
 			<ToxicResistance>0.1</ToxicResistance>
-			<PainShockThreshold>0.05</PainShockThreshold>
-			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+			<PainShockThreshold>0.02</PainShockThreshold>
+			<MentalBreakThreshold>0.02</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -97,8 +97,8 @@
 			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
 			<ToxicResistance>0.05</ToxicResistance>
 			<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
-			<PainShockThreshold>0.05</PainShockThreshold>
-			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+			<PainShockThreshold>0.02</PainShockThreshold>
+			<MentalBreakThreshold>0.02</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -150,8 +150,8 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.05</MoveSpeed>
 			<ToxicResistance>0.05</ToxicResistance>
-			<PainShockThreshold>0.05</PainShockThreshold>
-			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+			<PainShockThreshold>0.02</PainShockThreshold>
+			<MentalBreakThreshold>0.02</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -200,8 +200,8 @@
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 			<ToxicResistance>0.05</ToxicResistance>
-			<PainShockThreshold>0.05</PainShockThreshold>
-			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+			<PainShockThreshold>0.02</PainShockThreshold>
+			<MentalBreakThreshold>0.02</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
