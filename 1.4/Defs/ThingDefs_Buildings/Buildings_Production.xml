@@ -67,6 +67,17 @@
 		<statBases>
 			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
 		</statBases>
+		<recipes>
+			<li MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustThePlants">MorrowRim_WoodFromCorkbulb</li>
+			<li MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustThePlants">MorrowRim_WoodFromCorkbulb_Bulk</li>
+			<li MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustThePlants">MorrowRim_MakeClothFromKresh</li>
+			<li MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustThePlants">MorrowRim_MakeClothFromKresh_Bulk</li>
+			<!-- It's MayRequireAnyOf because otherwise it null refs... -->
+			<li MayRequireAnyOf="SirMashedPotato.MorrowRim">MorrowRim_ResinFromPlantMatter</li>
+			<li MayRequireAnyOf="SirMashedPotato.MorrowRim">MorrowRim_ResinFromPlantMatter_Bulk</li>
+			<li MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheKwama">MorrowRim_CrushScrib</li>
+			<li MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">MorrowRim_CrushAshHopper</li>
+		</recipes>
 		<comps>
 		</comps>
 	</ThingDef>
