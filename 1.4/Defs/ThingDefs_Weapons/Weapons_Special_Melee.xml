@@ -3,7 +3,13 @@
 	<!-- ==========[MorrowRim_Dunmer_Weapon_Throwing]========== -->
 	<ThingDef ParentName="BaseWeapon" Name="MorrowRim_Dunmer_SpecialWeapon_Melee" Abstract="True">
 		<techLevel>Medieval</techLevel>
-		<comps/>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>2000</ticksPerHeal>
+			</li>
+		</comps>
 		<statBases>
 			<MarketValue>2000</MarketValue>
 			<Mass>2</Mass>
@@ -25,8 +31,9 @@
 			<li>Melee</li>
 		</weaponClasses>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
+		<relicChance>1</relicChance>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_SpecialWeapon_Hopesfire]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_SpecialWeapon_Melee">
