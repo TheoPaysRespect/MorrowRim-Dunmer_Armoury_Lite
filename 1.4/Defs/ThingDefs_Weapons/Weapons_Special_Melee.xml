@@ -32,6 +32,7 @@
 		</weaponClasses>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<relicChance>1</relicChance>
 	</ThingDef>
