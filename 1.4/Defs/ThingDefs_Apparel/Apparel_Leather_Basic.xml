@@ -13,7 +13,7 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourCuirass_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_LeatherBoiled</defName>
 		<label>boiled netch leather cuirass</label>
-		<description>A cuirass made of boiled netch leather, increasing its durability and protection. A fine layer of venom remains coating the armour, even after boiling the leather. While the constant stinging sensation does help to mask severe pain, it also makes wearing the armour somewhat uncomfortable. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
+		<description>A cuirass made of boiled netch leather, increasing its durability and protection. Some nematocysts appear to still be active, even after boiling the leather. While normally the constant stinging would make this cuirass somewhat uncomfortable to wear, because the leather has been boiled, touching it results in an oddly pleasant tingling feeling instead. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>5</Crafting>
@@ -41,7 +41,7 @@
 			<MoveSpeed>-0.3</MoveSpeed>
 			<ToxicResistance>0.1</ToxicResistance>
 			<PainShockThreshold>0.02</PainShockThreshold>
-			<MentalBreakThreshold>0.02</MentalBreakThreshold>
+			<MentalBreakThreshold>-0.02</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -69,7 +69,7 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourHelmet_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
 		<defName>MorrowRim_Dunmer_ArmourHelmet_LeatherBoiled</defName>
 		<label>boiled netch leather helmet</label>
-		<description>A helmet made of boiled netch leather, increasing its durability and protection. A fine layer of venom remains coating the helmet, even after boiling the leather. While the constant stinging sensation does help to mask severe pain, it also makes wearing the helmet somewhat uncomfortable. Netch leather armour also provides some protection against toxic based attacks, and the inbuilt filtration system in this helmet helps to filter out airborne toxins.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
+		<description>A helmet made of boiled netch leather, increasing its durability and protection. Some nematocysts appear to still be active, even after boiling the leather. While normally the constant stinging would make this helmet somewhat uncomfortable to wear, because the leather has been boiled, touching it results in an oddly pleasant tingling feeling instead. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>5</Crafting>
@@ -98,7 +98,7 @@
 			<ToxicResistance>0.05</ToxicResistance>
 			<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
 			<PainShockThreshold>0.02</PainShockThreshold>
-			<MentalBreakThreshold>0.02</MentalBreakThreshold>
+			<MentalBreakThreshold>-0.02</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -123,7 +123,7 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourBoots_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
 		<defName>MorrowRim_Dunmer_ArmourBoots_LeatherBoiled</defName>
 		<label>boiled netch leather boots</label>
-		<description>A pair of boots made of boiled netch leather, increasing their durability and protection. A fine layer of venom remains coating the boots, even after boiling the leather. While the constant stinging sensation does help to mask severe pain, it also makes wearing the boots somewhat uncomfortable. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
+		<description>A pair of boots made of boiled netch leather, increasing their durability and protection. Some nematocysts appear to still be active, even after boiling the leather. While normally the constant stinging would make these boots somewhat uncomfortable to wear, because the leather has been boiled, touching it results in an oddly pleasant tingling feeling instead. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>3</Crafting>
@@ -151,7 +151,7 @@
 			<MoveSpeed>-0.05</MoveSpeed>
 			<ToxicResistance>0.05</ToxicResistance>
 			<PainShockThreshold>0.02</PainShockThreshold>
-			<MentalBreakThreshold>0.02</MentalBreakThreshold>
+			<MentalBreakThreshold>-0.02</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -173,7 +173,7 @@
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourGauntlets_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
 		<defName>MorrowRim_Dunmer_ArmourGauntlets_LeatherBoiled</defName>
 		<label>boiled netch leather gauntlets</label>
-		<description>A pair of gauntlets made of boiled netch leather, increasing their durability and protection. A fine layer of venom remains coating the gauntlets, even after boiling the leather. While the constant stinging sensation does help to mask severe pain, it also makes wearing the gauntlets somewhat uncomfortable. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
+		<description>A pair of gauntlets made of boiled netch leather, increasing their durability and protection. Some nematocysts appear to still be active, even after boiling the leather. While normally the constant stinging would make these gauntlets somewhat uncomfortable to wear, because the leather has been boiled, touching it results in an oddly pleasant tingling feeling instead. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>3</Crafting>
@@ -201,7 +201,7 @@
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 			<ToxicResistance>0.05</ToxicResistance>
 			<PainShockThreshold>0.02</PainShockThreshold>
-			<MentalBreakThreshold>0.02</MentalBreakThreshold>
+			<MentalBreakThreshold>-0.02</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
