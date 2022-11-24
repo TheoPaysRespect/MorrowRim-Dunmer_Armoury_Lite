@@ -98,6 +98,30 @@
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourMakeable_BonemoldNoble]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourMakeable_BonemoldNoble" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites>
+				<li MayRequire="Ludeon.RimWorld.Royalty">NobleApparel</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<apparel>
+			<tags>
+				<li>Royal</li>
+				<li>RoyalTier1</li>
+				<li>RoyalTier2</li>
+				<li>MorrowRim_Dunmer_BonemoldArmourNoble</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_Armour_BonemoldNoble</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourMakeable_BonemoldRoyal]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourMakeable_BonemoldRoyal" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalApparel</li>
+			</researchPrerequisites>
+		</recipeMaker>
 		<apparel>
 			<tags>
 				<li>Royal</li>
@@ -108,20 +132,14 @@
 				<li>RoyalTier5</li>
 				<li>RoyalTier6</li>
 				<li>RoyalTier7</li>
-				<li>MorrowRim_Dunmer_BonemoldArmourNoble</li>
+				<li>MorrowRim_Dunmer_BonemoldArmourRoyal</li>
 			</tags>
 		</apparel>
 		<tradeTags>
-			<li>MorrowRim_Dunmer_Armour_BonemoldNoble</li>
+			<li>MorrowRim_Dunmer_Armour_BonemoldRoyal</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourMakeable_Base]========== -->
-	<!-- 
-		Base stats off ebony plate armour
-		- Roughly same defence
-		- Additionally confers additional stat bonuses
-		- Work increased by 20%
-	-->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" Name="MorrowRim_Dunmer_ArmourMakeable_Ordinator" Abstract="True">
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>

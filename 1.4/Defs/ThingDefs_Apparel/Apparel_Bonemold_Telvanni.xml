@@ -3,7 +3,7 @@
 	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_BonemoldGahTel]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldGahTel</defName>
-		<label>Gah-Tel bonemold cuirass</label>
+		<label>Gah-Tel cuirass</label>
 		<description>A traditional bonemold cuirass, made in the Gah-Tel style. Styled after the emperor parasol, surprisingly bulky for armour traditionally worn by the Telvanni, the pauldrons help dissipate neural heat.\n\nTypically favoured by members of Great House Telvanni, and those with an interest in psycasts.</description>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -64,7 +64,7 @@
 	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldGahTel]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
 		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldGahTel</defName>
-		<label>Gah-Tel bonemold helmet</label>
+		<label>Gah-Tel helmet</label>
 		<description>A traditional bonemold helmet, made in the Gah-Tel style. While it offers reduced physical protection compared to the regular bonemold helmet, the design allows heat to easily dissipate, and the inbuilt filtration system offers increased protection against toxic environments.\n\nTypically favoured by members of Great House Telvanni, and those that frequent swampy regions.</description>
 		<recipeMaker>
 			<researchPrerequisites>

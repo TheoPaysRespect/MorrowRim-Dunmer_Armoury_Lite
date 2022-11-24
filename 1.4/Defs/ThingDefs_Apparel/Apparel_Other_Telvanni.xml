@@ -13,7 +13,7 @@
 		<recipeMaker>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedTelvanni</unfinishedThingDef>
 			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_TelvanniArmourAdvanced</li>
+				<li>MorrowRim_Dunmer_TelvanniArmour</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -57,14 +57,12 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Royal</li>
-				<li>RoyalTier2</li>
 				<li>MorrowRim_Dunmer_TelvanniArmour</li>
 				<li>MorrowRim_Dunmer_OtherArmour_KwamaEgg</li>
 			</tags>
 		</apparel>
 		<tradeTags>
-			<li>MorrowRim_Dunmer_TelvanniArmour_Advanced</li>
+			<li>MorrowRim_Dunmer_TelvanniArmour</li>
 		</tradeTags>
 	</ThingDef>
 </Defs>

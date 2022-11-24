@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[MorrowRim_Dunmer_Belt_Throwing]========== -->
-	<ThingDef Name="MorrowRim_Dunmer_Belt_Throwing" ParentName="ApparelNoQualityBase" Abstract="True">
+	<!-- ==========[MorrowRim_Dunmer_Belt]========== -->
+	<ThingDef Name="MorrowRim_Dunmer_Belt" ParentName="ApparelNoQualityBase" Abstract="True">
 		<techLevel>Medieval</techLevel>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<WorkToMake>500</WorkToMake>
 			<Mass>3</Mass>
 			<Flammability>0.4</Flammability>
 			<EquipDelay>2</EquipDelay>
+			<WorkToMake>500</WorkToMake>
 		</statBases>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -22,9 +22,6 @@
 				<li>MorrowRim_Dunmer_DunmerForgeFuelled</li>
 				<li>MorrowRim_Dunmer_DunmerForgeElectric</li>
 			</recipeUsers>
-			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_ThrowingWeapons</li>
-			</researchPrerequisites>
 		</recipeMaker>
 		<thingCategories>
 			<li>ApparelUtility</li>
@@ -43,5 +40,13 @@
 				<li>Belt</li>
 			</layers>
 		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_Belt_Throwing]========== -->
+	<ThingDef Name="MorrowRim_Dunmer_Belt_Throwing" ParentName="MorrowRim_Dunmer_Belt" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_ThrowingWeapons</li>
+			</researchPrerequisites>
+		</recipeMaker>
 	</ThingDef>
 </Defs>

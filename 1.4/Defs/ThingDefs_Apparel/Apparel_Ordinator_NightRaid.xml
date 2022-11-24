@@ -7,7 +7,7 @@
 		<description>A variation of the regular Ordinator cuirass, notably missing the ornate golden coating. The darkened colouration makes this cuirass perfect for night-time missions, and delving into poorly lit areas.</description>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_NightRaidOrdinatorArmour</li>
+				<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>12</Crafting>
@@ -68,7 +68,7 @@
 		<description>A variation of the regular Ordinator helmet, notably missing the ornate golden coating. The darkened colouration makes this helmet perfect for night-time missions, and delving into poorly lit areas.</description>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_NightRaidOrdinatorArmour</li>
+				<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>12</Crafting>
@@ -125,7 +125,7 @@
 		<description>A variation of the regular Ordinator boots, notably missing the ornate golden coating. The darkened colouration makes these boots perfect for night-time missions, and delving into poorly lit areas.</description>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_NightRaidOrdinatorArmour</li>
+				<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>10</Crafting>
@@ -178,7 +178,7 @@
 		<description>A variation of the regular Ordinator gauntlets, notably missing the ornate golden coating. The darkened colouration makes these guantlets perfect for night-time missions, and delving into poorly lit areas.</description>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_NightRaidOrdinatorArmour</li>
+				<li>MorrowRim_Dunmer_DoctrineOrdinatorArmour</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>10</Crafting>

@@ -3,7 +3,7 @@
 	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_BonemoldAldKhan]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldAldKhan</defName>
-		<label>Ald-Khan bonemold cuirass</label>
+		<label>Ald-Khan cuirass</label>
 		<description>A traditional bonemold cuirass, made in the Ald-Khan style. Something about it radiates a sense of authority, helping the wearer sway others to the one true faith.\n\nTypically favoured by members of Great House Indoril, and those faithful to the Temple.</description>
 		<recipeMaker>
 			<researchPrerequisites>

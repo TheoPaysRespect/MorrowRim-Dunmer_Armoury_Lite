@@ -12,7 +12,8 @@
 		<recipeMaker>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedTelvanni</unfinishedThingDef>
 			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_TelvanniArmourAdvanced</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">NobleApparel</li>
+				<li>MorrowRim_Dunmer_TelvanniArmour</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -64,7 +65,7 @@
 			</tags>
 		</apparel>
 		<tradeTags>
-			<li>MorrowRim_Dunmer_TelvanniArmour_Advanced</li>
+			<li>MorrowRim_Dunmer_TelvanniArmour</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- 
