@@ -23,7 +23,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Armour_Item</texPath>
 		</graphicData>
 		<costList>
-			<MorrowRim_NetchLeather>170</MorrowRim_NetchLeather>
+			<MorrowRim_NetchLeather>100</MorrowRim_NetchLeather>
 		</costList>
 		<statBases>
 			<WorkToMake>26000</WorkToMake>
@@ -79,7 +79,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Helmet_Item</texPath>
 		</graphicData>
 		<costList>
-			<MorrowRim_NetchLeather>50</MorrowRim_NetchLeather>
+			<MorrowRim_NetchLeather>30</MorrowRim_NetchLeather>
 		</costList>
 		<statBases>
 			<WorkToMake>4700</WorkToMake>
@@ -133,7 +133,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Boots</texPath>
 		</graphicData>
 		<costList>
-			<MorrowRim_NetchLeather>50</MorrowRim_NetchLeather>
+			<MorrowRim_NetchLeather>30</MorrowRim_NetchLeather>
 		</costList>
 		<statBases>
 			<WorkToMake>4700</WorkToMake>
@@ -183,7 +183,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Gauntlets</texPath>
 		</graphicData>
 		<costList>
-			<MorrowRim_NetchLeather>50</MorrowRim_NetchLeather>
+			<MorrowRim_NetchLeather>30</MorrowRim_NetchLeather>
 		</costList>
 		<statBases>
 			<WorkToMake>4700</WorkToMake>
