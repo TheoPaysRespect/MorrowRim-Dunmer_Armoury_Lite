@@ -29,6 +29,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_RangedLongBow</defName>
 		<label>bonemold long bow</label>
 		<description>A highly flexible long bow, made from bonemold. An exceptional weapon, though it requires some skill to wield to its full power. The bonemold long bow can launch arrows a great distance, with frightening precision.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Bonemold/Bonemold_LongBow</texPath>
 			<drawSize>1.25</drawSize>

@@ -28,6 +28,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_RangedBow</defName>
 		<label>Doctrine bow</label>
 		<description>An ornate ebony bow, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it launches arrows through flesh</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Doctrine/Doctrine_Bow</texPath>
 		</graphicData>

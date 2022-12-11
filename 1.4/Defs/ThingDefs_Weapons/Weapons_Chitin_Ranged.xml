@@ -32,6 +32,11 @@
 		<defName>MorrowRim_Dunmer_ChitinWeapon_RangedLongBow</defName>
 		<label>chitin short bow</label>
 		<description>A primitive short bow, made from chitin, a weapon favoured by Ashlanders. While it fires faster than a regular short bow, the arrows fired don't have quite the same impact.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Chitin/Chitin_ShortBow</texPath>
 			<drawSize>1.25</drawSize>

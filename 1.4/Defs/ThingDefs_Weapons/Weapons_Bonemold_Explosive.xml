@@ -48,6 +48,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_FireBomb</defName>
 		<label>bonemold fire bomb</label>
 		<description>A bonemold vessel, filled with a chemfuel mixture. Explodes after a short delay, unleashing a blast of fire.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Explosive/MorrowRim_FireBomb</texPath>
 		</graphicData>
@@ -112,6 +117,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_NetchBomb</defName>
 		<label>bonemold retching bomb</label>
 		<description>A two-chambered bonemold vessel, one filled with chemfuel, the other with netch jelly. Shatters on impact, releasing a a cloud of retching netch gas.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Explosive/MorrowRim_NetchBomb</texPath>
 		</graphicData>
@@ -169,6 +179,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_ShrapnelBomb</defName>
 		<label>bonemold shrapnel bomb</label>
 		<description>A bonemold vessel embedded with steel spikes, and filled with a chemfuel mixture. Explodes after a short delay, unleashing a blast of shrapnel.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Explosive/MorrowRim_ShrapnelBomb</texPath>
 		</graphicData>
@@ -230,6 +245,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_SmokeBomb</defName>
 		<label>bonemold smoke bomb</label>
 		<description>A fragile bonemold vessel, filled with a chemfuel mixture. Shatters on impact, releasing a thick smoke cloud.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Explosive/MorrowRim_SmokeBomb</texPath>
 		</graphicData>
