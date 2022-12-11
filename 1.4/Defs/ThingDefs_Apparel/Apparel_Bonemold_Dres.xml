@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ====================[Gah-Kogo Set]====================-->
 	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_BonemoldGahKogo]========== -->
-	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name="MorrowRim_Dunmer_ArmourCuirass_BonemoldGahKogo">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldGahKogo</defName>
-		<label>Gah-Kogo bonemold cuirass</label>
+		<label>Gah-Kogo cuirass</label>
 		<description>A traditional bonemold cuirass, made in the Gah-Kogo style. Its flexible build helps the wearer retain as much mobility as possible, though this comes at the cost of defence.\n\nTypically favoured by members of Great House Dres, and those that often find themselves chasing after slaves.</description>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -62,9 +63,9 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldGahKogo]========== -->
-	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold" Name = "MorrowRim_Dunmer_ArmourHelmet_BonemoldGahKogo">
 		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldGahKogo</defName>
-		<label>Gah-Kogo bonemold helmet</label>
+		<label>Gah-Kogo helmet</label>
 		<description>A traditional bonemold helmet, made in the Gah-Kogo style. While it offers no improvement over the regular bonemold helmet in terms of protection, its association with Great House Dres does tend to weaken the will of slaves.\n\nTypically favoured by members of Great House Dres, and those that frequent the outskirts of Black Marsh.</description>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -113,4 +114,183 @@
 			<li>MorrowRim_Dunmer_DresArmour_Basic</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ====================[Bleached Gah-Kogo Set]====================-->
+	<!-- 
+		- Pretty much exactly the same, just matching the standard Dres colours
+		- Requires Dres armour research as well
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_BonemoldGahKogoBleached]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourCuirass_BonemoldGahKogo">
+		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldGahKogoBleached</defName>
+		<label>bleached Gah-Kogo cuirass</label>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_DresArmour</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Dres_GahKogo_Bleached/Bonemold_Dres_GahKogo_Bleached_Armour_Item</texPath>
+		</graphicData>
+		<costList>
+			<Dye>30</Dye>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Dres_GahKogo_Bleached/Bonemold_Dres_GahKogo_Bleached_Armour</wornGraphicPath>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldArmour_GahKogoBleached</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldGahKogoBleached]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourHelmet_BonemoldGahKogo">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldGahKogoBleached</defName>
+		<label>bleached Gah-Kogo helmet</label>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_DresArmour</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Dres_GahKogo_Bleached/Bonemold_Dres_GahKogo_Bleached_Helmet_Item</texPath>
+		</graphicData>
+		<costList>
+			<Dye>20</Dye>
+			<Cloth>10</Cloth>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Dres_GahKogo_Bleached/Bonemold_Dres_GahKogo_Bleached_Helmet</wornGraphicPath>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldArmour_GahKogoBleached</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ====================[Slavehunter Set]====================-->
+	<!--
+		- Stats based on Gah-Kogo set
+		- Higher supression power
+		TODO
+		- Additional arrest chance?
+		- Skill requirement increased by 1 level
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_BonemoldDresSlavehunter]========== -->
+	<!--
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
+		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldDresSlavehunter</defName>
+		<label>Dres slavehunter cuirass</label>
+		<description>A bonemold cuirass, bleached bone white, and adorned with blue cloth, made in the typical Dres style. Relatively lightweight and flexible, while still providing a good degree of protection, perfect for chasing after soon-to-be slaves.\n\nTypically worn by the slavehunters of Great House Dres, who are well known for venturing into the most dangerous of swamps, in search of good slaves.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_DresArmour</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Dres_Slavehunter/Bonemold_Dres_Slavehunter_Armour_Item</texPath>
+		</graphicData>
+		<costList>
+			<Dye>30</Dye>
+			<Cloth>30</Cloth>
+			<ESCP_BonemoldItem>170</ESCP_BonemoldItem>
+		</costList>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<MaxHitPoints>230</MaxHitPoints>
+			<Mass>12</Mass>
+			<Flammability>0.2</Flammability>
+			<!- 10% lower than standard ->
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<!- 5% lower than standard ->
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<!- 2 higher than standard ->
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<!- 0.3 lower than standard ->
+			<MoveSpeed>-0.3</MoveSpeed>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.15</SuppressionPower>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Dres_Slavehunter/Bonemold_Dres_Slavehunter_Armour</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldArmour_DresBasic</li>
+				<li>MorrowRim_Dunmer_BonemoldArmour_DresSlavehunter</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_DresArmour_Basic</li>
+		</tradeTags>
+	</ThingDef>
+	-->
+	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldDresSlavehunter]========== -->
+	<!--
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
+		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldDresSlavehunter</defName>
+		<label>Dres slavehunter helmet</label>
+		<description>A bonemold helmet, bleached bone white, and adorned with blue cloth, made in the typical Dres style. The ghastly visage of this mask weakens the will of those that witness it.\n\nTypically worn by the slavehunters of Great House Dres, who are well known for venturing into the most dangerous of swamps, in search of good slaves.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_DresArmour</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Dres_Slavehunter/Bonemold_Dres_Slavehunter_Helmet_Item</texPath>
+		</graphicData>
+		<costList>
+			<Dye>20</Dye>
+			<Cloth>20</Cloth>
+			<ESCP_BonemoldItem>50</ESCP_BonemoldItem>
+		</costList>
+		<statBases>
+			<WorkToMake>6800</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.34</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.15</SuppressionPower>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Bonemold/Bonemold_Dres_Slavehunter/Bonemold_Dres_Slavehunter_Helmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MorrowRim_Dunmer_BonemoldArmour_DresBasic</li>
+				<li>MorrowRim_Dunmer_BonemoldArmour_DresSlavehunter</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_DresArmour_Basic</li>
+		</tradeTags>
+	</ThingDef>
+	-->
 </Defs>

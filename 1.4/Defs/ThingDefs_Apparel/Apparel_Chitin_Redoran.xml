@@ -11,7 +11,7 @@
 		<description>A large chitin helmet, made from the shell of an arthropod encountered only in Redoran controlled land. Designed to provide a good range of long-distance vision, whilst still offering reasonable protection. This comes at the cost of short-distance vision, forcing wearers to walk slightly more carefully than normal, lest they trip over trama root.\n\nTypically worn by Redoran guards that are proficient with bonemold long bows.</description>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_RedoranArmourAdvanced</li>
+				<li>MorrowRim_Dunmer_RedoranArmour</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>10</Crafting>
@@ -22,7 +22,7 @@
 		</graphicData>
 		<costList>
 			<Cloth>45</Cloth>
-			<InsectChitin>90</InsectChitin>
+			<InsectChitin>60</InsectChitin>
 		</costList>
 		<statBases>
 			<WorkToMake>8600</WorkToMake>
@@ -58,7 +58,7 @@
 			</tags>
 		</apparel>
 		<tradeTags>
-			<li>MorrowRim_Dunmer_RedoranArmour_Advanced</li>
+			<li>MorrowRim_Dunmer_RedoranArmour</li>
 		</tradeTags>
 	</ThingDef>
 </Defs>

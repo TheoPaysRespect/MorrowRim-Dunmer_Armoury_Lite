@@ -3,7 +3,7 @@
 	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_BonemoldArmunAn]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldArmunAn</defName>
-		<label>Armun-An bonemold cuirass</label>
+		<label>Armun-An cuirass</label>
 		<description>A traditional bonemold cuirass, made in the Armun-An style. While rather similar in design to the standard bonemold cuirass, the modified pauldron design ensures everyone knows who is in charge.\n\nTypically favoured by members of Great House Hlaalu, it is also commonly worn by both mercenaries and reavers.</description>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -63,7 +63,7 @@
 	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldArmunAn]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
 		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldArmunAn</defName>
-		<label>Armun-An bonemold helmet</label>
+		<label>Armun-An helmet</label>
 		<description>A traditional bonemold helmet, made in the Armun-An style. While it offers no improvement over the regular bonemold helmet in terms of protection, its association with Great House Hlaalu does tend to loosen both coin pouches and tongues.\n\nTypically favoured by members of Great House Hlaalu, it is also commonly worn by both mercenaries and reavers.</description>
 		<recipeMaker>
 			<researchPrerequisites>

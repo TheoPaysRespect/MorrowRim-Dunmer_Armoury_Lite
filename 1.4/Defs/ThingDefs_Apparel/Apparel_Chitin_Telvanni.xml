@@ -12,7 +12,8 @@
 		<recipeMaker>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedTelvanni</unfinishedThingDef>
 			<researchPrerequisites>
-				<li>MorrowRim_Dunmer_TelvanniArmourAdvanced</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">NobleApparel</li>
+				<li>MorrowRim_Dunmer_TelvanniArmour</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -26,7 +27,7 @@
 			<Cloth>30</Cloth>
 			<MorrowRim_AirSalts MayRequire="SirMashedPotato.MorrowRim.TelvanniTechnology">10</MorrowRim_AirSalts>
 			<MorrowRim_WaterSalts MayRequire="SirMashedPotato.MorrowRim.TelvanniTechnology">10</MorrowRim_WaterSalts>
-			<InsectChitin>65</InsectChitin>
+			<InsectChitin>45</InsectChitin>
 		</costList>
 		<statBases>
 			<WorkToMake>8600</WorkToMake>
@@ -47,6 +48,7 @@
 			<PsychicEntropyRecoveryRate MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">0.033</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
 		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -64,7 +66,7 @@
 			</tags>
 		</apparel>
 		<tradeTags>
-			<li>MorrowRim_Dunmer_TelvanniArmour_Advanced</li>
+			<li>MorrowRim_Dunmer_TelvanniArmour</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- 
@@ -99,6 +101,7 @@
 			<PsychicEntropyMax MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">20</PsychicEntropyMax>
 		</equippedStatOffsets>
 		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>

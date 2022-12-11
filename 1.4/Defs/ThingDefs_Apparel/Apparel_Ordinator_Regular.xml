@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ====================[Regular Set]====================-->
+	<!-- 
+		Base stats off ebony plate armour
+		- Roughly same defence
+		- Additionally confers additional stat bonuses
+		- Work increased by 20%
+	-->
 	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_OrdinatorRegular]========== -->
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Ordinator" Name="MorrowRim_Dunmer_ArmourCuirass_OrdinatorRegular">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_OrdinatorRegular</defName>

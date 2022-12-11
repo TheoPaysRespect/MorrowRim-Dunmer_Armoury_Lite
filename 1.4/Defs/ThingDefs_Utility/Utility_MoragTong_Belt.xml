@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_Dunmer_BeltBonemold_Explosive]========== -->
+	<ThingDef Name="MorrowRim_Dunmer_BeltMoragTong" ParentName="MorrowRim_Dunmer_Belt" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MorrowRim_Dunmer_MoragTongBelts</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedLeather</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>MorrowRim_Dunmer_MoragTongBelt</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Dunmer_BeltMoragTong_SmokeBomb]========== -->
+	<ThingDef ParentName="MorrowRim_Dunmer_BeltMoragTong">
+		<defName>MorrowRim_Dunmer_BeltMoragTong_SmokeBomb</defName>
+		<label>Morag Tong smoke-bomb belt</label>
+		<description>A belt with several fragile smoke bombs attached to it. One of the smoke-bombs may shatter when the wearer is damaged, releasing a large cloud of obscuring smoke.</description>
+		<thingClass>MorrowRim_DunmerArmoury.SmokepopBelt_MoragTong</thingClass>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<maxCharges>5</maxCharges>
+				<destroyOnEmpty>true</destroyOnEmpty>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>smoke-bomb</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Smokepop</verbClass>
+				<label>detonate smoke bomb</label>
+				<violent>false</violent>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>false</targetable>
+				<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+				<onlyManualCast>True</onlyManualCast>
+			</li>
+		</verbs>
+		<costList>
+			<Chemfuel>40</Chemfuel>
+			<MorrowRim_AirSalts MayRequire="SirMashedPotato.MorrowRim.TelvanniTechnology">10</MorrowRim_AirSalts>
+			<ESCP_BonemoldItem>60</ESCP_BonemoldItem>
+		</costList>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Other/Belts/Belt_MoragTong_Smoke</texPath>
+		</graphicData>
+		<statBases>
+			<SmokepopBeltRadius>2.9</SmokepopBeltRadius>
+		</statBases>
+		<apparel>
+			<tags>
+				<li>MorrowRim_MoragTongBelt_Smokepop</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+</Defs>
