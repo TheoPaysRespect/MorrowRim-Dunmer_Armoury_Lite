@@ -34,6 +34,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_ThrowingDart</defName>
 		<label>bonemold throwing darts</label>
 		<description>An aerodynamic bonemold dart, embedded with a steel spike. While effective at puncturing through armour from a distance, they can also make for decent melee weapons when needed.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Bonemold/Bonemold_ThrowingDart</texPath>
 		</graphicData>
@@ -83,6 +88,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_ThrowingKnife</defName>
 		<label>bonemold throwing knives</label>
 		<description>An aerodynamic bonemold handle, attached to a steel knife. While effective at slicing through armour from a distance, they can also make for decent melee weapons when needed.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Bonemold/Bonemold_ThrowingKnife</texPath>
 		</graphicData>

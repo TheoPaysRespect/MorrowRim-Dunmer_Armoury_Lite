@@ -43,6 +43,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_Axe</defName>
 		<label>Doctrine axe</label>
 		<description>An ornate ebony axe, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it cleaves through flesh.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Axe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -91,6 +96,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_BattleAxe</defName>
 		<label>Doctrine battle axe</label>
 		<description>An ornate ebony battle axe, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it cleaves through armour.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_BattleAxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -140,6 +150,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_Dagger</defName>
 		<label>Doctrine dagger</label>
 		<description>An ornate ebony dagger, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it slashes through flesh.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Dagger</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -196,6 +211,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_GreatSword</defName>
 		<label>Doctrine greatsword</label>
 		<description>An ornate ebony greatsword, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it slashes through armour.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Greatsword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -253,6 +273,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_Mace</defName>
 		<label>Doctrine mace</label>
 		<description>An ornate ebony mace, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it crushes bone.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Mace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -302,6 +327,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_Maul</defName>
 		<label>Doctrine maul</label>
 		<description>An ornate ebony maul, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it crushes armour.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Maul</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -352,6 +382,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_Spear</defName>
 		<label>Doctrine spear</label>
 		<description>An ornate spear, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it pierces armour.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Spear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -403,6 +438,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_Sword</defName>
 		<label>Doctrine sword</label>
 		<description>An ornate ebony sword, coated in a layer of gold. A weapon typically wielded by Ordinators, strikes fear into the heart, just as easily as it slashes through flesh.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Doctrine/Doctrine_Sword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

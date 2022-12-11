@@ -45,6 +45,11 @@
 		<defName>MorrowRim_Dunmer_ChitinWeapon_Club</defName>
 		<label>chitin club</label>
 		<description>A primitive chitin club, covered in large spikes. Strikes from the head have a chance of inflicting additional scratches.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Chitin/Chitin_Club</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -110,6 +115,11 @@
 		<defName>MorrowRim_Dunmer_ChitinWeapon_Dagger</defName>
 		<label>chitin dagger</label>
 		<description>A primitive chitin dagger, with a rough serrated edge. Slashes from the blade have a chance of inflicting additional scratches.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Chitin/Chitin_Dagger</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -173,6 +183,11 @@
 		<defName>MorrowRim_Dunmer_ChitinWeapon_Spear</defName>
 		<label>chitin spear</label>
 		<description>A primitive chitin spear, a weapon favoured by Ashlanders. Stabs from the point have a chance of inflicting additional scratches.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Chitin/Chitin_Spear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -227,6 +242,11 @@
 		<defName>MorrowRim_Dunmer_ChitinWeapon_Sword</defName>
 		<label>chitin shortsword</label>
 		<description>A primitive chitin sword, rather deadly by Ashlander standards. Slashes from the blade have a chance of inflicting additional scratches.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Chitin/Chitin_Shortsword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -296,6 +316,11 @@
 		<defName>MorrowRim_Dunmer_ChitinWeapon_WarAxe</defName>
 		<label>chitin war axe</label>
 		<description>A primitive chitin war axe, its head featuring multiple large spikes. Stabs from these spikes have a chance of inflicting additional scratches</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Chitin/Chitin_WarAxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

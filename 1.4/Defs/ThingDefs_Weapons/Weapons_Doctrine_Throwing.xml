@@ -35,6 +35,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_ThrowingDart</defName>
 		<label>doctrine throwing darts</label>
 		<description>Ornate ebony throwing darts, coated in a layer of gold, a weapon typically wielded by Ordinators. While effective at puncturing through armour from a distance, they can also make for decent melee weapons when needed.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Doctrine/Doctrine_ThrowingDart</texPath>
 		</graphicData>
@@ -84,6 +89,11 @@
 		<defName>MorrowRim_Dunmer_DoctrineWeapon_ThrowingKnife</defName>
 		<label>doctrine throwing knives</label>
 		<description>Ornate ebony throwing knives, coated in a layer of gold, a weapon typically wielded by Ordinators.  While effective at slicing through armour from a distance, they can also make for decent melee weapons when needed.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Doctrine/Doctrine_ThrowingKnife</texPath>
 		</graphicData>

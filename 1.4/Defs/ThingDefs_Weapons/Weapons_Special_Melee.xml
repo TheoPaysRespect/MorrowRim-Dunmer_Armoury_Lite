@@ -41,6 +41,11 @@
 		<defName>MorrowRim_Dunmer_SpecialWeapon_Hopesfire</defName>
 		<label>hopesfire</label>
 		<description>An ancient sword of Dwemer make, engulfed in an ever-raging inferno, originally the blade of Almalexia.\n\nStrikes from this blade sear through the targets flesh, and have a chance of releasing a burst of electrical energy.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<!--
 		<soundInteract>Interact_PlasmaSword</soundInteract>
 		<meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
@@ -106,6 +111,11 @@
 		<defName>MorrowRim_Dunmer_SpecialWeapon_Trueflame</defName>
 		<label>trueflame</label>
 		<description>An ancient sword of Dwemer make, engulfed in an ever-burning inferno, originally the blade of Indoril Nerevar.\n\nStrikes from this blade sear through the targets flesh, and have a chance of lighting them on fire.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<!--
 		<soundInteract>Interact_PlasmaSword</soundInteract>
 		<meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
@@ -171,6 +181,11 @@
 		<defName>MorrowRim_Dunmer_SpecialWeapon_Muatra</defName>
 		<label>muatra</label>
 		<description>An ancient spear of unknown make, originally wielded by Vivec. There are many stories concerning the origin of this weapon, though fact is difficult to discern from fiction, as Vivec was well known for bending the truth.\n\nStrikes from this spear seem to always find their way through armour.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<!--
 		<soundInteract>Interact_PlasmaSword</soundInteract>
 		<meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>

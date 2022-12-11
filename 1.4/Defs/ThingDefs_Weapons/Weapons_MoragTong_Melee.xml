@@ -19,6 +19,11 @@
 		<defName>MorrowRim_Dunmer_MoragTongWeapon_Blade</defName>
 		<label>Morag Tong blade</label>
 		<description>An exquisite glass-steel alloy blade, dyed blood-red. Typically a ceremonial weapon wielded by members of the Morag Tong. Blades such as these strike clean through armour, the perfect weapon for someone that wants to make a swift getaway afterwards.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_MoragTong/MoragTong_Blade</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

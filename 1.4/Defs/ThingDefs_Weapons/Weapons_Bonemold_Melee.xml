@@ -37,6 +37,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_BattleAxe</defName>
 		<label>bonemold battle axe</label>
 		<description>A heavy steel blade, attached to a long bonemold handle. The powerful cleaving impacts can slice an enemy's insides, even through armor.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_BattleAxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -86,6 +91,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_Club</defName>
 		<label>bonemold club</label>
 		<description>A crudely constructed bonemold club, with a steel spike protruding from the head.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Club</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -138,6 +148,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_Dagger</defName>
 		<label>bonemold dagger</label>
 		<description>A small steel blade, attached to a bonemold handle. Not the most dangerous weapon, but sometimes you have to work with what you have.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Dagger</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -188,6 +203,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_GreatSword</defName>
 		<label>bonemold greatsword</label>
 		<description>A large steel blade, attached to a sturdy bonemold handle. Excellent for slashing and stabbing, though a little unwieldy.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Greatsword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -245,6 +265,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_Katana</defName>
 		<label>bonemold katana</label>
 		<description>A large single-edged steel blade, attached to a sturdy bonemold handle. Excellent for slashing, though not so good for stabbing.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Katana</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -294,6 +319,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_Mace</defName>
 		<label>bonemold mace</label>
 		<description>A heavy steel weight, attached to a bonemold handle, engineered for efficient swinging and deadly impacts.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Mace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -343,6 +373,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_Spear</defName>
 		<label>bonemold spear</label>
 		<description>A steel blade, attached to a long bonemold handle. Excellent for stabbing from a distance.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Spear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -394,6 +429,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_Sword</defName>
 		<label>bonemold sword</label>
 		<description>A steel blade, attached to a bonemold handle. Good for stabbing and slashing.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Sword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -450,6 +490,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_WarAxe</defName>
 		<label>bonemold war axe</label>
 		<description>A heavy steel blade, attached to a bonemold handle. The simple, ancient design concentrates cutting power generated from strong overhand swings.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Waraxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -498,6 +543,11 @@
 		<defName>MorrowRim_Dunmer_BonemoldWeapon_Warhammer</defName>
 		<label>bonemold warhammer</label>
 		<description>A long polearm containing a heavy steel weight, attached to a bonemold handle. The powerful blunt impacts can pulverize an enemy's insides, even through armor.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>false</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Bonemold/Bonemold_Warhammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

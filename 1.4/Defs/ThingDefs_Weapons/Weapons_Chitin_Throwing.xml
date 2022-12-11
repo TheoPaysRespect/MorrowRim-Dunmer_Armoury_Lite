@@ -34,6 +34,11 @@
 		<defName>MorrowRim_Dunmer_ChitinWeapon_ThrowingStar</defName>
 		<label>chitin throwing stars</label>
 		<description>Primitive chitin throwing stars, aerodynamic and quick to throw, though not the most accurate. While effective at cutting through flesh from a distance, they can also make for decent melee weapons when needed.</description>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Chitin/Chitin_ThrowingStar</texPath>
 		</graphicData>
