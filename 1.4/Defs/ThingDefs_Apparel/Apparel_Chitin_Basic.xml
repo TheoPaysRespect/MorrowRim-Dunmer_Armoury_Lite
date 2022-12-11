@@ -22,7 +22,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Chitin/Chitin_Regular/Chitin_Regular_Armour_Item</texPath>
 		</graphicData>
 		<costList>
-			<InsectChitin>170</InsectChitin>
+			<InsectChitin>100</InsectChitin>
 		</costList>
 		<statBases>
 			<WorkToMake>26000</WorkToMake>
@@ -74,7 +74,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Chitin/Chitin_Regular/Chitin_Regular_Helmet_Item</texPath>
 		</graphicData>
 		<costList>
-			<InsectChitin>50</InsectChitin>
+			<InsectChitin>30</InsectChitin>
 		</costList>
 		<statBases>
 			<WorkToMake>4700</WorkToMake>
@@ -123,7 +123,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Chitin/Chitin_Regular/Chitin_Regular_Boots</texPath>
 		</graphicData>
 		<costList>
-			<InsectChitin>50</InsectChitin>
+			<InsectChitin>30</InsectChitin>
 		</costList>
 		<statBases>
 			<WorkToMake>4700</WorkToMake>
@@ -169,7 +169,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Chitin/Chitin_Regular/Chitin_Regular_Gauntlets</texPath>
 		</graphicData>
 		<costList>
-			<InsectChitin>50</InsectChitin>
+			<InsectChitin>30</InsectChitin>
 		</costList>
 		<statBases>
 			<WorkToMake>4700</WorkToMake>
@@ -221,7 +221,7 @@
 		</graphicData>
 		<costList Inherit="False">
 			<Cloth>20</Cloth>
-			<InsectChitin>30</InsectChitin>
+			<InsectChitin>20</InsectChitin>
 		</costList>
 		<statBases>
 			<ArmorRating_Sharp>0.16</ArmorRating_Sharp>

@@ -22,7 +22,7 @@
 		</graphicData>
 		<costList>
 			<Cloth>45</Cloth>
-			<InsectChitin>90</InsectChitin>
+			<InsectChitin>60</InsectChitin>
 		</costList>
 		<statBases>
 			<WorkToMake>8600</WorkToMake>
