@@ -235,6 +235,7 @@
 			<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Chitin/Chitin_AshMask/Chitin_AshMask_Helmet</wornGraphicPath>
 			<tags>
 				<li>MorrowRim_Dunmer_ChitinArmour_Standard</li>

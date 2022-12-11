@@ -203,6 +203,7 @@
 			<li>ESCP_DunmerStart_Medieval</li>
 		</tags>
 	</ResearchProjectDef>
+	<!--
 	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Expensive">
 		<defName>MorrowRim_Dunmer_MoragTongArmour</defName>
 		<label>Morag Tong armour</label>
@@ -219,6 +220,7 @@
 			<li>ESCP_DunmerStart_MoragTong</li>
 		</tags>
 	</ResearchProjectDef>
+	-->
 	<!-- ==========[Ordinator extension]========== -->
 	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Tribunal">
 		<defName>MorrowRim_Dunmer_DoctrineOrdinatorArmour</defName>
@@ -267,7 +269,7 @@
 		<defName>MorrowRim_Dunmer_DresArmour</defName>
 		<label>Dres armour</label>
 		<description>Allows for the creation of Great House Dres style armour, at the Dunmeri forge.\n\nFamed for their proficiency with slaves, Dres armour tends to be lighter than most, but still adequately protective.\n\nFurther research will unlock different armour sets.</description>
-		<baseCost>500</baseCost>
+		<baseCost>200</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>1</researchViewX>
 		<researchViewY>4</researchViewY>
@@ -277,7 +279,7 @@
 		<defName>MorrowRim_Dunmer_HlaaluArmour</defName>
 		<label>Hlaalu armour</label>
 		<description>Allows the creation of Great House Hlaalu style armour, at the Dunmeri forge.\n\nUsually ones to favour words over weapons, Hlaalu armour strikes a good balance between form and function.\n\nFurther research will unlock different armour sets.</description>
-		<baseCost>500</baseCost>
+		<baseCost>200</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>2</researchViewX>
 		<researchViewY>4</researchViewY>
@@ -287,7 +289,7 @@
 		<defName>MorrowRim_Dunmer_IndorilArmour</defName>
 		<label>Indoril armour</label>
 		<description>Allows the creation of Great House Indoril style armour, at the Dunmeri forge.\n\nAlways the most faithful supporters of the Temple, and growing increasingly indistinguishable from it over time, Indoril armour provides more than just physical protection.\n\nFurther research will unlock different armour sets.</description>
-		<baseCost>500</baseCost>
+		<baseCost>200</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>3</researchViewX>
 		<researchViewY>4</researchViewY>
@@ -297,7 +299,7 @@
 		<defName>MorrowRim_Dunmer_RedoranArmour</defName>
 		<label>Redoran armour</label>
 		<description>Allows the creation of Great House Redoran style armour, at the Dunmeri forge.\n\nThe most militaristic of the Great Houses, whether fighting in snow, or in swamps, House Redoran has a set of armour suited for any situation.\n\nFurther research will unlock different armour sets.</description>
-		<baseCost>500</baseCost>
+		<baseCost>200</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>4</researchViewX>
 		<researchViewY>4</researchViewY>
@@ -307,13 +309,14 @@
 		<defName>MorrowRim_Dunmer_TelvanniArmour</defName>
 		<label>Telvanni armour</label>
 		<description>Allows the creation of Great House Telvanni style armour, at the Dunmeri forge.\n\nNever particularly ones for war, House Telvanni instead creates armour designed to augment their abilities, often out of peculiar materials.\n\nFurther research will unlock different armour sets.</description>
-		<baseCost>500</baseCost>
+		<baseCost>200</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>5</researchViewX>
 		<researchViewY>4</researchViewY>
 		<tab>ESCP_DunmerTab</tab>
 	</ResearchProjectDef>
 	<!-- ==========[Houses Elite]========== -->
+	<!--
 	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Cheap">
 		<defName>MorrowRim_Dunmer_DresArmourElite</defName>
 		<label>elite Dres armour</label>
@@ -353,6 +356,7 @@
 			<li>MorrowRim_Dunmer_IndorilArmour</li>
 		</prerequisites>
 	</ResearchProjectDef>
+	-->
 	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Cheap">
 		<defName>MorrowRim_Dunmer_RedoranArmourElite</defName>
 		<label>elite Redoran armour</label>
@@ -366,6 +370,7 @@
 			<li>MorrowRim_Dunmer_RedoranArmour</li>
 		</prerequisites>
 	</ResearchProjectDef>
+	<!--
 	<ResearchProjectDef ParentName="MorrowRim_Dunmer_ArmouryTechprints_Cheap">
 		<defName>MorrowRim_Dunmer_TelvanniArmourElite</defName>
 		<label>elite Telvanni armour</label>
@@ -379,4 +384,5 @@
 			<li>MorrowRim_Dunmer_TelvanniArmour</li>
 		</prerequisites>
 	</ResearchProjectDef>
+	-->
 </Defs>

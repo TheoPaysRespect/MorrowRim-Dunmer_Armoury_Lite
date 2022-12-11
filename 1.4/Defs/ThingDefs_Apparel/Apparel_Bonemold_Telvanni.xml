@@ -101,6 +101,7 @@
 			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>

@@ -173,6 +173,7 @@
 		- Skill requirement increased by 1 level
 	-->
 	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_BonemoldDresSlavehunter]========== -->
+	<!--
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_BonemoldDresSlavehunter</defName>
 		<label>Dres slavehunter cuirass</label>
@@ -198,18 +199,18 @@
 			<MaxHitPoints>230</MaxHitPoints>
 			<Mass>12</Mass>
 			<Flammability>0.2</Flammability>
-			<!-- 10% lower than standard -->
+			<!- 10% lower than standard ->
 			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-			<!-- 5% lower than standard -->
+			<!- 5% lower than standard ->
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
 			<Insulation_Cold>2</Insulation_Cold>
-			<!-- 2 higher than standard -->
+			<!- 2 higher than standard ->
 			<Insulation_Heat>10</Insulation_Heat>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<!-- 0.3 lower than standard -->
+			<!- 0.3 lower than standard ->
 			<MoveSpeed>-0.3</MoveSpeed>
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.15</SuppressionPower>
 		</equippedStatOffsets>
@@ -235,7 +236,9 @@
 			<li>MorrowRim_Dunmer_DresArmour_Basic</li>
 		</tradeTags>
 	</ThingDef>
+	-->
 	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_BonemoldDresSlavehunter]========== -->
+	<!--
 	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Bonemold">
 		<defName>MorrowRim_Dunmer_ArmourHelmet_BonemoldDresSlavehunter</defName>
 		<label>Dres slavehunter helmet</label>
@@ -289,4 +292,5 @@
 			<li>MorrowRim_Dunmer_DresArmour_Basic</li>
 		</tradeTags>
 	</ThingDef>
+	-->
 </Defs>
