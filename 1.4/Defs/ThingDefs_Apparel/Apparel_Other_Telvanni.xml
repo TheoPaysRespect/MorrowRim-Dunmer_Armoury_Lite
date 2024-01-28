@@ -6,10 +6,11 @@
 		- 20% heavier
 	-->
 	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_OtherKwamaEgg]========== -->
-	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheKwama">
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Base"
+MayRequire="SirMashedPotato.Ashlands">
 		<defName>MorrowRim_Dunmer_ArmourHelmet_OtherKwamaEgg</defName>
 		<label>Telvanni kwama egg helmet</label>
-		<description>A hollowed out kwama egg, reinforced with Telvanni secrets, and made into a rather peculiar helmet. Claustrophobic and smells strange, it does provide surprisingly good defence.\n\nTypically worn by members of Great House Telvanni, as no one else would dare be caught wearing a hollowed kwama egg on their head.</description>
+		<description>A fetcher fly hive core, made to look like a hollowed out kwama egg. It is reinforced with Telvanni secrets, and made into a rather peculiar helmet. Claustrophobic and smells strange, it does provide surprisingly good defence.\n\nTypically worn by members of Great House Telvanni, as no one else would dare be caught wearing a helmet looking like a hollowed out kwama egg on their head.</description>
 		<recipeMaker>
 			<unfinishedThingDef>MorrowRim_Dunmer_UnfinishedTelvanni</unfinishedThingDef>
 			<researchPrerequisites>
@@ -29,7 +30,8 @@
 			<ESCP_BonemoldItem>20</ESCP_BonemoldItem>
 			<MorrowRim_FrostSalts MayRequire="SirMashedPotato.MorrowRim.TelvanniTechnology">10</MorrowRim_FrostSalts>
 			<MorrowRim_FerrousSalts MayRequire="SirMashedPotato.MorrowRim.TelvanniTechnology">10</MorrowRim_FerrousSalts>
-			<MorrowRim_KwamaEgg>1</MorrowRim_KwamaEgg>
+			<Mashed_Ashlands_FetcherflyHiveCore MayRequire="SirMashedPotato.Ashlands">1</Mashed_Ashlands_FetcherflyHiveCore>
+			<!--Change to Silt strider egg? If done, remember to update description-->
 		</costList>
 		<statBases>
 			<WorkToMake>8600</WorkToMake>

@@ -10,7 +10,7 @@
 		- Each piece provides 'exhilaration' stat buff
 	-->
 	<!-- ==========[MorrowRim_Dunmer_ArmourCuirass_LeatherBoiled]========== -->
-	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourCuirass_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourCuirass_LeatherBoiled" MayRequire="SirMashedPotato.Ashlands">
 		<defName>MorrowRim_Dunmer_ArmourCuirass_LeatherBoiled</defName>
 		<label>boiled netch leather cuirass</label>
 		<description>A cuirass made of boiled netch leather, increasing its durability and protection. Some nematocysts appear to still be active, even after boiling the leather. While normally the constant stinging would make this cuirass somewhat uncomfortable to wear, because the leather has been boiled, touching it results in an oddly pleasant tingling feeling instead. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
@@ -23,7 +23,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Armour_Item</texPath>
 		</graphicData>
 		<costList>
-			<MorrowRim_NetchLeather>100</MorrowRim_NetchLeather>
+			<Mashed_Ashlands_NetchLeather>100</Mashed_Ashlands_NetchLeather>
 		</costList>
 		<statBases>
 			<WorkToMake>26000</WorkToMake>
@@ -66,7 +66,7 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourHelmet_LeatherBoiled]========== -->
-	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourHelmet_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourHelmet_LeatherBoiled" MayRequire="SirMashedPotato.Ashlands">
 		<defName>MorrowRim_Dunmer_ArmourHelmet_LeatherBoiled</defName>
 		<label>boiled netch leather helmet</label>
 		<description>A helmet made of boiled netch leather, increasing its durability and protection. Some nematocysts appear to still be active, even after boiling the leather. While normally the constant stinging would make this helmet somewhat uncomfortable to wear, because the leather has been boiled, touching it results in an oddly pleasant tingling feeling instead. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
@@ -79,7 +79,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Helmet_Item</texPath>
 		</graphicData>
 		<costList>
-			<MorrowRim_NetchLeather>30</MorrowRim_NetchLeather>
+			<Mashed_Ashlands_NetchLeather>30</Mashed_Ashlands_NetchLeather>
 		</costList>
 		<statBases>
 			<WorkToMake>4700</WorkToMake>
@@ -120,7 +120,7 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourBoots_LeatherBoiled]========== -->
-	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourBoots_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourBoots_LeatherBoiled" MayRequire="SirMashedPotato.Ashlands">
 		<defName>MorrowRim_Dunmer_ArmourBoots_LeatherBoiled</defName>
 		<label>boiled netch leather boots</label>
 		<description>A pair of boots made of boiled netch leather, increasing their durability and protection. Some nematocysts appear to still be active, even after boiling the leather. While normally the constant stinging would make these boots somewhat uncomfortable to wear, because the leather has been boiled, touching it results in an oddly pleasant tingling feeling instead. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
@@ -133,7 +133,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Boots</texPath>
 		</graphicData>
 		<costList>
-			<MorrowRim_NetchLeather>30</MorrowRim_NetchLeather>
+			<Mashed_Ashlands_NetchLeather>30</Mashed_Ashlands_NetchLeather>
 		</costList>
 		<statBases>
 			<WorkToMake>4700</WorkToMake>
@@ -170,7 +170,7 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Dunmer_ArmourGauntlets_LeatherBoiled]========== -->
-	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourGauntlets_LeatherBoiled" MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
+	<ThingDef ParentName="MorrowRim_Dunmer_ArmourMakeable_Leather" Name="MorrowRim_Dunmer_ArmourGauntlets_LeatherBoiled" MayRequire="SirMashedPotato.Ashlands">
 		<defName>MorrowRim_Dunmer_ArmourGauntlets_LeatherBoiled</defName>
 		<label>boiled netch leather gauntlets</label>
 		<description>A pair of gauntlets made of boiled netch leather, increasing their durability and protection. Some nematocysts appear to still be active, even after boiling the leather. While normally the constant stinging would make these gauntlets somewhat uncomfortable to wear, because the leather has been boiled, touching it results in an oddly pleasant tingling feeling instead. Netch leather armour also provides some protection against toxic based attacks.\n\nTypically favoured by Ashlanders, bandits, and mercenaries.</description>
@@ -183,7 +183,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_Leather/Leather_Boiled/Leather_Boiled_Gauntlets</texPath>
 		</graphicData>
 		<costList>
-			<MorrowRim_NetchLeather>30</MorrowRim_NetchLeather>
+			<Mashed_Ashlands_NetchLeather>30</Mashed_Ashlands_NetchLeather>
 		</costList>
 		<statBases>
 			<WorkToMake>4700</WorkToMake>

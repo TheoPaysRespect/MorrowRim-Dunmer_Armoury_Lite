@@ -20,7 +20,7 @@
 			<Dye>15</Dye>
 			<Cloth>30</Cloth>
 			<Steel>50</Steel>
-			<MorrowRim_Ebony>120</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>120</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>10</Beauty>
@@ -81,7 +81,7 @@
 			<Dye>5</Dye>
 			<Cloth>20</Cloth>
 			<Steel>30</Steel>
-			<MorrowRim_Ebony>30</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>30</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>10</Beauty>
@@ -138,7 +138,7 @@
 			<Dye>5</Dye>
 			<Cloth>20</Cloth>
 			<Steel>30</Steel>
-			<MorrowRim_Ebony>20</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>20</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>5</Beauty>
@@ -191,7 +191,7 @@
 			<Dye>5</Dye>
 			<Cloth>20</Cloth>
 			<Steel>30</Steel>
-			<MorrowRim_Ebony>20</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>20</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>5</Beauty>

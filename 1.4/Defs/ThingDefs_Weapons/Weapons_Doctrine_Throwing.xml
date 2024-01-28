@@ -45,7 +45,7 @@
 		</graphicData>
 		<costList>
 			<Gold>2</Gold>
-			<MorrowRim_Ebony>30</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>30</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<verbs>
 			<li>
@@ -99,7 +99,7 @@
 		</graphicData>
 		<costList>
 			<Gold>2</Gold>
-			<MorrowRim_Ebony>30</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>30</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<verbs>
 			<li>

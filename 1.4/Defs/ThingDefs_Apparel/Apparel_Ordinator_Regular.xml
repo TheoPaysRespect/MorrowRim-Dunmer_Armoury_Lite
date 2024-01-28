@@ -27,7 +27,7 @@
 			<Gold>5</Gold>
 			<Cloth>30</Cloth>
 			<InsectChitin>50</InsectChitin>
-			<MorrowRim_Ebony>120</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>120</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>20</Beauty>
@@ -86,7 +86,7 @@
 			<Gold>1</Gold>
 			<Cloth>20</Cloth>
 			<InsectChitin>30</InsectChitin>
-			<MorrowRim_Ebony>20</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>20</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>20</Beauty>
@@ -141,7 +141,7 @@
 			<Gold>1</Gold>
 			<Cloth>20</Cloth>
 			<InsectChitin>30</InsectChitin>
-			<MorrowRim_Ebony>20</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>20</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>10</Beauty>
@@ -192,7 +192,7 @@
 			<Gold>1</Gold>
 			<Cloth>20</Cloth>
 			<InsectChitin>30</InsectChitin>
-			<MorrowRim_Ebony>20</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>20</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>10</Beauty>

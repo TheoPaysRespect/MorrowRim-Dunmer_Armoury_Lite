@@ -65,7 +65,7 @@
 		</recipeMaker>
 		<costList>
 			<Gold>1</Gold>
-			<MorrowRim_Ebony>40</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>40</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
@@ -119,7 +119,7 @@
 		</recipeMaker>
 		<costList>
 			<Gold>3</Gold>
-			<MorrowRim_Ebony>125</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>125</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
@@ -172,7 +172,7 @@
 		</recipeMaker>
 		<costList>
 			<Gold>1</Gold>
-			<MorrowRim_Ebony>15</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>15</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<weaponTags>
 			<li>MedievalMeleeBasic</li>
@@ -234,7 +234,7 @@
 		</recipeMaker>
 		<costList>
 			<Gold>3</Gold>
-			<MorrowRim_Ebony>125</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>125</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<weaponTags>
 			<li>MedievalMeleeAdvanced</li>
@@ -295,7 +295,7 @@
 		</recipeMaker>
 		<costList>
 			<Gold>1</Gold>
-			<MorrowRim_Ebony>40</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>40</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
@@ -350,7 +350,7 @@
 		</recipeMaker>
 		<costList>
 			<Gold>3</Gold>
-			<MorrowRim_Ebony>125</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>125</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
@@ -405,7 +405,7 @@
 		</recipeMaker>
 		<costList>
 			<Gold>1</Gold>
-			<MorrowRim_Ebony>65</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>65</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<weaponTags>
 			<li>MedievalMeleeAdvanced</li>
@@ -460,7 +460,7 @@
 		</recipeMaker>
 		<costList>
 			<Gold>2</Gold>
-			<MorrowRim_Ebony>30</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>30</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>

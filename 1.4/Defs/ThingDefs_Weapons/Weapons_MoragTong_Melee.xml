@@ -42,7 +42,7 @@
 		<costList>
 			<Dye>20</Dye>
 			<Steel>20</Steel>
-			<MorrowRim_Glass>30</MorrowRim_Glass>
+			<Mashed_Ashlands_VolcanicGlass>30</Mashed_Ashlands_VolcanicGlass>
 		</costList>
 		<weaponTags>
 			<li>MedievalMeleeAdvanced</li>

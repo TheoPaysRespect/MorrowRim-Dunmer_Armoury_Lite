@@ -156,7 +156,7 @@
 		</tags>
 	</ResearchProjectDef>
 	<!-- ==========[Armour path]========== -->
-	<ResearchProjectDef MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">
+	<ResearchProjectDef MayRequire="SirMashedPotato.Ashlands">
 		<defName>MorrowRim_Dunmer_LeatherArmour</defName>
 		<label>leather armour</label>
 		<description>Allows the creation of Dunmer style leather armour at the Ashlander forge.</description>
@@ -179,7 +179,7 @@
 		<researchViewY>3</researchViewY>
 		<tab>ESCP_DunmerTab</tab>
 		<prerequisites>
-			<li MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">MorrowRim_Dunmer_LeatherArmour</li>
+			<li MayRequire="SirMashedPotato.Ashlands">MorrowRim_Dunmer_LeatherArmour</li>
 		</prerequisites>
 		<tags>
 			<li>ESCP_DumerStart_Ashlander</li>

@@ -27,7 +27,7 @@
 			<Cloth>50</Cloth>
 			<ESCP_BonemoldItem>25</ESCP_BonemoldItem>
 			<MorrowRim_Adamantium>80</MorrowRim_Adamantium>
-			<MorrowRim_Ebony>120</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>120</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>25</Beauty>
@@ -88,7 +88,7 @@
 			<Dye>15</Dye>
 			<Cloth>30</Cloth>
 			<MorrowRim_Adamantium>30</MorrowRim_Adamantium>
-			<MorrowRim_Ebony>30</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>30</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>25</Beauty>
@@ -145,7 +145,7 @@
 			<Cloth>30</Cloth>
 			<ESCP_BonemoldItem>15</ESCP_BonemoldItem>
 			<MorrowRim_Adamantium>30</MorrowRim_Adamantium>
-			<MorrowRim_Ebony>30</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>30</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>15</Beauty>
@@ -198,7 +198,7 @@
 			<Cloth>30</Cloth>
 			<ESCP_BonemoldItem>15</ESCP_BonemoldItem>
 			<MorrowRim_Adamantium>30</MorrowRim_Adamantium>
-			<MorrowRim_Ebony>30</MorrowRim_Ebony>
+			<Mashed_Ashlands_VolcanicEbony>30</Mashed_Ashlands_VolcanicEbony>
 		</costList>
 		<statBases>
 			<Beauty>15</Beauty>
